@@ -194,15 +194,19 @@
 	<!--Playlist Elements-->
 	<bitmap id="wa2.pl.base" file="graphics/plmain.png" w="275" h="116"/>
 	<bitmap id="wa2.pl.glass" file="graphics/glassploverlay.png"/>
-	<bitmap id="wa2.playlist.topleft" file="graphics/pledit.png"  x="0" y="0" h="20" w="25"/>
+	<bitmap id="wa2.pl.topleft" file="graphics/pledit.png"  x="0" y="0" h="20" w="25"/>
 	<bitmap id="wa2.pl.topright" file="graphics/pledit.png"  x="153" y="0" h="20" w="25"/>
 	<bitmap id="wa2.pl.topcenter" file="graphics/pledit.png"  x="127" y="0" h="20" w="25"/>
-	<bitmap id="wa2.pl.middleright" file="graphics/pledit.png"  x="26" y="42" h="29" w="25"/>
-	<bitmap id="wa2.pl.middleleft" file="graphics/pledit.png"  x="0" y="42" h="29" w="25"/>
+	<bitmap id="wa2.pl.stretchleft" file="graphics/pledit.png"  x="127" y="0" h="20" w="13"/>
+	<bitmap id="wa2.pl.stretchright" file="graphics/pledit.png"  x="139" y="0" h="20" w="13"/>
 	<bitmap id="wa2.pl.bottomleft" file="graphics/pledit.png"  x="0" y="72" h="38" w="125"/>
 	<bitmap id="wa2.pl.bottomright" file="graphics/pledit.png"  x="126" y="72" h="38" w="150"/>
 	<bitmap id="wa2.pl.scrollleft" file="graphics/pledit.png"  x="15" y="81" h="14" w="18"/>
 	<bitmap id="wa2.pl.scrollright" file="graphics/pledit.png"  x="44" y="81" h="14" w="18"/>
+	<bitmap id="wa2.pl.midleft" file="graphics/pledit.png" x="0" y="42" h="29" w="12"/>
+	<bitmap id="wa2.pl.midright" file="graphics/pledit.png" x="12" y="42" h="29" w="12"/>
+	<bitmap id="wa2.pl.buttonstretch" file="graphics/pledit.png"  x="257" y="91" h="19" w="19"/>
+	<bitmap id="wa2.pl.bottomstretch" file="graphics/pledit.png"  x="179" y="0" h="38" w="25"/>
 	
 	<!-- PL Titlebar -->
 	<bitmap id="wa2.pl.titlebar.left.enabled" file="graphics/pledit.png" x="0" y="21" h="20" w="25"/>
@@ -211,9 +215,6 @@
 	<bitmap id="wa2.pl.titlebar.middle.disabled" file="graphics/pledit.png" x="26" y="0" h="20" w="100"/>
 	<bitmap id="wa2.pl.titlebar.right.enabled" file="graphics/pledit.png" x="153" y="21" h="20" w="25"/>
 	<bitmap id="wa2.pl.titlebar.right.disabled" file="graphics/pledit.png" x="153" y="0" h="20" w="25"/>
-
-	<bitmap id="wa2.pl.frame.bottom.left" file="graphics/pledit.png" x="0" y="72" h="38" w="125"/>
-	<bitmap id="wa2.pl.frame.bottom.right" file="graphics/pledit.png" x="126" y="72" h="38" w="150"/>
 
 	<!-- PL Buttons-->
 	<bitmap id="wa2.pl.add" file="graphics/pledit.png" x="14" y="80" h="18" w="22"/>
