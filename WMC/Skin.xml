@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<WinampAbstractionLayer version="1.2">
+
+	<skininfo>
+		<version>2.1</version>
+		<name>WMC ADO Elite</name>
+		<comment>WMC/WCL For Winamp</comment>
+		<author>original code by gonzotek, updated by Joe Garrett</author>
+		<email>garrjo@gmail.com</email>
+		<homepage>www.winamp.com</homepage>
+		<screenshot>screenshot.png</screenshot>
+	</skininfo>
+
+	<include file="../default/xml/studio.xml"/>
+	<include file="../default/xml/components.xml"/>
+	<!--
+		Elements Is Where all Graphics are Defined 
+		To change find the reference area by its comments
+	-->
+	<include file="/xml/elements.xml"/>
+
+	<!-- The Remaining are Layouts (where stuff shows up)-->
+	<include file="/xml/main.xml"/>
+	<include file="/xml/eqmain.xml"/>
+	<include file="/xml/pledit.xml"/>
+	<include file="/xml/ml.xml"/>
+	<scripts>
+		<script id="wa2_doublesize" file="scripts/wa2_doublesize.maki"/>
+		<script id="eqlayer" file="scripts/eq_layers.maki"/>
+		<script id="wa2_vistoggle" file="scripts/wa2_vistoggle.maki"/>
+		<script id="songinfo" file="scripts/songinfo.maki"/>
+	</scripts>
+
+
+
+</WinampAbstractionLayer>

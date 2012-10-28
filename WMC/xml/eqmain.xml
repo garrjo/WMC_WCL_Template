@@ -1,0 +1,308 @@
+<container id="EQ" name="Equalizer" default_x="0" default_y="116" default_visible="1">
+	<layout id="normal" background="wa2.player.eq.base">
+		<AlbumArt id="wa2.player.eq.album" notfoundImage="notfound" valign="top" align="left" stretched="false" w="275" h="116" x="0" y="0" alpha="15"/>
+		<layer id="eqlayer">
+			<button id="setMax" x="40" y="36" w="28" h="8"/>
+			<button id="reset"  x="40" y="64" w="28" h="8"/>
+			<button id="setMin" x="40" y="94" w="28" h="8"/>
+
+			<layer
+				id="blah"
+				dblClickAction="SWITCH;shade"
+				x="0" y="0"
+				image="wa2.player.eq.shadeswicher"
+				inactiveAlpha="128"
+    />
+
+			<layer
+				id="EQLineBack"
+				x="86" y="17"
+				image="wa2.player.eq.spline.back"
+    />
+
+			<!-- Backgrounds -->
+			<layer
+				id="preamp_layer"
+				x="21" y="38"
+				image="wa2.player.eq.slider0"
+				move="0"
+				tooltip="Preamp"
+				rectrgn="0"
+    />
+			<layer
+				id="eq1back"
+				x="78" y="38"
+				image="wa2.player.eq.slider0"
+    />
+			<layer
+				id="eq2back"
+				x="96" y="38"
+				image="wa2.player.eq.slider0"
+    />
+			<layer
+				id="eq3back"
+				x="114" y="38"
+				image="wa2.player.eq.slider0"
+    />
+			<layer
+				id="eq4back"
+				x="132" y="38"
+				image="wa2.player.eq.slider0"
+    />
+			<layer
+				id="eq5back"
+				x="150" y="38"
+				image="wa2.player.eq.slider0"
+    />
+			<layer
+				id="eq6back"
+				x="168" y="38"
+				image="wa2.player.eq.slider0"
+    />
+			<layer
+				id="eq7back"
+				x="186" y="38"
+				image="wa2.player.eq.slider0"
+    />
+			<layer
+				id="eq8back"
+				x="204" y="38"
+				image="wa2.player.eq.slider0"
+    />
+			<layer
+				id="eq9back"
+				x="222" y="38"
+				image="wa2.player.eq.slider0"
+    />
+			<layer
+				id="eq10back"
+				x="240" y="38"
+				image="wa2.player.eq.slider0"
+    />
+
+
+			<slider
+				id="preamp"
+				action="EQ_PREAMP"
+				x="22" y="38"
+				w="11" h="62"
+				orientation="vertical"
+				thumb="wa2.player.eq.slider.up"
+				downThumb="wa2.player.eq.slider.down"
+    />
+
+			<slider
+				id="eq1"
+				action="EQ_BAND"
+				param="1"
+				x="79" y="38"
+				w="11" h="62"
+				orientation="vertical"
+				thumb="wa2.player.eq.slider.up"
+				downThumb="wa2.player.eq.slider.down"
+    />
+
+			<slider
+				id="eq2"
+				action="EQ_BAND"
+				param="2"
+				x="97" y="38"
+				w="11" h="62"
+				orientation="vertical"
+				thumb="wa2.player.eq.slider.up"
+				downThumb="wa2.player.eq.slider.down"
+    />
+
+			<slider
+				id="eq3"
+				action="EQ_BAND"
+				param="3"
+				x="115" y="38"
+				w="11" h="62"
+				orientation="vertical"
+				thumb="wa2.player.eq.slider.up"
+				downThumb="wa2.player.eq.slider.down"
+    />
+
+			<slider
+				id="eq4"
+				action="EQ_BAND"
+				param="4"
+				x="133" y="38"
+				w="11" h="62"
+				orientation="vertical"
+				thumb="wa2.player.eq.slider.up"
+				downThumb="wa2.player.eq.slider.down"
+    />
+
+			<slider
+				id="eq5"
+				action="EQ_BAND"
+				param="5"
+				x="151" y="38"
+				w="11" h="62"
+				orientation="vertical"
+				thumb="wa2.player.eq.slider.up"
+				downThumb="wa2.player.eq.slider.down"
+    />
+
+			<slider
+				id="eq6"
+				action="EQ_BAND"
+				param="6"
+				x="169" y="38"
+				w="11" h="62"
+				orientation="vertical"
+				thumb="wa2.player.eq.slider.up"
+				downThumb="wa2.player.eq.slider.down"
+    />
+
+			<slider
+				id="eq7"
+				action="EQ_BAND"
+				param="7"
+				x="187" y="38"
+				w="11" h="62"
+				orientation="vertical"
+				thumb="wa2.player.eq.slider.up"
+				downThumb="wa2.player.eq.slider.down"
+    />
+
+			<slider
+				id="eq8"
+				action="EQ_BAND"
+				param="8"
+				x="205" y="38"
+				w="11" h="62"
+				orientation="vertical"
+				thumb="wa2.player.eq.slider.up"
+				downThumb="wa2.player.eq.slider.down"
+    />
+
+			<slider
+				id="eq9"
+				action="EQ_BAND"
+				param="9"
+				x="223" y="38"
+				w="11" h="62"
+				orientation="vertical"
+				thumb="wa2.player.eq.slider.up"
+				downThumb="wa2.player.eq.slider.down"
+    />
+
+			<slider
+				id="eq10"
+				action="EQ_BAND"
+				param="10"
+				x="241" y="38"
+				w="11" h="62"
+				orientation="vertical"
+				thumb="wa2.player.eq.slider.up"
+				downThumb="wa2.player.eq.slider.down"
+    />
+			<eqvis
+				id="spline"
+				x="86" y="17"
+				w="113" h="19"
+				colortop="211,151,0"
+				colormiddle="239,231,0"
+				colorbottom="244,196,0"
+				colorpreamp="246,181,0"
+				gamma="192"
+   />
+
+			<button
+				id="Close"
+				action="close"
+				x="264" y="-3"
+				image="wa2.player.eq.button.quit"
+				downImage="wa2.player.eq.button.quit.pressed"
+				tooltip="Close"
+				inactiveAlpha="128"
+    />
+
+			<button
+				id="winshade" tooltip="Toggle Windowshade mode"
+				action="SWITCH" param="shade"
+				x="254" y="-3"
+				image="wa2.player.title.shade"
+				downImage="wa2.player.title.shade.pressed"
+				inactiveAlpha="128"
+    />
+
+			<button
+				id="presets"
+				action="MENU" param="presets"
+				x="217" y="18"
+				image="wa2.player.eq.preset"
+				downImage="wa2.player.eq.preset.pressed"
+				tooltip="Display Presets menu"
+    />
+
+			<button
+				id="toggle"
+				action="EQ_TOGGLE"
+				x="14" y="18"
+				image="wa2.eq.on"
+				downImage="wa2.eq.on.pressed"
+				activeImage="wa2.eq.on.active"
+				tooltip="Toggle EQ processing"
+    />
+
+			<button
+				id="auto"
+				action="EQ_AUTO"
+				x="38" y="18"
+				image="wa2.player.eq.auto"
+				downImage="wa2.player.eq.auto.pressed"
+				activeImage="wa2.player.eq.auto.active"
+				tooltip="Toggle EQ automatic processing"
+    />
+		</layer>
+		<layer id="glass" x="0" y="0" image="wa2.eq.glass" ghost="1"/>
+	</layout>
+	<layout id="shade" background="wa2.player.eq.shade">
+
+		<layer
+			id="blah"
+			dblClickAction="SWITCH;normal"
+			x="0" y="0"
+			image="wa2.player.eq.shade"
+			inactiveAlpha="0"
+    />
+
+		<button
+			id="winshade"
+			action="SWITCH" param="normal"
+			x="254" y="3"
+			image="wa2.player.title.shade"
+			downImage="wa2.player.title.shade.pressed"
+			inactiveAlpha="128"
+			tooltip="Toggle Windowshade mode"
+    />
+
+		<button
+			id="Close"
+			action="close"
+			x="264" y="3"
+			image="wa2.player.eq.shade.button.quit"
+			downImage="wa2.player.eq.shade.button.quit.pressed"
+			tooltip="Close"
+			inactiveAlpha="128"
+    />
+		<images source="volume" images="wa2.player.vol.main" x="80" y="5" w="68" h="13" imagesspacing="15"/>
+		<slider id="Volume"
+						action="VOLUME"
+						x="80" y="3" w="68" h="13"
+						thumb="wa2.player.vol.slider.normal" downThumb="wa2.player.vol.slider.pressed"/>
+
+		<images source="balance"
+						 x="170" y="5" w="36" h="13"
+						images="wa2.player.bal.main"
+						imagesspacing="15"/>
+		<slider id="Pan"
+						action="PAN"
+						x="173" y="3" w="38" h="13"
+						thumb="wa2.player.bal.slider.normal" downThumb="wa2.player.bal.slider.pressed"/>
+	</layout>
+</container>

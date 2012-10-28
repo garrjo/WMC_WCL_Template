@@ -1,0 +1,44 @@
+<container id="PL" name="Playlist" default_x="0" default_y="232" default_visible="1">
+	<layout id="normal" background="wa2.pl.base">
+		<layer id="wa2.pl.title.left.disabled" dblClickAction="SWITCH;plShade" x="0" y="0" image="wa2.pl.titlebar.left.disabled" />
+		<layer id="wa2.pl.title.left.enabled" dblClickAction="SWITCH;plShade" x="0" y="0" image="wa2.pl.titlebar.left.enabled" inactiveAlpha="128"/>
+		<layer id="wa2.pl.title.middle.disabled" dblClickAction="SWITCH;plShade" x="87" y="0" image="wa2.pl.titlebar.middle.disabled" />
+		<layer id="wa2.pl.title.middle.enabled" dblClickAction="SWITCH;plShade" x="87" y="0" image="wa2.pl.titlebar.middle.enabled" inactiveAlpha="128"/>
+		<layer id="wa2.pl.title.right.disabled" dblClickAction="SWITCH;plShade" x="250" y="0" image="wa2.pl.titlebar.right.disabled" />
+		<layer id="wa2.pl.title.right.enabled" dblClickAction="SWITCH;plShade" x="250" y="0" image="wa2.pl.titlebar.right.enabled" inactiveAlpha="128"/>
+		<!-- FRAME -->
+		<layer id="wa2.pl.frame.bottom.left" x="0" y="79" image="wa2.pl.frame.bottom.left" resize="bottomright"/>
+		<layer id="wa2.pl.frame.bottom.right" x="125" y="79" image="wa2.pl.frame.bottom.right" resize="bottomright"/>
+
+		<button id="wa2.pl.resize.dummy.button" x="256" y="97" h="19" w="19" resize="bottomright"/>
+
+		<component
+		x="12"
+		y="20"
+		w="-20"
+		relatw="1"
+		h="-57"
+		relath="1"
+		noshowcmdbar="1"
+		autoopen="1"
+		autoclose="0"
+		param="guid:{45F3F7C1-A6F3-4ee6-A15E-125E92FC3F8D}"
+		  />
+
+		<script id="eqfunc" file="scripts/eqfunc.maki"/>
+		<!-- TitleBar -->
+
+		<!-- End Titlebar -->
+		<!-- Add Playlist Entry (List) -->
+		<button id="add" action="PE_ADD" image="wa2.pl.add" inactivealpha="128" tooltip="Add Files" x="14" y="87"/>
+		<button id="rem" action="PE_REM" image="wa2.pl.rem" inactivealpha="128" tooltip="Add Files" x="43" y="87"/>
+		<button id="sel" action="PE_SEL" image="wa2.pl.sel" inactivealpha="128" tooltip="Add Files" x="72" y="87"/>
+		<button id="misc" action="PE_MISC" image="wa2.pl.misc" inactivealpha="128" tooltip="Add Files" x="101" y="87"/>
+		<button id="load" action="PE_LIST" image="wa2.pl.load" inactivealpha="128" tooltip="Add Files" x="231" y="87"/>
+		<!-- End Playlist Entries -->
+
+		<!--Bottom Stuff-->
+		<layer id="glass" x="0" y="0" image="wa2.pl.glass" ghost="1"/>
+		<AlbumArt id="wa2.eq.album" notfoundImage="notfound" valign="top" align="left" stretched="false" w="275" h="116" x="0" y="0" alpha="15"/>
+	</layout>
+</container>

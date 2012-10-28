@@ -1,0 +1,227 @@
+<elements>
+	<!-- Fonts -->
+	<!-- 
+		TrueType Fonts Rather than Image Fonts 
+		Comment for Image Based Fonts
+	-->
+	<truetypefont id="player.Numbers"		file="graphics/04B_08__.ttf" />
+	<truetypefont id="player.BIGNUM"		file="graphics/04B_08__.ttf" />
+	<truetypefont id="player.SmallFixed"		file="graphics/04B_08__.ttf" />
+	<!--
+		Uncomment for Image Based Fonts
+		<bitmapfont id="player.SmallFixed"	file="graphics/text.png" charwidth="5" charheight="6" hspacing="0" vspacing="0"/>
+		<bitmapfont id="player.BIGNUM"			file="graphics/numbers.png" charwidth="9" charheight="13" hspacing="3" vspacing="1" />
+		<bitmapfont id="player.BIGNUMEX"		file="graphics/nums_ex.png" charwidth="9" charheight="13" hspacing="3" vspacing="1" />
+		-->
+	<!-- Main.png to Main.png -->
+	<bitmap id="wa2.player.base" file="graphics/Main.png"/>
+	<!-- Comment if you don't want some glass-->
+	<bitmap id="wa2.player.glass" file="graphics/glassoverlay.png"/>
+
+	<!-- Cbuttons.png to Cbuttons.png -->
+	<!-- Buttons Normal -->
+	<bitmap id="wa2.player.prev" file="graphics/Cbuttons.png"  x="0" y="0" h="18" w="23"/>
+	<bitmap id="wa2.player.play" file="graphics/Cbuttons.png"  x="23" y="0" h="18" w="23"/>
+	<bitmap id="wa2.player.pause" file="graphics/Cbuttons.png"  x="46" y="0" h="18" w="23"/>
+	<bitmap id="wa2.player.stop" file="graphics/Cbuttons.png"  x="68" y="0" h="18" w="23"/>
+	<bitmap id="wa2.player.next" file="graphics/Cbuttons.png"  x="92" y="0" h="18" w="23"/>
+	<bitmap id="wa2.player.eject" file="graphics/Cbuttons.png"  x="114" y="0" h="18" w="23"/>
+
+	<!-- Normal Buttons Down -->
+	<bitmap id="wa2.player.prev.down" file="graphics/Cbuttons.png"  x="0" y="18" h="18" w="23"/>
+	<bitmap id="wa2.player.play.down" file="graphics/Cbuttons.png"  x="23" y="18" h="18" w="23"/>
+	<bitmap id="wa2.player.pause.down" file="graphics/Cbuttons.png"  x="46" y="18" h="18" w="23"/>
+	<bitmap id="wa2.player.stop.down" file="graphics/Cbuttons.png"  x="68" y="18" h="18" w="23"/>
+	<bitmap id="wa2.player.next.down" file="graphics/Cbuttons.png"  x="92" y="18" h="18" w="23"/>
+	<bitmap id="wa2.player.eject.down" file="graphics/Cbuttons.png"  x="114" y="18" h="18" w="23"/>
+
+	<!-- TEST VIS -->
+	<bitmap id="wa2.player.vis" file="graphics/eqmain.png" x="115" y="294" h="19" w="1"/>
+
+
+	<!-- titlebar 
+			(crazy but, all here, I prefer transparencies when mapping this out.  
+			You can do some kewl stuff with it.) 
+	-->
+	<bitmap id="wa2.player.title.enabled" file="graphics/titlebar.png"  x="27" y="0" h="13" w="275"/>
+	<bitmap id="wa2.player.title.dissabled" file="graphics/titlebar.png"  x="27" y="15" h="13" w="275"/>
+	<bitmap id="wa2.player.title.quit" file="graphics/titlebar.png"  x="18" y="0" h="9" w="9"/>
+	<bitmap id="wa2.player.title.quit.pressed" file="graphics/titlebar.png"  x="18" y="9" h="9" w="9"/>
+	<bitmap id="wa2.player.title.shade" file="graphics/titlebar.png"  x="0" y="18" h="9" w="9"/>
+	<bitmap id="wa2.player.title.shade.pressed" file="graphics/titlebar.png"  x="9" y="18" h="9" w="9"/>
+	<bitmap id="wa2.player.title.min" file="graphics/titlebar.png"  x="9" y="0" h="9" w="9"/>
+	<bitmap id="wa2.player.title.min.pressed" file="graphics/titlebar.png"  x="9" y="9" h="9" w="9"/>
+	<bitmap id="wa2.player.title.menu" file="graphics/titlebar.png"  x="0" y="0" h="9" w="9"/>
+	<bitmap id="wa2.player.title.menu.pressed" file="graphics/titlebar.png"  x="0" y="9" h="9" w="9"/>
+	
+	<!-- Middle Option Menu (left side of classic skins) -->
+	<bitmap id="wa2.player.oiadv" file="graphics/titlebar.png"  x="305" y="0" h="42" w="7"/>
+	<bitmap id="wa2.player.oiadv.o" file="graphics/titlebar.png"  x="306" y="3" h="6" w="6"/>
+	<bitmap id="wa2.player.oiadv.o.pressed" file="graphics/titlebar.png"  x="306" y="47" h="6" w="6"/>
+	<bitmap id="wa2.player.oiadv.a" file="graphics/titlebar.png"  x="306" y="11" h="6" w="6"/>
+	<bitmap id="wa2.player.oiadv.a.pressed" file="graphics/titlebar.png"  x="314" y="55" h="6" w="6"/>
+	<bitmap id="wa2.player.oiadv.i" file="graphics/titlebar.png"  x="306" y="19" h="6" w="6"/>
+	<bitmap id="wa2.player.oiadv.i.pressed" file="graphics/titlebar.png"  x="322" y="63" h="6" w="6"/>
+	<bitmap id="wa2.player.oiadv.d" file="graphics/titlebar.png"  x="306" y="27" h="6" w="6"/>
+	<bitmap id="wa2.player.oiadv.d.pressed" file="graphics/titlebar.png"  x="330" y="71" h="6" w="6"/>
+	<bitmap id="wa2.player.oiadv.v" file="graphics/titlebar.png"  x="306" y="34" h="6" w="6"/>
+	<bitmap id="wa2.player.oiadv.v.pressed" file="graphics/titlebar.png"  x="338" y="78" h="6" w="6"/>
+
+	<!-- Winshade Stuff -->
+	<bitmap id="wa2.player.shade.enabled" file="graphics/titlebar.png"  x="27" y="29" h="14" w="275"/>
+	<bitmap id="wa2.player.shade.disabled" file="graphics/titlebar.png"  x="27" y="42" h="14" w="275"/>
+	<bitmap id="wa2.player.shade.menu" file="graphics/titlebar.png"  x="0" y="0" h="9" w="9"/>
+	<bitmap id="wa2.player.shade.menu.pressed" file="graphics/titlebar.png"  x="0" y="9" h="9" w="9"/>
+
+	<!-- Winshade Buttons -->
+	<bitmap id="player.winshade.button.previous" file="graphics/titlebar.png" x="193" y="32" w="10" h="9"/>
+	<bitmap id="player.winshade.button.play" file="graphics/titlebar.png" x="203" y="32" w="10" h="9" />
+	<bitmap id="player.winshade.button.pause" file="graphics/titlebar.png" x="213" y="32" w="10" h="9" />
+	<bitmap id="player.winshade.button.stop" file="graphics/titlebar.png" x="223" y="32" w="10" h="9" />
+	<bitmap id="player.winshade.button.next" file="graphics/titlebar.png" x="233" y="32" w="10" h="9" />
+	<bitmap id="player.winshade.button.open" file="graphics/titlebar.png" x="243" y="32" w="10" h="9" />
+	<bitmap id="player.winshade.seek" file="graphics/titlebar.png" x="20" y="36" w="3" h="7" />
+
+	<!-- Posbar Button and Base Bg. -->
+	<bitmap id="wa2.player.posbar.back" file="graphics/posbar.png"  x="0" y="0" h="10" w="247"/>
+	<bitmap id="wa2.player.posbar.up" file="graphics/posbar.png"  x="258" y="0" h="10" w="11"/>
+	<bitmap id="wa2.player.posbar.down" file="graphics/posbar.png"  x="286" y="0" h="10" w="11"/>
+
+	<!-- Posbar Fill Animation (it is the lower graphic - you can omit if you want) -->
+	<bitmap id="seeker.bar.left" file="graphics/posbar.png" x="1" y="15" h="9" w="157"/>
+	<bitmap id="seeker.bar.center" file="graphics/posbar.png" x="159" y="15" h="9" w="1" />
+	<bitmap id="seeker.bar.right" file="graphics/posbar.png" x="161" y="15" h="9" w="86"/>
+
+	<!-- shufrep (eq|pl|shuffle|repeat) you could add crossfade here  -->
+	<bitmap id="wa2.player.eq.off" file="graphics/shufrep.png"  x="0" y="61" h="12" w="23"/>
+	<bitmap id="wa2.player.eq.on" file="graphics/shufrep.png"  x="0" y="73" h="12" w="23"/>
+	<bitmap id="wa2.player.eq.down" file="graphics/shufrep.png"  x="46" y="73" h="12" w="23"/>
+
+	<bitmap id="wa2.player.playlist.off" file="graphics/shufrep.png"  x="23" y="61" h="12" w="23"/>
+	<bitmap id="wa2.player.playlist.on" file="graphics/shufrep.png"  x="23" y="73" h="12" w="23"/>
+	<bitmap id="wa2.player.playlist.down" file="graphics/shufrep.png"  x="69" y="73" h="12" w="23"/>
+
+	<bitmap id="wa2.player.rpt.off" file="graphics/shufrep.png"  x="0" y="0" h="15" w="28"/>
+	<bitmap id="wa2.player.rpt.on" file="graphics/shufrep.png"  x="0" y="30" h="15" w="28"/>
+	<bitmap id="wa2.player.rpt.down" file="graphics/shufrep.png"  x="0" y="15" h="15" w="28"/>
+
+	<bitmap id="wa2.player.sfl.off" file="graphics/shufrep.png"  x="28" y="0" h="15" w="47"/>
+	<bitmap id="wa2.player.sfl.on" file="graphics/shufrep.png"  x="28" y="30" h="15" w="47"/>
+	<bitmap id="wa2.player.sfl.down" file="graphics/shufrep.png"  x="28" y="15" h="15" w="47"/>
+
+	<!-- MONOSTER.png to MONOSTER.png -->
+	<!-- Doesnt Actualy Work Yet... So Its Defaulted To Stereo-->
+	<bitmap id="wa2.player.stereo.on" file="graphics/MONOSTER.png"  x="0" y="0" h="12" w="30"/>
+	<bitmap id="wa2.player.mono.off" file="graphics/MONOSTER.png"  x="29" y="12" h="12" w="30"/>
+	<bitmap id="wa2.player.mono.on" file="graphics/MONOSTER.png"  x="29" y="0" h="12" w="30"/>
+	<bitmap id="wa2.player.stereo.off" file="graphics/MONOSTER.png"  x="0" y="12" h="12" w="30"/>
+
+	<!-- volume.png volume.status-->b
+	<bitmap id="wa2.player.vol.main" file="graphics/volume.png" x="0" y="0" w="68" h="433" />
+	<bitmap id="wa2.player.vol.slider.normal" file="graphics/volume.png"  x="15" y="420" h="11" w="14"/>
+	<bitmap id="wa2.player.vol.slider.pressed" file="graphics/volume.png"  x="0" y="420" h="11" w="14"/>
+
+	<!-- balance.png player.status-->
+	<bitmap id="wa2.player.bal.main" file="graphics/balance.png" x="11" y="0" w="36" h="433" />
+	<bitmap id="wa2.player.bal.slider.normal" file="graphics/balance.png"  x="18" y="420" h="11" w="14"/>
+	<bitmap id="wa2.player.bal.slider.pressed" file="graphics/balance.png"  x="3" y="420" h="11" w="14"/>
+
+	<!-- playpaus.png -->
+	<bitmap id="player.status.play" file="graphics/playpaus.png"  x="0" y="0" h="9" w="9"/>
+	<bitmap id="player.status.pause" file="graphics/playpaus.png"  x="9" y="0" h="9" w="9"/>
+	<bitmap id="player.status.stop" file="graphics/playpaus.png"  x="18" y="0" h="9" w="9"/>
+
+	<!-- Eqmain Graphics -->
+	<bitmap id="wa2.player.eq.base" file="graphics/eqmain.png" x="0" y="0" h="116" w="275"/>
+	<bitmap id="wa2.player.eq.slider.up" file="graphics/eqmain.png" x="0" y="164" h="11" w="11"/>
+	<bitmap id="wa2.player.eq.slider.down" file="graphics/eqmain.png" x="0" y="176" h="11" w="11"/>
+	<bitmap id="wa2.player.eq.shadeswicher" file="graphics/eqmain.png" x="0" y="134" h="14" w="275"/>
+	<bitmap id="wa2.player.eq.spline.back" file="graphics/eqmain.png" x="0" y="294" h="19" w="113"/>
+	<bitmap id="wa2.player.eq.button.quit" file="graphics/eqmain.png" x="0" y="116" h="9" w="9"/>
+	<bitmap id="wa2.player.eq.button.quit.pressed" file="graphics/eqmain.png" x="0" y="125" h="9" w="9"/>
+	<bitmap id="wa2.player.eq.preset" file="graphics/eqmain.png"  x="224" y="164" h="12" w="44"/>
+	<bitmap id="wa2.player.eq.preset.pressed" file="graphics/eqmain.png" x="224" y="176" h="12" w="44"/>
+	<bitmap id="wa2.eq.on" file="graphics/eqmain.png" x="10" y="119" h="12" w="24"/>
+	<bitmap id="wa2.eq.on.pressed" file="graphics/eqmain.png" x="128" y="119" h="12" w="24"/>
+	<bitmap id="wa2.eq.on.active" file="graphics/eqmain.png" x="69" y="119" h="12" w="24"/>
+	<bitmap id="wa2.player.eq.auto" file="graphics/eqmain.png" x="34" y="119" h="12" w="34"/>
+	<bitmap id="wa2.player.eq.auto.pressed" file="graphics/eqmain.png" x="152" y="119" h="12" w="34"/>
+	<bitmap id="wa2.player.eq.auto.active" file="graphics/eqmain.png" x="93" y="119" h="12" w="34"/>
+	<bitmap id="wa2.eq.glass" file="graphics/glasseqoverlay.png" x="0" y="0" w="275" h="116"/>
+
+	<!-- EQ_EX -->
+	<bitmap id="wa2.player.eq.shade" file="graphics/EQ_EX.png"  x="0" y="0" h="13" w="275"/>
+	<bitmap id="wa2.player.eq.shade.button.quit" file="graphics/EQ_EX.png"  x="11" y="38" h="9" w="9"/>
+	<bitmap id="wa2.player.eq.shade.button.quit.pressed" file="graphics/EQ_EX.png"  x="11" y="47" h="9" w="9"/>
+	<bitmap id="wa2.player.eq.shade.button.change" file="graphics/EQ_EX.png"  x="1" y="38" h="9" w="9"/>
+	<bitmap id="wa2.player.eq.shade.button.change.pressed" file="graphics/EQ_EX.png"  x="1" y="47" h="9" w="9"/>
+	<!--
+			VOLUME / BALANCE ARE REPEATED FROM VOLUME.PNG AND BALANCE.PNG (IF YOU DO NO WANT THIS BEHAVIOR
+			YOU WILL NEED TO WRITE YOUR OWN XML HANDLER
+		-->
+
+	<!-- EQ Sliders (Don't Play with this the extra numbers are to fix problems with slides) -->
+	<bitmap id="wa2.player.eq.slider-1" file="graphics/eqmain.png"  x="208" y="164" h="63" w="14"/>
+	<bitmap id="wa2.player.eq.slider-2" file="graphics/eqmain.png"  x="193" y="164" h="63" w="14"/>
+	<bitmap id="wa2.player.eq.slider-3" file="graphics/eqmain.png"  x="178" y="164" h="63" w="14"/>
+	<bitmap id="wa2.player.eq.slider-4" file="graphics/eqmain.png"  x="163" y="164" h="63" w="14"/>
+	<bitmap id="wa2.player.eq.slider-5" file="graphics/eqmain.png"  x="148" y="164" h="63" w="14"/>
+	<bitmap id="wa2.player.eq.slider-6" file="graphics/eqmain.png"  x="133" y="164" h="63" w="14"/>
+	<bitmap id="wa2.player.eq.slider-7" file="graphics/eqmain.png"  x="118" y="164" h="63" w="14"/>
+	<bitmap id="wa2.player.eq.slider-8" file="graphics/eqmain.png"  x="103" y="164" h="63" w="14"/>
+	<bitmap id="wa2.player.eq.slider-9" file="graphics/eqmain.png"  x="88" y="164" h="63" w="14"/>
+	<bitmap id="wa2.player.eq.slider-10" file="graphics/eqmain.png"  x="73" y="164" h="63" w="14"/>
+	<bitmap id="wa2.player.eq.slider-11" file="graphics/eqmain.png"  x="58" y="164" h="63" w="14"/>
+	<bitmap id="wa2.player.eq.slider-12" file="graphics/eqmain.png"  x="43" y="164" h="63" w="14"/>
+	<bitmap id="wa2.player.eq.slider-13" file="graphics/eqmain.png"  x="28" y="164" h="63" w="14"/>
+	<bitmap id="wa2.player.eq.slider-14" file="graphics/eqmain.png"  x="13" y="164" h="63" w="14"/>
+	<bitmap id="wa2.player.eq.slider0" file="graphics/eqmain.png"  x="13" y="164" h="63" w="14"/>
+	<bitmap id="wa2.player.eq.slider1" file="graphics/eqmain.png"  x="13" y="229" h="63" w="14"/>
+	<bitmap id="wa2.player.eq.slider2" file="graphics/eqmain.png"  x="28" y="229" h="63" w="14"/>
+	<bitmap id="wa2.player.eq.slider3" file="graphics/eqmain.png"  x="43" y="229" h="63" w="14"/>
+	<bitmap id="wa2.player.eq.slider4" file="graphics/eqmain.png"  x="58" y="229" h="63" w="14"/>
+	<bitmap id="wa2.player.eq.slider5" file="graphics/eqmain.png"  x="73" y="229" h="63" w="14"/>
+	<bitmap id="wa2.player.eq.slider6" file="graphics/eqmain.png"  x="88" y="229" h="63" w="14"/>
+	<bitmap id="wa2.player.eq.slider7" file="graphics/eqmain.png"  x="103" y="229" h="63" w="14"/>
+	<bitmap id="wa2.player.eq.slider8" file="graphics/eqmain.png"  x="118" y="229" h="63" w="14"/>
+	<bitmap id="wa2.player.eq.slider9" file="graphics/eqmain.png"  x="133" y="229" h="63" w="14"/>
+	<bitmap id="wa2.player.eq.slider10" file="graphics/eqmain.png"  x="148" y="229" h="63" w="14"/>
+	<bitmap id="wa2.player.eq.slider11" file="graphics/eqmain.png"  x="163" y="229" h="63" w="14"/>
+	<bitmap id="wa2.player.eq.slider12" file="graphics/eqmain.png"  x="178" y="229" h="63" w="14"/>
+	<bitmap id="wa2.player.eq.slider13" file="graphics/eqmain.png"  x="193" y="229" h="63" w="14"/>
+	<bitmap id="wa2.player.eq.slider14" file="graphics/eqmain.png"  x="208" y="229" h="63" w="14"/>
+
+	<!--Playlist Elements-->
+	<bitmap id="wa2.pl.base" file="graphics/plmain.png" w="275" h="116"/>
+	<bitmap id="wa2.pl.glass" file="graphics/glassploverlay.png"/>
+	<bitmap id="wa2.playlist.topleft" file="graphics/pledit.png"  x="0" y="0" h="20" w="25"/>
+	<bitmap id="wa2.pl.topright" file="graphics/pledit.png"  x="153" y="0" h="20" w="25"/>
+	<bitmap id="wa2.pl.topcenter" file="graphics/pledit.png"  x="127" y="0" h="20" w="25"/>
+	<bitmap id="wa2.pl.middleright" file="graphics/pledit.png"  x="26" y="42" h="29" w="25"/>
+	<bitmap id="wa2.pl.middleleft" file="graphics/pledit.png"  x="0" y="42" h="29" w="25"/>
+	<bitmap id="wa2.pl.bottomleft" file="graphics/pledit.png"  x="0" y="72" h="38" w="125"/>
+	<bitmap id="wa2.pl.bottomright" file="graphics/pledit.png"  x="126" y="72" h="38" w="150"/>
+	<bitmap id="wa2.pl.scrollleft" file="graphics/pledit.png"  x="15" y="81" h="14" w="18"/>
+	<bitmap id="wa2.pl.scrollright" file="graphics/pledit.png"  x="44" y="81" h="14" w="18"/>
+	
+	<!-- PL Titlebar -->
+	<bitmap id="wa2.pl.titlebar.left.enabled" file="graphics/pledit.png" x="0" y="21" h="20" w="25"/>
+	<bitmap id="wa2.pl.titlebar.left.disabled" file="graphics/pledit.png" x="0" y="0" h="20" w="25"/>
+	<bitmap id="wa2.pl.titlebar.middle.enabled" file="graphics/pledit.png" x="26" y="21" h="20" w="100"/>
+	<bitmap id="wa2.pl.titlebar.middle.disabled" file="graphics/pledit.png" x="26" y="0" h="20" w="100"/>
+	<bitmap id="wa2.pl.titlebar.right.enabled" file="graphics/pledit.png" x="153" y="21" h="20" w="25"/>
+	<bitmap id="wa2.pl.titlebar.right.disabled" file="graphics/pledit.png" x="153" y="0" h="20" w="25"/>
+
+	<bitmap id="wa2.pl.frame.bottom.left" file="graphics/pledit.png" x="0" y="72" h="38" w="125"/>
+	<bitmap id="wa2.pl.frame.bottom.right" file="graphics/pledit.png" x="126" y="72" h="38" w="150"/>
+
+	<!-- PL Buttons-->
+	<bitmap id="wa2.pl.add" file="graphics/pledit.png" x="14" y="80" h="18" w="22"/>
+	<bitmap id="wa2.pl.rem" file="graphics/pledit.png" x="43" y="80" h="18" w="22"/>
+	<bitmap id="wa2.pl.sel" file="graphics/pledit.png" x="72" y="80" h="18" w="22"/>
+	<bitmap id="wa2.pl.misc" file="graphics/pledit.png" x="101" y="80" h="18" w="22"/>
+	<bitmap id="wa2.pl.load" file="graphics/pledit.png" x="232" y="80" h="18" w="22"/>
+
+
+	<!--Media Library/Video/AVS Elements-->
+</elements>

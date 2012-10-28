@@ -1,0 +1,1051 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<WinampAbstractionLayer version="1.2">
+
+	<skininfo>
+		<version>2.1</version>
+		<name>WCL Template</name>
+		<comment>WMC/WCL For Winamp</comment>
+		<author>original code by gonzotek</author>
+		<email>garrjo@gmail.com</email>
+		<homepage>www.winamp.com</homepage>
+		<screenshot>screenshot.png</screenshot>
+	</skininfo>
+
+	<include file="../default/xml/studio.xml"/>
+	<include file="../default/xml/components.xml"/>
+	<elements>
+		<!-- Fonts -->
+		<bitmapfont id="player.SmallFixed"	file="graphics/text.bmp" charwidth="5" charheight="6" hspacing="0" vspacing="0"/>
+		<bitmapfont id="player.BIGNUM"			file="graphics/numbers.bmp" charwidth="9" charheight="13" hspacing="3" vspacing="1" />
+		<bitmapfont id="player.BIGNUMEX"		file="graphics/NUMS_EX.bmp" charwidth="9" charheight="13" hspacing="3" vspacing="1" />
+
+		<!-- Main.png to Main.png -->
+		<bitmap id="wa2.player.base" file="graphics/Main.bmp"/>
+		<bitmap id="wa2.player.glass" file="graphics/glassoverlay.bmp"/>
+
+		<!-- Cbuttons.png to Cbuttons.png -->
+		<!-- Buttons Normal -->
+		<bitmap id="wa2.player.prev" file="graphics/Cbuttons.bmp"  x="0" y="0" h="18" w="23"/>
+		<bitmap id="wa2.player.play" file="graphics/Cbuttons.bmp"  x="23" y="0" h="18" w="23"/>
+		<bitmap id="wa2.player.pause" file="graphics/Cbuttons.bmp"  x="46" y="0" h="18" w="23"/>
+		<bitmap id="wa2.player.stop" file="graphics/Cbuttons.bmp"  x="68" y="0" h="18" w="23"/>
+		<bitmap id="wa2.player.next" file="graphics/Cbuttons.bmp"  x="92" y="0" h="18" w="23"/>
+		<bitmap id="wa2.player.eject" file="graphics/Cbuttons.bmp"  x="114" y="0" h="18" w="23"/>
+
+		<gradient id="player.font.color" x="0" y="0" w="0" h="0" relatw="1" relath="1" points="0.0=153,105,0,255;1.0=210,151,0,128" />
+
+		<!-- TEST VIS -->
+		<bitmap id="wa2.player.vis" file="graphics/eqmain.bmp" x="115" y="294" h="19" w="1"/>
+
+		<!-- Buttons Down -->
+		<bitmap id="wa2.player.prev.down" file="graphics/Cbuttons.bmp"  x="0" y="18" h="18" w="23"/>
+		<bitmap id="wa2.player.play.down" file="graphics/Cbuttons.bmp"  x="23" y="18" h="18" w="23"/>
+		<bitmap id="wa2.player.pause.down" file="graphics/Cbuttons.bmp"  x="46" y="18" h="18" w="23"/>
+		<bitmap id="wa2.player.stop.down" file="graphics/Cbuttons.bmp"  x="68" y="18" h="18" w="23"/>
+		<bitmap id="wa2.player.next.down" file="graphics/Cbuttons.bmp"  x="92" y="18" h="18" w="23"/>
+		<bitmap id="wa2.player.eject.down" file="graphics/Cbuttons.bmp"  x="114" y="18" h="18" w="23"/>
+
+		<!-- titlebar.png to titlebar.png -->
+		<bitmap id="wa2.player.title.enabled" file="graphics/titlebar.bmp"  x="27" y="0" h="13" w="275"/>
+		<bitmap id="wa2.player.title.dissabled" file="graphics/titlebar.bmp"  x="27" y="15" h="13" w="275"/>
+		<bitmap id="wa2.player.title.quit" file="graphics/titlebar.bmp"  x="18" y="0" h="9" w="9"/>
+		<bitmap id="wa2.player.title.quit.pressed" file="graphics/titlebar.bmp"  x="18" y="9" h="9" w="9"/>
+		<bitmap id="wa2.player.title.shade" file="graphics/titlebar.bmp"  x="0" y="18" h="9" w="9"/>
+		<bitmap id="wa2.player.title.shade.pressed" file="graphics/titlebar.bmp"  x="9" y="18" h="9" w="9"/>
+		<bitmap id="wa2.player.title.min" file="graphics/titlebar.bmp"  x="9" y="0" h="9" w="9"/>
+		<bitmap id="wa2.player.title.min.pressed" file="graphics/titlebar.bmp"  x="9" y="9" h="9" w="9"/>
+		<bitmap id="wa2.player.title.menu" file="graphics/titlebar.bmp"  x="0" y="0" h="9" w="9"/>
+		<bitmap id="wa2.player.title.menu.pressed" file="graphics/titlebar.bmp"  x="0" y="9" h="9" w="9"/>
+
+		<bitmap id="wa2.player.oiadv" file="graphics/titlebar.bmp"  x="305" y="0" h="42" w="7"/>
+
+		<bitmap id="wa2.player.oiadv.o" file="graphics/titlebar.bmp"  x="306" y="3" h="6" w="6"/>
+		<bitmap id="wa2.player.oiadv.o.pressed" file="graphics/titlebar.bmp"  x="306" y="47" h="6" w="6"/>
+		<bitmap id="wa2.player.oiadv.a" file="graphics/titlebar.bmp"  x="306" y="11" h="6" w="6"/>
+		<bitmap id="wa2.player.oiadv.a.pressed" file="graphics/titlebar.bmp"  x="314" y="55" h="6" w="6"/>
+		<bitmap id="wa2.player.oiadv.i" file="graphics/titlebar.bmp"  x="306" y="19" h="6" w="6"/>
+		<bitmap id="wa2.player.oiadv.i.pressed" file="graphics/titlebar.bmp"  x="322" y="63" h="6" w="6"/>
+		<bitmap id="wa2.player.oiadv.d" file="graphics/titlebar.bmp"  x="306" y="27" h="6" w="6"/>
+		<bitmap id="wa2.player.oiadv.d.pressed" file="graphics/titlebar.bmp"  x="330" y="71" h="6" w="6"/>
+		<bitmap id="wa2.player.oiadv.v" file="graphics/titlebar.bmp"  x="306" y="34" h="6" w="6"/>
+		<bitmap id="wa2.player.oiadv.v.pressed" file="graphics/titlebar.bmp"  x="338" y="78" h="6" w="6"/>
+
+		<!-- Winshade Stuff -->
+		<bitmap id="wa2.player.shade.enabled" file="graphics/titlebar.bmp"  x="27" y="29" h="14" w="275"/>
+		<bitmap id="wa2.player.shade.disabled" file="graphics/titlebar.bmp"  x="27" y="42" h="14" w="275"/>
+		<bitmap id="wa2.player.shade.menu" file="graphics/titlebar.bmp"  x="0" y="0" h="9" w="9"/>
+		<bitmap id="wa2.player.shade.menu.pressed" file="graphics/titlebar.bmp"  x="0" y="9" h="9" w="9"/>
+
+		<!-- Winshade Buttons -->
+		<bitmap id="player.winshade.button.previous" file="graphics/titlebar.bmp" x="193" y="32" w="10" h="9"/>
+		<bitmap id="player.winshade.button.play" file="graphics/titlebar.bmp" x="203" y="32" w="10" h="9" />
+		<bitmap id="player.winshade.button.pause" file="graphics/titlebar.bmp" x="213" y="32" w="10" h="9" />
+		<bitmap id="player.winshade.button.stop" file="graphics/titlebar.bmp" x="223" y="32" w="10" h="9" />
+		<bitmap id="player.winshade.button.next" file="graphics/titlebar.bmp" x="233" y="32" w="10" h="9" />
+		<bitmap id="player.winshade.button.open" file="graphics/titlebar.bmp" x="243" y="32" w="10" h="9" />
+		<bitmap id="player.winshade.seek" file="graphics/titlebar.bmp" x="20" y="36" w="3" h="7" />
+
+		<!-- posbar.png to posbar.png -->
+		<bitmap id="wa2.player.posbar.back" file="graphics/posbar.bmp"  x="0" y="0" h="10" w="247"/>
+		<bitmap id="wa2.player.posbar.up" file="graphics/posbar.bmp"  x="258" y="0" h="10" w="11"/>
+		<bitmap id="wa2.player.posbar.down" file="graphics/posbar.bmp"  x="286" y="0" h="10" w="11"/>
+
+		<!-- Posbar Fill Animation -->
+		<bitmap id="seeker.bar.left" file="graphics/posbar.bmp" x="1" y="15" h="9" w="157"/>
+		<bitmap id="seeker.bar.center" file="graphics/posbar.bmp" x="159" y="15" h="9" w="1" />
+		<bitmap id="seeker.bar.right" file="graphics/posbar.bmp" x="161" y="15" h="9" w="86"/>
+
+		<!-- shufrep.png to shufrep.png -->
+		<bitmap id="wa2.player.eq.off" file="graphics/shufrep.bmp"  x="0" y="61" h="12" w="23"/>
+		<bitmap id="wa2.player.eq.on" file="graphics/shufrep.bmp"  x="0" y="73" h="12" w="23"/>
+		<bitmap id="wa2.player.eq.down" file="graphics/shufrep.bmp"  x="46" y="73" h="12" w="23"/>
+
+		<bitmap id="wa2.player.playlist.off" file="graphics/shufrep.bmp"  x="23" y="61" h="12" w="23"/>
+		<bitmap id="wa2.player.playlist.on" file="graphics/shufrep.bmp"  x="23" y="73" h="12" w="23"/>
+		<bitmap id="wa2.player.playlist.down" file="graphics/shufrep.bmp"  x="69" y="73" h="12" w="23"/>
+
+		<bitmap id="wa2.player.rpt.off" file="graphics/shufrep.bmp"  x="0" y="0" h="15" w="28"/>
+		<bitmap id="wa2.player.rpt.on" file="graphics/shufrep.bmp"  x="0" y="30" h="15" w="28"/>
+		<bitmap id="wa2.player.rpt.down" file="graphics/shufrep.bmp"  x="0" y="15" h="15" w="28"/>
+
+		<bitmap id="wa2.player.sfl.off" file="graphics/shufrep.bmp"  x="28" y="0" h="15" w="47"/>
+		<bitmap id="wa2.player.sfl.on" file="graphics/shufrep.bmp"  x="28" y="30" h="15" w="47"/>
+		<bitmap id="wa2.player.sfl.down" file="graphics/shufrep.bmp"  x="28" y="15" h="15" w="47"/>
+
+		<!-- MONOSTER.png to MONOSTER.png -->
+		<!-- Doesnt Actualy Work Yet... So Its Defaulted To Stereo-->
+		<bitmap id="wa2.player.stereo.on" file="graphics/MONOSTER.bmp"  x="0" y="0" h="12" w="30"/>
+		<bitmap id="wa2.player.mono.off" file="graphics/MONOSTER.bmp"  x="29" y="12" h="12" w="30"/>
+		<bitmap id="wa2.player.mono.on" file="graphics/MONOSTER.bmp"  x="29" y="0" h="12" w="30"/>
+		<bitmap id="wa2.player.stereo.off" file="graphics/MONOSTER.bmp"  x="0" y="12" h="12" w="30"/>
+
+		<!-- volume.png volume.status-->b
+		<bitmap id="wa2.player.vol.main" file="graphics/volume.bmp" x="0" y="0" w="68" h="433" />
+		<bitmap id="wa2.player.vol.slider.normal" file="graphics/volume.bmp"  x="15" y="422" h="11" w="14"/>
+		<bitmap id="wa2.player.vol.slider.pressed" file="graphics/volume.bmp"  x="0" y="422" h="11" w="14"/>
+
+		<!-- balance.png player.status-->
+		<bitmap id="wa2.player.bal.main" file="graphics/balance.bmp" x="11" y="0" w="36" h="433" />
+		<bitmap id="wa2.player.bal.slider.normal" file="graphics/balance.bmp"  x="15" y="422" h="11" w="14"/>
+		<bitmap id="wa2.player.bal.slider.pressed" file="graphics/balance.bmp"  x="0" y="422" h="11" w="14"/>
+
+		<!-- playpaus.png -->
+		<bitmap id="player.status.play" file="graphics/playpaus.bmp"  x="0" y="0" h="9" w="9"/>
+		<bitmap id="player.status.pause" file="graphics/playpaus.bmp"  x="9" y="0" h="9" w="9"/>
+		<bitmap id="player.status.stop" file="graphics/playpaus.bmp"  x="18" y="0" h="9" w="9"/>
+
+	</elements>
+	<container id="Main" name="WA2 Skin Main window">
+		<layout id="normal" background="wa2.player.base">
+			<AlbumArt id="wa2.player.eq.album" notfoundImage="notfound" valign="top" align="left" stretched="false" w="275" h="116" x="0" y="0" alpha="15"/>
+			<text
+			 id="infoline"
+			 display="songinfo" default=""
+			 x="30" y="200" h="20" w="50"
+			 font="player.BIGNUMEX"
+			inactivealpha="128"
+     />
+
+			<layer
+				id="PosBarBack"
+				x="1" y="72"
+				w="265"
+				image="wa2.player.posbar.back"
+				rectrgn="0"
+				move="0"
+    />
+			<ProgressGrid
+			x="0"
+			y="75"
+			w="-10"
+			h="4"
+			relatw="1"
+			orientation="right"
+			left=""
+			middle="seeker.bar.center"
+			right="seeker.bar.left"/>
+
+			<button
+				id="Previous"
+				action="Prev"
+				x="16" y="88"
+				image="wa2.player.prev"
+				downImage="wa2.player.prev.down"
+				tooltip="Previous"
+				 inactivealpha="128"
+    />
+
+			<button
+				id="Play"
+				action="Play"
+				x="39" y="88"
+				image="wa2.player.play"
+				downImage="wa2.player.play.down"
+				tooltip="Play"
+				 inactivealpha="128"
+    />
+
+			<button
+				id="Pause"
+				action="Pause"
+				x="62" y="88"
+				image="wa2.player.pause"
+				downImage="wa2.player.pause.down"
+				tooltip="Pause"
+				 inactivealpha="128"
+    />
+
+			<button
+				id="Stop"
+				action="Stop"
+				x="85" y="88"
+				image="wa2.player.stop"
+				downImage="wa2.player.stop.down"
+				tooltip="Stop"
+				 inactivealpha="128"
+    />
+
+			<button
+				id="Next"
+				action="Next"
+				x="108" y="88"
+				image="wa2.player.next"
+				downImage="wa2.player.next.down"
+				tooltip="Next"
+				 inactivealpha="128"
+    />
+
+			<button
+				id="Eject"
+				action="EJECT"
+				x="131" y="88"
+				image="wa2.player.eject"
+				downImage="wa2.player.eject.down"
+				tooltip="Eject"
+				 inactivealpha="128"
+    />
+
+			<text
+				id="songticker" ticker="1"
+				display="songname" default="" showlen="2"
+				x="111" y="25"
+				w="154" h="10"
+				font="player.SmallFixed"
+				 inactivealpha="128"
+    />
+			<text
+				id="timer"
+				display="time"
+				x="35" y="10"
+				w="80" h="27"
+				default="" showlen="1"
+				antialias="true"
+				font="player.BIGNUMEX"
+				 inactivealpha="128"
+    />
+			<vis
+				id="vis"
+				x="27" y="43"
+				w="72" h="16"
+				alpha="220"
+				default="spectrum"
+				gammagroup="vis"
+				colorband1="211,151,0"
+				colorband2="211,160,5"
+				colorband3="196,138,0"
+				colorband4="196,152,5"
+				colorband5="181,124,0"
+				colorband6="181,130,5"
+				colorband7="166,113,0"
+				colorband8="166,113,5"
+				colorband9="153,106,0"
+				colorband10="166,113,5"
+				colorband11="166,113,0"
+				colorband12="211,151,5"
+				colorband13="211,160,0"
+				colorband14="196,138,5"
+				colorband15="196,152,0"
+				colorband16="181,124,5"
+				colorbandpeak="228,211,160"
+				colorosc1="211,151,0"
+				colorosc2="196,152,5"
+				colorosc3="228,211,160"
+				colorosc4="196,152,5"
+				colorosc5="211,151,0"
+				 inactivealpha="128"
+				/>
+			<text
+				id="bitrateText"
+				ticker="1"
+				display=""
+				x="109" y="41"
+				w="20" h="10"
+				font="player.SmallFixed"
+				inactivealpha="128"
+     />
+			<text
+				id="frequency"
+				ticker="1"
+				display=""
+				default=""
+				x="154" y="41"
+				w="20" h="10"
+				font="player.SmallFixed"
+			  inactivealpha="128"
+    />
+			<text
+				id="kbps"
+				ticker="1"
+				default="kbps"
+				x="125" y="41"
+				w="30" h="10"
+				font="player.SmallFixed"
+				inactivealpha="128"
+     />
+			<text
+				id="Khz"
+				ticker="1"
+				default="khz"
+				x="165" y="41"
+				w="40" h="11"
+				font="player.SmallFixed"
+				inactivealpha="128"
+     />
+			<togglebutton
+				id="eq"
+				action="TOGGLE" param="EQ"
+				x="219" y="58"
+				w="23" h="12"
+				image="wa2.player.eq.off"
+				downImage="wa2.player.eq.down"
+				activeImage="wa2.player.eq.on"
+				tooltip="Toggle Equalizer"
+				 inactivealpha="128"
+    />
+
+			<togglebutton
+				id="pl"
+				action="TOGGLE"
+				param="PL"
+				x="242" y="58"
+				w="23" h="12"
+				image="wa2.player.playlist.off"
+				downImage="wa2.player.playlist.down"
+				activeImage="wa2.player.playlist.on"
+				tooltip="Toggle Playlist Editor"
+				 inactivealpha="128"
+    />
+
+			<togglebutton
+				id="Repeat"
+				cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Repeat"
+				x="210" y="89"
+				action="TOGGLE_REPEAT"
+				image="wa2.player.rpt.off"
+				downImage="wa2.player.rpt.down"
+				activeImage="wa2.player.rpt.on"
+				tooltip="Repeat"
+				 inactivealpha="128"
+    />
+
+			<togglebutton
+				id="Shuffle"
+				cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Shuffle"
+				action="TOGGLE_SHUFFLE"
+				x="164" y="89"
+				image="wa2.player.sfl.off"
+				downImage="wa2.player.sfl.down"
+				activeImage="wa2.player.sfl.on"
+				tooltip="Shuffle"
+				 inactivealpha="128"
+    />
+
+			<layer
+				id="blah"
+				dblClickAction="SWITCH;shade"
+				x="0" y="0"
+				image="wa2.player.title.enabled"
+				inactiveAlpha="128"
+    />
+			<images source="volume" images="wa2.player.vol.main" x="107" y="57" w="68" h="13" imagesspacing="15"/>
+			<slider id="Volume"
+							action="VOLUME"
+							x="108" y="57" w="68" h="13"
+							thumb="wa2.player.vol.slider.normal" downThumb="wa2.player.vol.slider.pressed"/>
+
+			<images source="balance"
+							 x="177" y="57" w="38" h="13"
+							images="wa2.player.bal.main"
+							imagesspacing="15"/>
+			<slider id="Pan"
+							action="PAN"
+							x="177" y="57" w="38" h="13"
+							thumb="wa2.player.bal.slider.normal" downThumb="wa2.player.bal.slider.pressed"/>
+			<button
+				id="Close"
+				action="close"
+				x="264" y="3"
+				image="wa2.player.title.quit"
+				downImage="wa2.player.title.quit.pressed"
+				tooltip="Close"
+				inactiveAlpha="128"
+    />
+
+			<button
+				id="winshade" tooltip="Toggle Windowshade mode"
+				action="SWITCH" param="shade"
+				x="254" y="3"
+				image="wa2.player.title.shade"
+				downImage="wa2.player.title.shade.pressed"
+				inactiveAlpha="128"
+    />
+
+			<button
+				id="Minimize"
+				action="MINIMIZE"
+				x="243" y="3"
+				image="wa2.player.title.min"
+				downImage="wa2.player.title.min.pressed"
+				tooltip="Minimize Winamp"
+				inactiveAlpha="128"
+    />
+
+			<button
+				id="sysbutton"
+				action="SYSMENU"
+				x="6" y="3"
+				image="wa2.player.title.menu"
+				downImage="wa2.player.title.menu.pressed"
+				inactiveAlpha="128"
+    />
+
+			<layer
+				id="MonoOff"
+				x="212" y="41"
+				image="wa2.player.mono.off"
+    />
+			<layer
+				id="StereoOn"
+				x="239" y="41"
+				image="wa2.player.stereo.off"
+    />
+			<layer
+				id="monspeaker"
+				x="212" y="41"
+				image="wa2.player.mono.on"
+    />
+			<layer
+				id="sterspeaker"
+				x="239" y="41"
+				image="wa2.player.stereo.on"
+    />
+			<status
+				id="status"
+				x="26" y="28"
+				w="9" h="9"
+				stopBitmap="player.status.stop"
+				playBitmap="player.status.play"
+				pauseBitmap="player.status.pause"
+    />
+			<button
+				id="optiontog"
+				action="TOGGLE" param="guid:{ED3CD0D9-5FE5-4C34-AFE9-52E714D4FAA4}"
+				x="12" y="24"
+				image="wa2.player.oiadv.o"
+				downImage="wa2.player.oiadv.o.pressed"
+    />
+			<togglebutton
+				id="toggleAllWaysOnTop"
+				x="12" y="33"
+				image="wa2.player.oiadv.a"
+				downImage="wa2.player.oiadv.a.pressed"
+				activeImage="wa2.player.oiadv.a.pressed"
+				tooltip="Always On Top"
+    />
+			<button
+				id="fileinfo"
+				x="12" y="41"
+				image="wa2.player.oiadv.i"
+				downImage="wa2.player.oiadv.i.pressed"
+				tooltip="File Info"
+    />
+			<togglebutton
+				id="toggledoublesize"
+				x="12" y="49"
+				image="wa2.player.oiadv.d"
+				downImage="wa2.player.oiadv.d.pressed"
+				activeImage="wa2.player.oiadv.d.pressed"
+				tooltip="Double Size"
+    />
+			<button
+				id="vistog"
+				x="12" y="56"
+				image="wa2.player.oiadv.v"
+				downImage="wa2.player.oiadv.v.pressed"
+    />
+			<button
+				id="Thinger"
+				action="TOGGLE" param="thinger"
+				x="8" y="55"
+				h="14" w="14"
+				tooltip="Thinger"
+    />
+			<layer id="glass" x="0" y="0" image="wa2.player.glass" ghost="1"/>
+
+			<slider
+				id="seeker"
+				action="seek"
+				x="0" y="72"
+				h="10" w="274"
+				thumb="wa2.player.posbar.up"
+				downthumb="wa2.player.posbar.down"
+    />
+		</layout>
+		<layout id="shade" background="wa2.player.shade.enabled"
+			inactive="wa2.player.shade.disabled">
+
+			<layer
+				id="blah"
+				dblClickAction="SWITCH;normal"
+				x="0" y="0"
+				image="wa2.player.shade.enabled"
+				inactiveAlpha="0"
+    />
+
+			<text
+				id="timer"
+				display="time"
+				x="130" y="2"
+				w="26" h="10"
+				font="player.SmallFixed" fontsize="8"
+    />
+
+			<button
+				id="Previous"
+				action="PREV"
+				x="166" y="3"
+				image="player.winshade.button.previous"
+				downImage="player.winshade.button.previous"
+				tooltip="Previous"
+				inactiveAlpha="128"
+    />
+			<button
+				id="Play"
+				action="PLAY"
+				x="176" y="3"
+				image="player.winshade.button.play"
+				downImage="player.winshade.button.play"
+				tooltip="Play"
+				inactiveAlpha="128"
+    />
+			<button
+				id="Pause"
+				action="PAUSE"
+				x="186" y="3"
+				image="player.winshade.button.pause"
+				downImage="player.winshade.button.pause"
+				tooltip="Pause"
+				inactiveAlpha="128"
+    />
+			<button
+				id="Stop"
+				action="STOP"
+				x="196" y="3"
+				image="player.winshade.button.stop"
+				downImage="player.winshade.button.stop"
+				tooltip="Stop"
+				inactiveAlpha="128"
+    />
+			<button
+				id="Next"
+				action="NEXT"
+				x="206" y="3"
+				image="player.winshade.button.next"
+				downImage="player.winshade.button.next"
+				tooltip="Next"
+				inactiveAlpha="128"
+    />
+
+			<button
+				id="Eject"
+				action="EJECT"
+				x="216" y="3"
+				image="player.winshade.button.open"
+				downImage="player.winshade.button.open"
+				tooltip="Eject"
+    />
+
+			<vis
+				id="vis_Shade"
+				x="79" y="5"
+				w="38" h="5"
+
+   />
+
+			<button
+				id="winshade" tooltip="Toggle Windowshade mode"
+				action="SWITCH" param="normal"
+				x="254" y="3"
+				image="wa2.player.title.shade"
+				downImage="wa2.player.title.shade.pressed"
+				inactiveAlpha="128"
+    />
+
+			<button
+				id="Close"
+				action="close"
+				x="264" y="3"
+				image="wa2.player.title.quit"
+				downImage="wa2.player.title.quit.pressed"
+				tooltip="Close"
+				inactiveAlpha="128"
+    />
+
+			<button
+				id="Minimize"
+				action="MINIMIZE"
+				x="243" y="3"
+				image="wa2.player.title.min"
+				downImage="wa2.player.title.min.pressed"
+				tooltip="Minimize Winamp"
+    />
+
+			<button
+				id="sysbutton"
+				action="SYSMENU"
+				x="6" y="3"
+				image="wa2.player.shade.menu"
+				downImage="wa2.player.shade.menu.pressed"
+    />
+
+			<slider
+				id="seeker"
+				action="seek"
+				x="227" y="4"
+				h="7" w="15"
+				thumb="player.winshade.seek"
+				downthumb="player.winshade.seek"
+    />
+
+		</layout>
+	</container>
+
+	<elements>
+		<!-- Eqmain.png to Eqmain.png -->
+		<bitmap id="wa2.player.eq.base" file="graphics/eqmain.bmp" x="0" y="0" h="116" w="275"/>
+		<bitmap id="wa2.player.eq.slider.up" file="graphics/eqmain.bmp" x="0" y="164" h="11" w="11"/>
+		<bitmap id="wa2.player.eq.slider.down" file="graphics/eqmain.bmp" x="0" y="176" h="11" w="11"/>
+		<bitmap id="wa2.player.eq.shadeswicher" file="graphics/eqmain.bmp" x="0" y="134" h="14" w="275"/>
+		<bitmap id="wa2.player.eq.spline.back" file="graphics/eqmain.bmp" x="0" y="294" h="19" w="113"/>
+		<bitmap id="wa2.player.eq.button.quit" file="graphics/eqmain.bmp" x="0" y="116" h="9" w="9"/>
+		<bitmap id="wa2.player.eq.button.quit.pressed" file="graphics/eqmain.bmp" x="0" y="125" h="9" w="9"/>
+		<bitmap id="wa2.player.eq.preset" file="graphics/eqmain.bmp"  x="224" y="164" h="12" w="44"/>
+		<bitmap id="wa2.player.eq.preset.pressed" file="graphics/eqmain.bmp" x="224" y="176" h="12" w="44"/>
+		<bitmap id="wa2.eq.on" file="graphics/eqmain.bmp" x="10" y="119" h="12" w="24"/>
+		<bitmap id="wa2.eq.on.pressed" file="graphics/eqmain.bmp" x="128" y="119" h="12" w="24"/>
+		<bitmap id="wa2.eq.on.active" file="graphics/eqmain.bmp" x="69" y="119" h="12" w="24"/>
+		<bitmap id="wa2.player.eq.auto" file="graphics/eqmain.bmp" x="34" y="119" h="12" w="34"/>
+		<bitmap id="wa2.player.eq.auto.pressed" file="graphics/eqmain.bmp" x="152" y="119" h="12" w="34"/>
+		<bitmap id="wa2.player.eq.auto.active" file="graphics/eqmain.bmp" x="93" y="119" h="12" w="34"/>
+		<bitmap id="wa2.eq.glass" file="graphics/glasseqoverlay.bmp" x="0" y="0" w="275" h="116"/>
+
+		<!-- EQ_EX.png to EQ_EX.png -->
+		<bitmap id="wa2.player.eq.shade" file="graphics/EQ_EX.bmp"  x="0" y="0" h="13" w="275"/>
+		<bitmap id="wa2.player.eq.shade.button.quit" file="graphics/EQ_EX.bmp"  x="11" y="38" h="9" w="9"/>
+		<bitmap id="wa2.player.eq.shade.button.quit.pressed" file="graphics/EQ_EX.bmp"  x="11" y="47" h="9" w="9"/>
+		<bitmap id="wa2.player.eq.shade.button.change" file="graphics/EQ_EX.bmp"  x="1" y="38" h="9" w="9"/>
+		<bitmap id="wa2.player.eq.shade.button.change.pressed" file="graphics/EQ_EX.bmp"  x="1" y="47" h="9" w="9"/>
+		<!--
+			VOLUME / BALANCE ARE REPEATED FROM VOLUME.PNG AND BALANCE.PNG (IF YOU DO NO WANT THIS BEHAVIOR
+			YOU WILL NEED TO WRITE YOUR OWN XML HANDLER
+		-->
+
+		<!-- EQ Sliders (Don't Play with this the extra numbers are to fix problems with slides) -->
+		<bitmap id="wa2.player.eq.slider-1" file="graphics/eqmain.bmp"  x="208" y="164" h="63" w="14"/>
+		<bitmap id="wa2.player.eq.slider-2" file="graphics/eqmain.bmp"  x="193" y="164" h="63" w="14"/>
+		<bitmap id="wa2.player.eq.slider-3" file="graphics/eqmain.bmp"  x="178" y="164" h="63" w="14"/>
+		<bitmap id="wa2.player.eq.slider-4" file="graphics/eqmain.bmp"  x="163" y="164" h="63" w="14"/>
+		<bitmap id="wa2.player.eq.slider-5" file="graphics/eqmain.bmp"  x="148" y="164" h="63" w="14"/>
+		<bitmap id="wa2.player.eq.slider-6" file="graphics/eqmain.bmp"  x="133" y="164" h="63" w="14"/>
+		<bitmap id="wa2.player.eq.slider-7" file="graphics/eqmain.bmp"  x="118" y="164" h="63" w="14"/>
+		<bitmap id="wa2.player.eq.slider-8" file="graphics/eqmain.bmp"  x="103" y="164" h="63" w="14"/>
+		<bitmap id="wa2.player.eq.slider-9" file="graphics/eqmain.bmp"  x="88" y="164" h="63" w="14"/>
+		<bitmap id="wa2.player.eq.slider-10" file="graphics/eqmain.bmp"  x="73" y="164" h="63" w="14"/>
+		<bitmap id="wa2.player.eq.slider-11" file="graphics/eqmain.bmp"  x="58" y="164" h="63" w="14"/>
+		<bitmap id="wa2.player.eq.slider-12" file="graphics/eqmain.bmp"  x="43" y="164" h="63" w="14"/>
+		<bitmap id="wa2.player.eq.slider-13" file="graphics/eqmain.bmp"  x="28" y="164" h="63" w="14"/>
+		<bitmap id="wa2.player.eq.slider-14" file="graphics/eqmain.bmp"  x="13" y="164" h="63" w="14"/>
+		<bitmap id="wa2.player.eq.slider0" file="graphics/eqmain.bmp"  x="13" y="164" h="63" w="14"/>
+		<bitmap id="wa2.player.eq.slider1" file="graphics/eqmain.bmp"  x="13" y="229" h="63" w="14"/>
+		<bitmap id="wa2.player.eq.slider2" file="graphics/eqmain.bmp"  x="28" y="229" h="63" w="14"/>
+		<bitmap id="wa2.player.eq.slider3" file="graphics/eqmain.bmp"  x="43" y="229" h="63" w="14"/>
+		<bitmap id="wa2.player.eq.slider4" file="graphics/eqmain.bmp"  x="58" y="229" h="63" w="14"/>
+		<bitmap id="wa2.player.eq.slider5" file="graphics/eqmain.bmp"  x="73" y="229" h="63" w="14"/>
+		<bitmap id="wa2.player.eq.slider6" file="graphics/eqmain.bmp"  x="88" y="229" h="63" w="14"/>
+		<bitmap id="wa2.player.eq.slider7" file="graphics/eqmain.bmp"  x="103" y="229" h="63" w="14"/>
+		<bitmap id="wa2.player.eq.slider8" file="graphics/eqmain.bmp"  x="118" y="229" h="63" w="14"/>
+		<bitmap id="wa2.player.eq.slider9" file="graphics/eqmain.bmp"  x="133" y="229" h="63" w="14"/>
+		<bitmap id="wa2.player.eq.slider10" file="graphics/eqmain.bmp"  x="148" y="229" h="63" w="14"/>
+		<bitmap id="wa2.player.eq.slider11" file="graphics/eqmain.bmp"  x="163" y="229" h="63" w="14"/>
+		<bitmap id="wa2.player.eq.slider12" file="graphics/eqmain.bmp"  x="178" y="229" h="63" w="14"/>
+		<bitmap id="wa2.player.eq.slider13" file="graphics/eqmain.bmp"  x="193" y="229" h="63" w="14"/>
+		<bitmap id="wa2.player.eq.slider14" file="graphics/eqmain.bmp"  x="208" y="229" h="63" w="14"/>
+	</elements>
+
+	<container id="EQ" name="Equalizer" default_x="0" default_y="116" default_visible="1">
+		<layout id="normal" background="wa2.player.eq.base">
+			<AlbumArt id="wa2.player.eq.album" notfoundImage="notfound" valign="top" align="left" stretched="false" w="275" h="116" x="0" y="0" alpha="15"/>
+			<layer id="eqlayer">
+				<button id="setMax" x="40" y="36" w="28" h="8"/>
+				<button id="reset"  x="40" y="64" w="28" h="8"/>
+				<button id="setMin" x="40" y="94" w="28" h="8"/>
+
+				<layer
+					id="blah"
+					dblClickAction="SWITCH;shade"
+					x="0" y="0"
+					image="wa2.player.eq.shadeswicher"
+					inactiveAlpha="128"
+    />
+
+				<layer
+					id="EQLineBack"
+					x="86" y="17"
+					image="wa2.player.eq.spline.back"
+    />
+
+				<!-- Backgrounds -->
+				<layer
+					id="preamp_layer"
+					x="21" y="38"
+					image="wa2.player.eq.slider0"
+					move="0"
+					tooltip="Preamp"
+					rectrgn="0"
+    />
+				<layer
+					id="eq1back"
+					x="78" y="38"
+					image="wa2.player.eq.slider0"
+    />
+				<layer
+					id="eq2back"
+					x="96" y="38"
+					image="wa2.player.eq.slider0"
+    />
+				<layer
+					id="eq3back"
+					x="114" y="38"
+					image="wa2.player.eq.slider0"
+    />
+				<layer
+					id="eq4back"
+					x="132" y="38"
+					image="wa2.player.eq.slider0"
+    />
+				<layer
+					id="eq5back"
+					x="150" y="38"
+					image="wa2.player.eq.slider0"
+    />
+				<layer
+					id="eq6back"
+					x="168" y="38"
+					image="wa2.player.eq.slider0"
+    />
+				<layer
+					id="eq7back"
+					x="186" y="38"
+					image="wa2.player.eq.slider0"
+    />
+				<layer
+					id="eq8back"
+					x="204" y="38"
+					image="wa2.player.eq.slider0"
+    />
+				<layer
+					id="eq9back"
+					x="222" y="38"
+					image="wa2.player.eq.slider0"
+    />
+				<layer
+					id="eq10back"
+					x="240" y="38"
+					image="wa2.player.eq.slider0"
+    />
+
+
+				<slider
+					id="preamp"
+					action="EQ_PREAMP"
+					x="22" y="38"
+					w="11" h="62"
+					orientation="vertical"
+					thumb="wa2.player.eq.slider.up"
+					downThumb="wa2.player.eq.slider.down"
+    />
+
+				<slider
+					id="eq1"
+					action="EQ_BAND"
+					param="1"
+					x="79" y="38"
+					w="11" h="62"
+					orientation="vertical"
+					thumb="wa2.player.eq.slider.up"
+					downThumb="wa2.player.eq.slider.down"
+    />
+
+				<slider
+					id="eq2"
+					action="EQ_BAND"
+					param="2"
+					x="97" y="38"
+					w="11" h="62"
+					orientation="vertical"
+					thumb="wa2.player.eq.slider.up"
+					downThumb="wa2.player.eq.slider.down"
+    />
+
+				<slider
+					id="eq3"
+					action="EQ_BAND"
+					param="3"
+					x="115" y="38"
+					w="11" h="62"
+					orientation="vertical"
+					thumb="wa2.player.eq.slider.up"
+					downThumb="wa2.player.eq.slider.down"
+    />
+
+				<slider
+					id="eq4"
+					action="EQ_BAND"
+					param="4"
+					x="133" y="38"
+					w="11" h="62"
+					orientation="vertical"
+					thumb="wa2.player.eq.slider.up"
+					downThumb="wa2.player.eq.slider.down"
+    />
+
+				<slider
+					id="eq5"
+					action="EQ_BAND"
+					param="5"
+					x="151" y="38"
+					w="11" h="62"
+					orientation="vertical"
+					thumb="wa2.player.eq.slider.up"
+					downThumb="wa2.player.eq.slider.down"
+    />
+
+				<slider
+					id="eq6"
+					action="EQ_BAND"
+					param="6"
+					x="169" y="38"
+					w="11" h="62"
+					orientation="vertical"
+					thumb="wa2.player.eq.slider.up"
+					downThumb="wa2.player.eq.slider.down"
+    />
+
+				<slider
+					id="eq7"
+					action="EQ_BAND"
+					param="7"
+					x="187" y="38"
+					w="11" h="62"
+					orientation="vertical"
+					thumb="wa2.player.eq.slider.up"
+					downThumb="wa2.player.eq.slider.down"
+    />
+
+				<slider
+					id="eq8"
+					action="EQ_BAND"
+					param="8"
+					x="205" y="38"
+					w="11" h="62"
+					orientation="vertical"
+					thumb="wa2.player.eq.slider.up"
+					downThumb="wa2.player.eq.slider.down"
+    />
+
+				<slider
+					id="eq9"
+					action="EQ_BAND"
+					param="9"
+					x="223" y="38"
+					w="11" h="62"
+					orientation="vertical"
+					thumb="wa2.player.eq.slider.up"
+					downThumb="wa2.player.eq.slider.down"
+    />
+
+				<slider
+					id="eq10"
+					action="EQ_BAND"
+					param="10"
+					x="241" y="38"
+					w="11" h="62"
+					orientation="vertical"
+					thumb="wa2.player.eq.slider.up"
+					downThumb="wa2.player.eq.slider.down"
+    />
+				<eqvis
+					id="spline"
+					x="86" y="17"
+					w="113" h="19"
+					colortop="211,151,0"
+					colormiddle="239,231,0"
+					colorbottom="244,196,0"
+					colorpreamp="246,181,0"
+					gamma="192"
+   />
+
+				<button
+					id="Close"
+					action="close"
+					x="264" y="3"
+					image="wa2.player.eq.button.quit"
+					downImage="wa2.player.eq.button.quit.pressed"
+					tooltip="Close"
+					inactiveAlpha="128"
+    />
+
+				<button
+					id="winshade" tooltip="Toggle Windowshade mode"
+					action="SWITCH" param="shade"
+					x="254" y="3"
+					image="wa2.player.title.shade"
+					downImage="wa2.player.title.shade.pressed"
+					inactiveAlpha="128"
+    />
+
+				<button
+					id="presets"
+					action="MENU" param="presets"
+					x="217" y="18"
+					image="wa2.player.eq.preset"
+					downImage="wa2.player.eq.preset.pressed"
+					tooltip="Display Presets menu"
+    />
+
+				<button
+					id="toggle"
+					action="EQ_TOGGLE"
+					x="14" y="18"
+					image="wa2.eq.on"
+					downImage="wa2.eq.on.pressed"
+					activeImage="wa2.eq.on.active"
+					tooltip="Toggle EQ processing"
+    />
+
+				<button
+					id="auto"
+					action="EQ_AUTO"
+					x="38" y="18"
+					image="wa2.player.eq.auto"
+					downImage="wa2.player.eq.auto.pressed"
+					activeImage="wa2.player.eq.auto.active"
+					tooltip="Toggle EQ automatic processing"
+    />
+			</layer>
+			<layer id="glass" x="0" y="0" image="wa2.eq.glass" ghost="1"/>
+		</layout>
+		<layout id="shade" background="wa2.player.eq.shade">
+
+			<layer
+				id="blah"
+				dblClickAction="SWITCH;normal"
+				x="0" y="0"
+				image="wa2.player.eq.shade"
+				inactiveAlpha="0"
+    />
+
+			<button
+				id="winshade"
+				action="SWITCH" param="normal"
+				x="254" y="3"
+				image="wa2.player.title.shade"
+				downImage="wa2.player.title.shade.pressed"
+				inactiveAlpha="128"
+				tooltip="Toggle Windowshade mode"
+    />
+
+			<button
+				id="Close"
+				action="close"
+				x="264" y="3"
+				image="wa2.player.eq.shade.button.quit"
+				downImage="wa2.player.eq.shade.button.quit.pressed"
+				tooltip="Close"
+				inactiveAlpha="128"
+    />
+			<images source="volume" images="wa2.player.vol.main" x="80" y="5" w="68" h="13" imagesspacing="15"/>
+			<slider id="Volume"
+							action="VOLUME"
+							x="80" y="3" w="68" h="13"
+							thumb="wa2.player.vol.slider.normal" downThumb="wa2.player.vol.slider.pressed"/>
+
+			<images source="balance"
+							 x="170" y="5" w="36" h="13"
+							images="wa2.player.bal.main"
+							imagesspacing="15"/>
+			<slider id="Pan"
+							action="PAN"
+							x="173" y="3" w="38" h="13"
+							thumb="wa2.player.bal.slider.normal" downThumb="wa2.player.bal.slider.pressed"/>
+		</layout>
+	</container>
+
+	<elements>
+		<!-- Used Pledit.png to Pledit.png -->
+		<bitmap id="wa2.playlist.base" file="graphics/plmain.bmp"/>
+		<bitmap id="wa2.pl.glass" file="graphics/glassploverlay.bmp"/>
+		<bitmap id="wa2.playlist.topleft" file="graphics/pledit.bmp"  x="0" y="0" h="20" w="25"/>
+		<bitmap id="wa2.playlist.topright" file="graphics/pledit.bmp"  x="153" y="0" h="20" w="25"/>
+		<bitmap id="wa2.playlist.topcenter" file="graphics/pledit.bmp"  x="127" y="0" h="20" w="25"/>
+		<bitmap id="wa2.playlist.middleright" file="graphics/pledit.bmp"  x="26" y="42" h="29" w="25"/>
+		<bitmap id="wa2.playlist.middleleft" file="graphics/pledit.bmp"  x="0" y="42" h="29" w="25"/>
+		<bitmap id="wa2.playlist.bottomleft" file="graphics/pledit.bmp"  x="0" y="72" h="38" w="125"/>
+		<bitmap id="wa2.playlist.bottomright" file="graphics/pledit.bmp"  x="126" y="72" h="38" w="150"/>
+		<bitmap id="wa2.playlist.scrollleft" file="graphics/pledit.bmp"  x="15" y="81" h="14" w="18"/>
+		<bitmap id="wa2.playlist.scrollright" file="graphics/pledit.bmp"  x="44" y="81" h="14" w="18"/>
+
+		<bitmap id="wa2.playlist.add" file="graphics/pledit.bmp" x="14" y="80" h="18" w="22"/>
+		<bitmap id="wa2.playlist.rem" file="graphics/pledit.bmp" x="43" y="80" h="18" w="22"/>
+		<bitmap id="wa2.playlist.sel" file="graphics/pledit.bmp" x="72" y="80" h="18" w="22"/>
+		<bitmap id="wa2.playlist.misc" file="graphics/pledit.bmp" x="101" y="80" h="18" w="22"/>
+		<bitmap id="wa2.playlist.load" file="graphics/pledit.bmp" x="232" y="80" h="18" w="22"/>
+	</elements>
+
+	<container id="PL" name="Playlist" component="guid:{45F3F7C1-A6F3-4ee6-A15E-125E92FC3F8D}" default_x="0" default_y="232" default_visible="1">
+		<layout id="normal" background="wa2.playlist.base">
+			<PlaylistDirectory id="pldirectory" x="10" y="10" w="260" h="75" inactivealpha="128" font="player.SmallFixed" fontsize="8" color="255,255,255"/>
+			<!--BUTTONS-->
+			<button id="add" action="PE_ADD" image="wa2.playlist.add" inactivealpha="128" tooltip="Add Files" x="15" y="92"/>
+			<button id="rem" action="PE_REM" image="wa2.playlist.rem" inactivealpha="128" tooltip="Add Files" x="39" y="92"/>
+			<button id="sel" action="PE_SEL" image="wa2.playlist.sel" inactivealpha="128" tooltip="Add Files" x="63" y="92"/>
+			<button id="misc" action="PE_MISC" image="wa2.playlist.misc" inactivealpha="128" tooltip="Add Files" x="87" y="92"/>
+			<button id="load" action="PE_LIST" image="wa2.playlist.load" inactivealpha="128" tooltip="Add Files" x="230" y="92"/>
+			<!--END BUTTONS-->
+			<!-- Add Playlist Entry (List) -->
+			<!-- End Playlist Entries -->
+			<!--Bottom Stuff-->
+			<layer id="glass" x="0" y="0" image="wa2.pl.glass" ghost="1"/>
+			<AlbumArt id="wa2.player.eq.album" notfoundImage="notfound" valign="top" align="left" stretched="false" w="275" h="116" x="0" y="0" alpha="15"/>
+		</layout>
+	</container>
+
+	<scripts>
+		<script id="wa2_doublesize" file="scripts/wa2_doublesize.maki"/>
+		<script id="eqlayer" file="scripts/eq_layers.maki"/>
+		<script id="wa2_vistoggle" file="scripts/wa2_vistoggle.maki"/>
+		<script id="songinfo" file="scripts/songinfo.maki"/>
+	</scripts>
+
+</WinampAbstractionLayer>

@@ -1,0 +1,559 @@
+<container id="Main" name="WA2 Skin Main window">
+	<layout id="normal" background="wa2.player.base">
+		<AlbumArt id="wa2.player.eq.album" notfoundImage="notfound" valign="top" align="left" stretched="false" w="275" h="116" x="0" y="0" alpha="15"/>
+		<text
+		 id="infoline"
+		 display="songinfo" default=""
+		 x="30" y="200" h="20" w="50"
+			showlen="1"
+			antialias="true"
+			timeroffstyle="1"
+			offsetx="1"
+			offsety="1"
+			shadowcolor="210,153,0"
+			shadowx="-1"
+			shadowy="-1"
+			alpha="200"
+			color="246,188,37"
+			font="player.BIGNUM" fontsize="8"
+			 inactivealpha="128"
+     />
+
+		<layer
+			id="PosBarBack"
+			x="1" y="72"
+			w="265"
+			image="wa2.player.posbar.back"
+			rectrgn="0"
+			move="0"
+    />
+		<ProgressGrid
+		x="0"
+		y="75"
+		w="-10"
+		h="4"
+		relatw="1"
+		orientation="right"
+		left=""
+		middle="seeker.bar.center"
+		right="seeker.bar.left"/>
+
+		<button
+			id="Previous"
+			action="Prev"
+			x="16" y="88"
+			image="wa2.player.prev"
+			downImage="wa2.player.prev.down"
+			tooltip="Previous"
+			 inactivealpha="128"
+    />
+
+		<button
+			id="Play"
+			action="Play"
+			x="39" y="88"
+			image="wa2.player.play"
+			downImage="wa2.player.play.down"
+			tooltip="Play"
+			 inactivealpha="128"
+    />
+
+		<button
+			id="Pause"
+			action="Pause"
+			x="62" y="88"
+			image="wa2.player.pause"
+			downImage="wa2.player.pause.down"
+			tooltip="Pause"
+			 inactivealpha="128"
+    />
+
+		<button
+			id="Stop"
+			action="Stop"
+			x="84" y="88"
+			image="wa2.player.stop"
+			downImage="wa2.player.stop.down"
+			tooltip="Stop"
+			 inactivealpha="128"
+    />
+
+		<button
+			id="Next"
+			action="Next"
+			x="108" y="88"
+			image="wa2.player.next"
+			downImage="wa2.player.next.down"
+			tooltip="Next"
+			 inactivealpha="128"
+    />
+
+		<button
+			id="Eject"
+			action="EJECT"
+			x="130" y="88"
+			image="wa2.player.eject"
+			downImage="wa2.player.eject.down"
+			tooltip="Eject"
+			 inactivealpha="128"
+    />
+
+		<text
+			id="songticker" ticker="1"
+			display="songname" default="" showlen="2"
+			x="111" y="22"
+			w="154" h="10"
+			antialias="true"
+			timeroffstyle="0"
+			offsetx="1"
+			offsety="1"
+			shadowcolor="0,0,0"
+			shadowx="-1"
+			shadowy="-1"
+			alpha="200"
+			color="246,188,37"
+			font="player.Numbers" fontsize="7"
+			 inactivealpha="128"
+    />
+		<text
+			id="timer"
+			display="time"
+			x="35" y="10"
+			w="80" h="27"
+			default="" showlen="1"
+			antialias="true"
+			timeroffstyle="1"
+			offsetx="1"
+			offsety="1"
+			shadowcolor="0,0,0"
+			shadowx="1"
+			shadowy="1"
+			timecolonwidth="3"
+			alpha="200"
+			color="246,188,37"
+			font="player.Numbers" fontsize="18"
+			 inactivealpha="128"
+    />
+		<vis
+			id="vis"
+			x="24" y="36"
+			w="72" h="16"
+			alpha="220"
+			default="spectrum"
+			gammagroup="vis"
+			colorband1="211,151,0"
+			colorband2="211,160,5"
+			colorband3="196,138,0"
+			colorband4="196,152,5"
+			colorband5="181,124,0"
+			colorband6="181,130,5"
+			colorband7="166,113,0"
+			colorband8="166,113,5"
+			colorband9="153,106,0"
+			colorband10="166,113,5"
+			colorband11="166,113,0"
+			colorband12="211,151,5"
+			colorband13="211,160,0"
+			colorband14="196,138,5"
+			colorband15="196,152,0"
+			colorband16="181,124,5"
+			colorbandpeak="228,211,160"
+			colorosc1="211,151,0"
+			colorosc2="196,152,5"
+			colorosc3="228,211,160"
+			colorosc4="196,152,5"
+			colorosc5="211,151,0"
+			 inactivealpha="128"
+				/>
+		<text
+			id="bitrateText"
+			ticker="1"
+			display=""
+			x="109" y="41"
+			w="20" h="11"
+			font="player.SmallFixed"
+			fontsize="8"
+			align="left"
+			alpha="120"
+			 inactivealpha="128"
+     />
+		<text
+			id="status0"
+			ticker="1"
+			display="COMPONENTBUCKET"
+			default=""
+			x="20" y="55"
+			w="25" h="11"
+			font="player.SmallFixed"
+			fontsize="7"
+			align="left"
+			alpha="120"
+			 inactivealpha="128"
+    />
+		<text
+			id="frequency"
+			ticker="1"
+			display=""
+			default=""
+			x="154" y="41"
+			w="20" h="11"
+			font="player.SmallFixed"
+			fontsize="7"
+			align="left"
+		alpha="120"
+		 inactivealpha="128"
+    />
+		<text
+			id="kbps"
+			ticker="1"
+			default="kbps"
+			x="126" y="40"
+			w="30" h="11"
+			font="player.SmallFixed"
+			antialias="true"
+			offsetx="1"
+			offsety="1"
+			shadowcolor="0,0,0"
+			shadowx="1"
+			shadowy="1"
+			alpha="200"
+			color="246,188,37"
+			fontsize="7"
+			 inactivealpha="128"
+     />
+		<text
+			id="Khz"
+			ticker="1"
+			default="khz"
+			x="164" y="40"
+			w="40" h="11"
+			fontsize="7"
+			font="player.SmallFixed"
+			antialias="true"
+			offsetx="1"
+			offsety="1"
+			shadowcolor="0,0,0"
+			shadowx="1"
+			shadowy="1"
+			timecolonwidth="0"
+			alpha="200"
+			color="246,188,37"
+			 inactivealpha="128"
+     />
+		<togglebutton
+			id="eq"
+			action="TOGGLE" param="EQ"
+			x="219" y="58"
+			w="23" h="12"
+			image="wa2.player.eq.off"
+			downImage="wa2.player.eq.down"
+			activeImage="wa2.player.eq.on"
+			tooltip="Toggle Equalizer"
+			 inactivealpha="128"
+    />
+
+		<togglebutton
+			id="pl"
+			action="TOGGLE" param="PL"
+			x="242" y="58"
+			w="23" h="12"
+			image="wa2.player.playlist.off"
+			downImage="wa2.player.playlist.down"
+			activeImage="wa2.player.playlist.on"
+			tooltip="Toggle Playlist Editor"
+			rectrgn="1"
+    />
+
+		<togglebutton
+			id="Repeat"
+			cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Repeat"
+			x="210" y="89"
+			action="TOGGLE_REPEAT"
+			image="wa2.player.rpt.off"
+			downImage="wa2.player.rpt.down"
+			activeImage="wa2.player.rpt.on"
+			tooltip="Repeat"
+			 inactivealpha="128"
+    />
+
+		<togglebutton
+			id="Shuffle"
+			cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Shuffle"
+			action="TOGGLE_SHUFFLE"
+			x="164" y="89"
+			image="wa2.player.sfl.off"
+			downImage="wa2.player.sfl.down"
+			activeImage="wa2.player.sfl.on"
+			tooltip="Shuffle"
+			 inactivealpha="128"
+    />
+
+		<layer
+			id="blah"
+			dblClickAction="SWITCH;shade"
+			x="0" y="0"
+			image="wa2.player.title.enabled"
+			inactiveAlpha="128"
+    />
+		<images source="volume" images="wa2.player.vol.main" x="107" y="57" w="68" h="13" imagesspacing="15"/>
+		<slider id="Volume"
+						action="VOLUME"
+						x="109" y="55" w="68" h="13"
+						thumb="wa2.player.vol.slider.normal" downThumb="wa2.player.vol.slider.pressed"/>
+
+		<images source="balance"
+						 x="179" y="57" w="36" h="13"
+						images="wa2.player.bal.main"
+						imagesspacing="15"/>
+		<slider id="Pan"
+						action="PAN"
+						x="181" y="55" w="38" h="13"
+						thumb="wa2.player.bal.slider.normal" downThumb="wa2.player.bal.slider.pressed"/>
+		<button
+			id="Close"
+			action="close"
+			x="264" y="-3"
+			image="wa2.player.title.quit"
+			downImage="wa2.player.title.quit.pressed"
+			tooltip="Close"
+			inactiveAlpha="128"
+    />
+
+		<button
+			id="winshade" tooltip="Toggle Windowshade mode"
+			action="SWITCH" param="shade"
+			x="254" y="-3"
+			image="wa2.player.title.shade"
+			downImage="wa2.player.title.shade.pressed"
+			inactiveAlpha="128"
+    />
+
+		<button
+			id="Minimize"
+			action="MINIMIZE"
+			x="243" y="-3"
+			image="wa2.player.title.min"
+			downImage="wa2.player.title.min.pressed"
+			tooltip="Minimize Winamp"
+			inactiveAlpha="128"
+    />
+
+		<button
+			id="sysbutton"
+			action="SYSMENU"
+			x="6" y="-3"
+			image="wa2.player.title.menu"
+			downImage="wa2.player.title.menu.pressed"
+			inactiveAlpha="128"
+    />
+
+		<layer
+			id="MonoOff"
+			x="212" y="41"
+			image="wa2.player.mono.off"
+    />
+		<layer
+			id="StereoOn"
+			x="239" y="41"
+			image="wa2.player.stereo.off"
+    />
+		<layer
+			id="monspeaker"
+			x="212" y="41"
+			image="wa2.player.mono.on"
+    />
+		<layer
+			id="sterspeaker"
+			x="239" y="41"
+			image="wa2.player.stereo.on"
+    />
+		<status
+			id="status"
+			x="24" y="22"
+			w="9" h="9"
+			stopBitmap="player.status.stop"
+			playBitmap="player.status.play"
+			pauseBitmap="player.status.pause"
+    />
+		<button
+			id="optiontog"
+			action="TOGGLE" param="guid:{ED3CD0D9-5FE5-4C34-AFE9-52E714D4FAA4}"
+			x="8" y="15"
+			image="wa2.player.oiadv.o"
+			downImage="wa2.player.oiadv.o.pressed"
+    />
+		<togglebutton
+			id="toggleAllWaysOnTop"
+			x="8" y="25"
+			image="wa2.player.oiadv.a"
+			downImage="wa2.player.oiadv.a.pressed"
+			activeImage="wa2.player.oiadv.a.pressed"
+			tooltip="Always On Top"
+    />
+		<button
+			id="fileinfo"
+			x="8" y="35"
+			image="wa2.player.oiadv.i"
+			downImage="wa2.player.oiadv.i.pressed"
+			tooltip="File Info"
+    />
+		<togglebutton
+			id="toggledoublesize"
+			x="8" y="45"
+			image="wa2.player.oiadv.d"
+			downImage="wa2.player.oiadv.d.pressed"
+			activeImage="wa2.player.oiadv.d.pressed"
+			tooltip="Double Size"
+    />
+		<button
+			id="vistog"
+			x="8" y="55"
+			image="wa2.player.oiadv.v"
+			downImage="wa2.player.oiadv.v.pressed"
+    />
+		<button
+			id="Thinger"
+			action="TOGGLE" param="thinger"
+			x="8" y="55"
+			h="14" w="14"
+			tooltip="Thinger"
+    />
+		<layer id="glass" x="0" y="0" image="wa2.player.glass" ghost="1"/>
+
+		<slider
+			id="seeker"
+			action="seek"
+			x="0" y="72"
+			h="10" w="274"
+			thumb="wa2.player.posbar.up"
+			downthumb="wa2.player.posbar.down"
+    />
+	</layout>
+	<layout id="shade" background="wa2.player.shade.enabled"
+		inactive="wa2.player.shade.disabled">
+
+		<layer
+			id="blah"
+			dblClickAction="SWITCH;normal"
+			x="0" y="0"
+			image="wa2.player.shade.enabled"
+			inactiveAlpha="0"
+    />
+
+		<text
+			id="timer"
+			display="time"
+			x="130" y="2"
+			w="26" h="10"
+			font="player.SmallFixed" fontsize="8"
+    />
+
+		<button
+			id="Previous"
+			action="PREV"
+			x="166" y="3"
+			image="player.winshade.button.previous"
+			downImage="player.winshade.button.previous"
+			tooltip="Previous"
+			inactiveAlpha="128"
+    />
+		<button
+			id="Play"
+			action="PLAY"
+			x="176" y="3"
+			image="player.winshade.button.play"
+			downImage="player.winshade.button.play"
+			tooltip="Play"
+			inactiveAlpha="128"
+    />
+		<button
+			id="Pause"
+			action="PAUSE"
+			x="186" y="3"
+			image="player.winshade.button.pause"
+			downImage="player.winshade.button.pause"
+			tooltip="Pause"
+			inactiveAlpha="128"
+    />
+		<button
+			id="Stop"
+			action="STOP"
+			x="196" y="3"
+			image="player.winshade.button.stop"
+			downImage="player.winshade.button.stop"
+			tooltip="Stop"
+			inactiveAlpha="128"
+    />
+		<button
+			id="Next"
+			action="NEXT"
+			x="206" y="3"
+			image="player.winshade.button.next"
+			downImage="player.winshade.button.next"
+			tooltip="Next"
+			inactiveAlpha="128"
+    />
+
+		<button
+			id="Eject"
+			action="EJECT"
+			x="216" y="3"
+			image="player.winshade.button.open"
+			downImage="player.winshade.button.open"
+			tooltip="Eject"
+    />
+
+		<vis
+			id="vis_Shade"
+			x="79" y="5"
+			w="38" h="5"
+
+   />
+
+		<button
+			id="winshade" tooltip="Toggle Windowshade mode"
+			action="SWITCH" param="normal"
+			x="254" y="3"
+			image="wa2.player.title.shade"
+			downImage="wa2.player.title.shade.pressed"
+			inactiveAlpha="128"
+    />
+
+		<button
+			id="Close"
+			action="close"
+			x="264" y="3"
+			image="wa2.player.title.quit"
+			downImage="wa2.player.title.quit.pressed"
+			tooltip="Close"
+			inactiveAlpha="128"
+    />
+
+		<button
+			id="Minimize"
+			action="MINIMIZE"
+			x="243" y="3"
+			image="wa2.player.title.min"
+			downImage="wa2.player.title.min.pressed"
+			tooltip="Minimize Winamp"
+    />
+
+		<button
+			id="sysbutton"
+			action="SYSMENU"
+			x="6" y="3"
+			image="wa2.player.shade.menu"
+			downImage="wa2.player.shade.menu.pressed"
+    />
+
+		<slider
+			id="seeker"
+			action="seek"
+			x="227" y="4"
+			h="7" w="15"
+			thumb="player.winshade.seek"
+			downthumb="player.winshade.seek"
+    />
+
+	</layout>
+</container>
