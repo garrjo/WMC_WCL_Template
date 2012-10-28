@@ -1,24 +1,6 @@
 <container id="Main" name="WA2 Skin Main window">
 	<layout id="normal" background="wa2.player.base">
 		<AlbumArt id="wa2.player.eq.album" notfoundImage="notfound" valign="top" align="left" stretched="false" w="275" h="116" x="0" y="0" alpha="15"/>
-		<text
-		 id="infoline"
-		 display="songinfo" default=""
-		 x="30" y="200" h="20" w="50"
-			showlen="1"
-			antialias="true"
-			timeroffstyle="1"
-			offsetx="1"
-			offsety="1"
-			shadowcolor="210,153,0"
-			shadowx="-1"
-			shadowy="-1"
-			alpha="200"
-			color="246,188,37"
-			font="player.BIGNUM" fontsize="8"
-			 inactivealpha="128"
-     />
-
 		<layer
 			id="PosBarBack"
 			x="1" y="72"
@@ -97,7 +79,23 @@
 			tooltip="Eject"
 			 inactivealpha="128"
     />
-
+		<text
+		 id="infoline"
+		 display="songinfo" default=""
+		 x="30" y="200" h="20" w="50"
+			showlen="1"
+			antialias="true"
+			timeroffstyle="1"
+			offsetx="1"
+			offsety="1"
+			shadowcolor="210,153,0"
+			shadowx="-1"
+			shadowy="-1"
+			alpha="200"
+			color="246,188,37"
+			font="player.BIGNUM" fontsize="8"
+			 inactivealpha="128"
+     />
 		<text
 			id="songticker" ticker="1"
 			display="songname" default="" showlen="2"

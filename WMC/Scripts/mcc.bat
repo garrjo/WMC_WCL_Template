@@ -1,2 +1,3 @@
-..\..\..\mc eq_layers.m
+..\..\..\mc doublesize.m
+
 pause

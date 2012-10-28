@@ -1,5 +1,5 @@
 <container id="PL" name="Playlist" default_x="0" default_y="232" default_visible="1">
-	<layout id="normal" background="wa2.pl.base" move="1">
+	<layout id="normal" background="wa2.pl.base" resize="bottomright" scale="1">
 		<!-- TitleBar -->
 		<!--
 		Grid (System Defines): 
@@ -14,7 +14,7 @@
 			bottomright - (id) A bitmap element for the bottom right section of the grid. 
 
 		-->
-		<button id="wa2.pl.resize.button" image="wa2.pl.buttonstretch" x="256" y="97" h="19" w="19" resize="bottomright"/>
+		<button id="wa2.pl.resize.button" image="wa2.pl.buttonstretch" x="256" y="97" h="19" w="19"/>
 		<grid x="0" y="0" w="0" h="0" relatw="1" relath="1"
 		topleft="wa2.pl.topleft"
 		top="wa2.pl.stretchleft"

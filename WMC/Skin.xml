@@ -3,13 +3,14 @@
 <WinampAbstractionLayer version="1.2">
 
 	<skininfo>
-		<version>2.1</version>
+		<version>2.1.10.27.2012</version>
 		<name>WMC ADO Elite</name>
 		<comment>WMC/WCL For Winamp</comment>
-		<author>original code by gonzotek, updated by Joe Garrett</author>
+		<authors>Garetjax, Peacemaker and PJN123</authors>
 		<email>garrjo@gmail.com</email>
 		<homepage>www.winamp.com</homepage>
 		<screenshot>screenshot.png</screenshot>
+		<contributors>Gonzotek, The Plague, Skin Love Forum Members, Deviantart: Garetjax Studios and many others.</contributors>
 	</skininfo>
 
 	<include file="../default/xml/studio.xml"/>
@@ -26,10 +27,10 @@
 	<include file="/xml/pledit.xml"/>
 	<include file="/xml/ml.xml"/>
 	<scripts>
-		<script id="wa2_doublesize" file="scripts/wa2_doublesize.maki"/>
+		<script id="doublesizer" file="scripts/doublesize.maki"/>
 		<script id="eqlayer" file="scripts/eq_layers.maki"/>
-		<script id="wa2_vistoggle" file="scripts/wa2_vistoggle.maki"/>
 		<script id="songinfo" file="scripts/songinfo.maki"/>
+		<script id="notifier" file="scripts/notifier.maki"/>
 	</scripts>
 
 

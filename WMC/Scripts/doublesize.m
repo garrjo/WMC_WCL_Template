@@ -1,45 +1,41 @@
-#include "lib/std.mi"
+#include <lib/std.mi>
 
 Global Togglebutton dblToggle;
-Global Layout norm, EQnorm;     // in WA2 doublesize affects
+Global Layout Main, EQ, PL;     // in WA2 doublesize affects
                                 // main window AND EQ window
 
 System.onScriptLoaded()
 {
-  MainNorm = getContainer("main").getlayout("normal");
-  EQnorm = getContainer("eqMain").getlayout("normal");
-  PLnorm = getContainer("eqMain").getlayout("normal");
-  dblToggle = norm.getObject("toggledoublesize");
+  Main = getContainer("Main").getlayout("normal");
+  EQ = getContainer("EQ").getlayout("normal");
+  PL = getContainer("PL").getlayout("normal");
+  dblToggle = Main.getObject("toggledoublesize");
 }
 
 dblToggle.onLeftClick()
 {
-  if (MainNorm.getScale() < 2)
+  if (Main.getScale() < 2)
   {
-    MainNorm.setScale(MainNorm.getScale()*2);
-    MainNorm.setx(MainNorm.getx()*2);
+    Main.setScale(Main.getScale()*2);
   }
   else
   {
-    MainNorm.setScale(MainNorm.getScale()/2);
+    Main.setScale(Main.getScale()/2);
   }
-  if (EQnorm.getScale() < 2)
+  if (EQ.getScale() < 2)
   {
-    EQnorm.setScale(EQnorm.getScale()*2);
-    eqnorm.setx(EQnorm.getx()*2);
-  }
-  else
-  {
-    EQnorm.setScale(EQnorm.getScale()/2);
-  }
-
-  if(PLnorm.getScale() < 2)
-  {
-    PLnorm.setScale(PLnorm.getScale()*2);
-    PLnorm.setx(PLnorm.getx()*2);
+    EQ.setScale(EQ.getScale()*2);
   }
   else
   {
-    PLnorm.setScale(PLnorm.getScale()/2);
+    EQ.setScale(EQ.getScale()/2);
+  }
+  if (PL.getScale() < 2)
+  {
+    PL.setScale(PL.getScale()*2);
+  }
+  else
+  {
+    PL.setScale(PL.getScale()/2);
   }
 }

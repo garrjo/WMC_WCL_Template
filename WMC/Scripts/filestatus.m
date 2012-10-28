@@ -185,8 +185,8 @@ System.onPause() {
 }
 
 System.onStop() {
-	Bitrate.setText("");
-  	Samplerate.setText("");
+	Bitrate.setText("---");
+  Samplerate.setText("--");
 	Play.hide();
 	Pause.hide();
 	mono.hide();

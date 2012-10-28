@@ -8,6 +8,7 @@ System.onScriptLoaded()
 {
   Main = getContainer("Main").getlayout("normal");
   EQ = getContainer("EQ").getlayout("normal");
+  PL = getContainer("PL").getlayout("normal");
   dblToggle = Main.getObject("toggledoublesize");
 }
 
@@ -29,5 +30,12 @@ dblToggle.onLeftClick()
   {
     EQ.setScale(EQ.getScale()/2);
   }
-
+  if (PL.getScale() < 2)
+  {
+    PL.setScale(PL.getScale()*2);
+  }
+  else
+  {
+    PL.setScale(PL.getScale()/2);
+  }
 }

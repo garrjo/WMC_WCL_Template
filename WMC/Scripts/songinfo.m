@@ -10,17 +10,17 @@ Global String SongInfoString;
 
 System.onScriptLoaded()
 {
-Main = getContainer("Main").getLayout("Normal");
-sterspeaker = Main.getObject("sterspeaker");
-monspeaker = Main.getObject("monspeaker");
-infolineExampleText = Main.getObject("infoline");
-bitrateText = main.getObject("bitrateText");
-FrequencyText = main.getObject("frequency");
-songInfoTimer = new Timer;
-songInfoTimer.setDelay(1);
-if ( getLeftVUMeter() ) songInfoTimer.start();
-sterspeaker.hide();
-monspeaker.hide();
+  Main = getContainer("Main").getLayout("Normal");
+  sterspeaker = Main.getObject("sterspeaker");
+  monspeaker = Main.getObject("monspeaker");
+  infolineExampleText = Main.getObject("infoline");
+  bitrateText = main.getObject("bitrateText");
+  FrequencyText = main.getObject("frequency");
+  songInfoTimer = new Timer;
+  songInfoTimer.setDelay(1);
+  if ( getLeftVUMeter() ) songInfoTimer.start();
+  sterspeaker.hide();
+  monspeaker.hide();
 }
 
 System.onScriptUnloading(){
