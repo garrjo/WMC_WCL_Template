@@ -5,9 +5,9 @@ After much folly trying to create a modern skin and running afoul of very many p
 
 Contributors
 --------------------------------------------------------------------------------
-Garetjax  - Skinning since 1996
-Peacemaker - A Great Skinner, Long Time collaborator and Developer
-PJN123 - Classic Pro, Skin Consortium and a Great developer.
+[*]Garetjax  - Skinning since 1996
+[*]Peacemaker - A Great Skinner, Long Time collaborator and Developer
+[*]PJN123 - Classic Pro, Skin Consortium and a Great developer.
 
 WMC - Winamp Modern Classic (Template) 
 --------------------------------------------------------------------------------
