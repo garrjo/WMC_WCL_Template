@@ -3,6 +3,11 @@ WMC-WCL-Open-Source
 Open Source Template for Winamp5+
 After much folly trying to create a modern skin and running afoul of very many problems with maki code and similar. I decided to start over; I am creating a Classic Skin that is simplistic and written from the beginning in the modern skin wrappers. 
 
+Contributors
+--------------------------------------------------------------------------------
+Garetjax  - Skinning since 1996
+Peacemaker - A Great Skinner, Long Time collaborator and Developer
+PJN123 - Classic Pro, Skin Consortium and a Great developer.
 
 WMC - Winamp Modern Classic (Template) 
 --------------------------------------------------------------------------------
