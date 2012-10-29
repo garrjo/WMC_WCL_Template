@@ -5,9 +5,9 @@ After much folly trying to create a modern skin and running afoul of very many p
 
 Contributors
 --------------------------------------------------------------------------------
-[*]Garetjax  - Skinning since 1996
-[*]Peacemaker - A Great Skinner, Long Time collaborator and Developer
-[*]PJN123 - Classic Pro, Skin Consortium and a Great developer.
+Garetjax  - Skinning since 1996
+Peacemaker - A Great Skinner, Long Time collaborator and Developer
+PJN123 - Classic Pro, Skin Consortium and a Great developer.
 
 WMC - Winamp Modern Classic (Template) 
 --------------------------------------------------------------------------------
@@ -21,7 +21,7 @@ The WCL template seeks to extend the winamp 5 engine while keeping the original 
 
 
 Of Note:
-
+--------------------------------------------------------------------------------
 Winamp is not open source, the scripts I am providing and the templates are for that engine and will not work with other products or software.  The solution I am providing is open source and is entirely up to you whether you want to migrate/change/modify.
 
 Thank You,
