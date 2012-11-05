@@ -223,6 +223,12 @@
 	<bitmap id="wa2.pl.misc" file="graphics/pledit.png" x="101" y="80" h="18" w="22"/>
 	<bitmap id="wa2.pl.load" file="graphics/pledit.png" x="232" y="80" h="18" w="22"/>
 
-
+	<!-- PL Player Controls-->
+	<bitmap id="wa2.pl.prev" file="graphics/pledit.png" x="134" y="96" h="5" w="5"/>
+	<bitmap id="wa2.pl.play" file="graphics/pledit.png" x="142" y="96" h="5" w="5"/>
+	<bitmap id="wa2.pl.pause" file="graphics/pledit.png" x="152" y="96" h="5" w="5"/>
+	<bitmap id="wa2.pl.stop" file="graphics/pledit.png" x="162" y="96" h="5" w="5"/>
+	<bitmap id="wa2.pl.next" file="graphics/pledit.png" x="171" y="96" h="5" w="5"/>
+	<bitmap id="wa2.pl.eject" file="graphics/pledit.png" x="180" y="96" h="5" w="5"/>
 	<!--Media Library/Video/AVS Elements-->
 </elements>

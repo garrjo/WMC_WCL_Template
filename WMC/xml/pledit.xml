@@ -1,5 +1,5 @@
 <container id="PL" name="Playlist" default_x="0" default_y="232" default_visible="1">
-	<layout id="normal" background="wa2.pl.base" resize="bottomright" scale="1">
+	<layout id="normal" background="wa2.pl.base" move="1" minimum_h="116" minimum_w="275" >
 		<!-- TitleBar -->
 		<!--
 		Grid (System Defines): 
@@ -12,36 +12,13 @@
 			bottomleft - (id) A bitmap element for the bottom left section of the grid. 
 			bottom - (id) A bitmap element for the bottom middle section of the grid. 
 			bottomright - (id) A bitmap element for the bottom right section of the grid. 
-
 		-->
-		<button id="wa2.pl.resize.button" image="wa2.pl.buttonstretch" x="256" y="97" h="19" w="19"/>
-		<grid x="0" y="0" w="0" h="0" relatw="1" relath="1"
-		topleft="wa2.pl.topleft"
-		top="wa2.pl.stretchleft"
-		topright="wa2.pl.topright"
-		left="wa2.pl.midleft"
-		right="wa2.pl.midright"
-		bottom="wa2.pl.bottomstretch"
-		bottomleft="wa2.pl.bottomleft"
-		bottomright="wa2.pl.bottomright"
-		move="1"
-		/>
+		<button id="wa2.pl.resize.button" image="wa2.pl.buttonstretch" x="256" y="97" h="19" w="19" resize="bottomright" />
 
-		<component
-		x="12"
-		y="20"
-		w="-20"
-		relatw="1"
-		h="-57"
-		relath="1"
-		noshowcmdbar="1"
-		autoopen="1"
-		autoclose="0"
-		param="guid:{45F3F7C1-A6F3-4ee6-A15E-125E92FC3F8D}"
-		  />
+		<windowholder x="5" y="15" w="-10" h="-50" background="rgb(120,120,2)" relath="1" relatw="1" autofocus="0" wantfocus="0" autoclose="1" autoopen="1" autoavailable="1" visible="1" hold="guid:{45f3f7c1-a6f3-4ee6-a15e-125e92fc3f8d}"/>
 
 		<script id="eqfunc" file="scripts/eqfunc.maki"/>
-
+		<layer id="coverleft" background="wa2.pl.stretchleft" x="0" y="0" w="5" h="116"/>
 		<!-- Add Playlist Entry (List) -->
 		<button id="add" action="PE_ADD" image="wa2.pl.add" inactivealpha="128" tooltip="Add Files" x="14" y="86"/>
 		<button id="rem" action="PE_REM" image="wa2.pl.rem" inactivealpha="128" tooltip="Add Files" x="43" y="86"/>
@@ -49,8 +26,14 @@
 		<button id="misc" action="PE_MISC" image="wa2.pl.misc" inactivealpha="128" tooltip="Add Files" x="101" y="86"/>
 		<button id="load" action="PE_LIST" image="wa2.pl.load" inactivealpha="128" tooltip="Add Files" x="231" y="86"/>
 		<!-- End Playlist Entries -->
-
-		<!--Bottom Stuff-->
+		<!-- PL CONTROLS -->
+		<button id="prev" action="Prev" image="wa2.pl.prev" inactivealpha="128" tooltip="Previous" x="134" y="102" />
+		<button id="play" action="Play" image="wa2.pl.play" inactivealpha="128" tooltip="Play" x="142" y="102"/>
+		<button id="paus" action="Pause" image="wa2.pl.pause" inactivealpha="128" tooltip="Pause" x="152" y="102"/>
+		<button id="stop" action="Stop" image="wa2.pl.stop" inactivealpha="128" tooltip="Stop" x="162" y="102"/>
+		<button id="next" action="Next" image="wa2.pl.next" inactivealpha="128" tooltip="Next" x="171" y="102"/>
+		<button id="ejec" action="Eject" image="wa2.pl.eject" inactivealpha="128" tooltip="Eject" x="180" y="102"/>
+		<!--Bottom Stuff--> 
 		<layer id="glass" x="0" y="0" image="wa2.pl.glass" ghost="1"/>
 	</layout>
 </container>
