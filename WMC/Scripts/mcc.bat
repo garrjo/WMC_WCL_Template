@@ -1,3 +1,3 @@
-..\..\..\mc eqfunc.m
+..\..\..\mc doublesize.m
 
 pause

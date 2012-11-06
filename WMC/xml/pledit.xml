@@ -1,39 +1,59 @@
-<container id="PL" name="Playlist" default_x="0" default_y="232" default_visible="1">
-	<layout id="normal" background="wa2.pl.base" move="1" minimum_h="116" minimum_w="275" >
-		<!-- TitleBar -->
-		<!--
-		Grid (System Defines): 
-			topleft - (id) A bitmap element for the top left section of the grid. 
-			top - (id) A bitmap element for the top middle section of the grid. 
-			topright - (id) A bitmap element for the top right section of the grid. 
-			left - (id) A bitmap element for the middle left section of the grid. 
-			middle - (id) A bitmap element for the center section of the grid. 
-			right - (id) A bitmap element for the middle right section of the grid. 
-			bottomleft - (id) A bitmap element for the bottom left section of the grid. 
-			bottom - (id) A bitmap element for the bottom middle section of the grid. 
-			bottomright - (id) A bitmap element for the bottom right section of the grid. 
-		-->
-		<button id="wa2.pl.resize.button" image="wa2.pl.buttonstretch" x="256" y="97" h="19" w="19" resize="bottomright" />
+<container id="PL" name="Playlist" default_x="0" default_y="232" default_visible="1" >
+	<layout id="normal" minimum_h="116" minimum_w="275">
+		<!-- Can use the grid object here but then you won't have the inactive image option -->
+		<layer image="wa2.pl.1" x="0" y="0" inactivealpha="0" regionop="1"/>
+		<layer image="wa2.pl.1.disabled" x="0" y="0" activealpha="0" regionop="1"/>
+		<layer image="wa2.pl.2" x="25" y="0" w="-50" relatw="1" inactivealpha="0" regionop="1"/>
+		<layer image="wa2.pl.2.disabled" x="25" y="0" w="-50" relatw="1" activealpha="0" regionop="1"/>
+		<layer image="wa2.pl.3" x="-25" y="0" relatx="1" inactivealpha="0" regionop="1"/>
+		<layer image="wa2.pl.3.disabled" x="-25" y="0" relatx="1" activealpha="0" regionop="1"/>
+		<layer image="wa2.pl.4" x="0" y="20" h="-58" relath="1" regionop="1"/>
+		<layer image="wa2.pl.5" x="25" y="20" w="-50" h="-58" relatw="1" relath="1" regionop="1"/>
+		<layer image="wa2.pl.6" x="-25" y="20" h="-58" relatx="1" relath="1" regionop="1"/>
+		<layer image="wa2.pl.7" x="0" y="-38" relaty="1" regionop="1"/>
+		<layer image="wa2.pl.8" x="125" y="-38" w="-275" relaty="1" relatw="1" regionop="1"/>
+		<layer image="wa2.pl.9" x="-150" y="-38" relatx="1" relaty="1" regionop="1"/>
+		<layer x="-19" y="-19" w="19" h="19" relatx="1" relaty="1" resize="bottomright" move="0"/>
 
-		<windowholder x="5" y="15" w="-10" h="-50" background="rgb(120,120,2)" relath="1" relatw="1" autofocus="0" wantfocus="0" autoclose="1" autoopen="1" autoavailable="1" visible="1" hold="guid:{45f3f7c1-a6f3-4ee6-a15e-125e92fc3f8d}"/>
+		<!-- Layers that needs to be hidden or centered -->
+		<layer id="pl.center.logo.active" image="wa2.pl.2.center" x="-100" y="0" inactivealpha="0"/>
+		<script file="scripts/_wa2-easylayout.maki" param="pl.center.logo.active;0;0;1;0;0;0"/>
 
-		<script id="eqfunc" file="scripts/eqfunc.maki"/>
-		<layer id="coverleft" background="wa2.pl.stretchleft" x="0" y="0" w="5" h="116"/>
+		<layer id="pl.center.logo.inactive" image="wa2.pl.2.center.disabled" x="-100" y="0" activealpha="0"/>
+		<script file="scripts/_wa2-easylayout.maki" param="pl.center.logo.inactive;0;0;1;0;0;0"/>
+
+		<layer id="pl.vis.area" image="wa2.pl.8.vis" x="-225" y="-38" relatx="1" relaty="1"/>
+		<script file="scripts/_wa2-easylayout.maki" param="pl.vis.area;350;0;0;0;0;0"/>
+
+
 		<!-- Add Playlist Entry (List) -->
-		<button id="add" action="PE_ADD" image="wa2.pl.add" inactivealpha="128" tooltip="Add Files" x="14" y="86"/>
-		<button id="rem" action="PE_REM" image="wa2.pl.rem" inactivealpha="128" tooltip="Add Files" x="43" y="86"/>
-		<button id="sel" action="PE_SEL" image="wa2.pl.sel" inactivealpha="128" tooltip="Add Files" x="72" y="86"/>
-		<button id="misc" action="PE_MISC" image="wa2.pl.misc" inactivealpha="128" tooltip="Add Files" x="101" y="86"/>
-		<button id="load" action="PE_LIST" image="wa2.pl.load" inactivealpha="128" tooltip="Add Files" x="231" y="86"/>
+		<button action="PE_ADD"		image="wa2.pl.add"	x="14" y="-30" w="22" h="18" relatx="0" relaty="1" rectrgn="1" tooltip="Add Files"/>
+		<button action="PE_REM"		image="wa2.pl.rem"	x="43" y="-30" w="22" h="18" relatx="0" relaty="1" rectrgn="1" tooltip="Add Files"/>
+		<button action="PE_SEL"		image="wa2.pl.sel"	x="72" y="-30" w="22" h="18" relatx="0" relaty="1" rectrgn="1" tooltip="Add Files"/>
+		<button action="PE_MISC"	image="wa2.pl.misc"	x="101" y="-30" w="22" h="18" relatx="0" relaty="1" rectrgn="1" tooltip="Add Files"/>
+		<button action="PE_LIST"	image="wa2.pl.load"	x="-46" y="-30" w="22" h="18" relatx="1" relaty="1" rectrgn="1" tooltip="Add Files"/>
 		<!-- End Playlist Entries -->
-		<!-- PL CONTROLS -->
-		<button id="prev" action="Prev" image="wa2.pl.prev" inactivealpha="128" tooltip="Previous" x="134" y="102" />
-		<button id="play" action="Play" image="wa2.pl.play" inactivealpha="128" tooltip="Play" x="142" y="102"/>
-		<button id="paus" action="Pause" image="wa2.pl.pause" inactivealpha="128" tooltip="Pause" x="152" y="102"/>
-		<button id="stop" action="Stop" image="wa2.pl.stop" inactivealpha="128" tooltip="Stop" x="162" y="102"/>
-		<button id="next" action="Next" image="wa2.pl.next" inactivealpha="128" tooltip="Next" x="171" y="102"/>
-		<button id="ejec" action="Eject" image="wa2.pl.eject" inactivealpha="128" tooltip="Eject" x="180" y="102"/>
-		<!--Bottom Stuff--> 
-		<layer id="glass" x="0" y="0" image="wa2.pl.glass" ghost="1"/>
+
+		<!-- Since Winamp 5.0 the component xml object was renamed to windowholder -->
+		<windowholder
+			x="12" y="20" w="-20" h="-57" relatw="1" relath="1"
+			noshowcmdbar="1" autoopen="1" autoclose="1"
+			param="guid:{45F3F7C1-A6F3-4ee6-A15E-125E92FC3F8D}"
+		/>
+
+		<!-- Special buttons, Since you can't scroll the playlist one line up/down the buttons now move the playing item -->
+		<button id="playlist.up" x="-15" y="-36" w="8" h="5" relatx="1" relaty="1" rectrgn="1" tooltip="Move playing item up"/>
+		<script file="scripts/_wa2-morefunctions.maki" param="playlist.up;pledit_up"/>
+		<button id="playlist.down" x="-15" y="-31" w="8" h="5" relatx="1" relaty="1" rectrgn="1" tooltip="Move playing item down"/>
+		<script file="scripts/_wa2-morefunctions.maki" param="playlist.down;pledit_down"/>
+
+		<!-- Playback buttons - No images so must use rectrgn="1" -->
+		<button x="-145" y="-16" w="8" h="9" relatx="1" relaty="1" action="Prev" rectrgn="1" tooltip="Previous"/>
+		<button x="-137" y="-16" w="10" h="9" relatx="1" relaty="1" action="Play" rectrgn="1" tooltip="Play"/>
+		<button x="-127" y="-16" w="10" h="9" relatx="1" relaty="1" action="Pause" rectrgn="1" tooltip="Pause"/>
+		<button x="-117" y="-16" w="9" h="9" relatx="1" relaty="1" action="Stop" rectrgn="1" tooltip="Stop"/>
+		<button x="-108" y="-16" w="8" h="9" relatx="1" relaty="1" action="Next" rectrgn="1" tooltip="Next"/>
+		<button x="-100" y="-16" w="10" h="9" relatx="1" relaty="1" action="Eject" rectrgn="1" tooltip="Eject"/>
+
 	</layout>
 </container>
