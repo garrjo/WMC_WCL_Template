@@ -1,5 +1,6 @@
 /*************************************************************************************************************
  ~ filestatus.m by The Elusive Melon 2006 - getBitrate, getSamplerate and getNumChannels by Plague.
+ ~ updated specifically for the WMC/WMC Project (it has been forked quite heavily) - Joe G. (garetjax)
  
  ~ Made for Melonscopic v1.0
  
@@ -9,70 +10,67 @@
    that the .m file is included as well as the .maki file. 
 *************************************************************************************************************/
 
-#include "../../../lib/std.mi"
-#include "../../../lib/config.mi"
+#include <lib/std.mi>
+#include <lib/config.mi>
 
 Function String getBitrate(String info);
 Function String getSamplerate(String info);
 Function Int getNumChannels(String info);
+Function UpdateTicker();
 Function UpdateChannel();
 
-Global Text Bitrate, Samplerate, ticker;
-Global Layer mono, stereo, surround, play, pause, kbps, khz;
+Global Text kbps, khz, Samplerate, ticker, Bitrate, Samplerate;
+Global Layer mono, stereo;
+Global Layout main;
+Global Container MainContainer;
 
 System.onScriptLoaded() {
 
-	Group mainGrp = getScriptGroup();
-
+	MainContainer = getContainer("Main");
+  main = MainContainer.getLayout("normal");
 	// Get Status Symbol layers
-	mono = mainGrp.findObject("m_mono");
-	stereo = mainGrp.findObject("m_stereo");
-	surround = mainGrp.findObject("m_surround");
-	play = mainGrp.findObject("status_play");
-	pause = mainGrp.findObject("status_pause");
-	kbps = mainGrp.findObject("m_kbps");
-	khz = mainGrp.findObject("m_khz");
-	ticker = mainGrp.findObject("songticker");
-
-
+	mono = main.findObject("Mono");
+	stereo = main.findObject("Stereo");
+	khz = main.findObject("Khz");
+	kbps = main.findObject("kbps");
+	ticker = main.findObject("songticker");
+  
 	// Get Bitrate/Samplerate layers
-  	Bitrate = mainGrp.findObject("Bitrate");
-  	Samplerate = mainGrp.findObject("Samplerate");
+  	Bitrate = main.findObject("bitrateText");
+  	Samplerate = main.findObject("frequency");
+  UpdateTicker();
 
 	if (System.getStatus() == 0) 
 	{
-	mono.hide();
-	stereo.hide();
-	surround.hide();
-	play.hide();
-	pause.hide();
-	kbps.hide();
-	khz.hide();
-	ticker.setXMLParam("alpha","128");
+	  mono.hide();
+	  stereo.hide();
+	  kbps.hide();
+	  khz.hide();
+	  ticker.setXMLParam("alpha","128");
+   	UpdateTicker();
 	}
 	
 		
 	if (System.getStatus() == -1)     
   	{
-    		Pause.show();
-		Play.Hide();
+      //Status Is Crap
+   	  UpdateTicker();
   	}
-   	
- 	
+	
   	if (System.getStatus() == 1)  
   	{
-    		Play.show();
-		Pause.Hide();
-		kbps.show();
-	    khz.show();
-		Bitrate.setText(getBitrate(getSongInfoText()));
-		Samplerate.setText(getSamplerate(getSongInfoText()));				
+		  kbps.show();
+      khz.show();
+      Bitrate.setText(getBitrate(getSongInfoText()));
+      Samplerate.setText(getSamplerate(getSongInfoText()));
+      UpdateTicker();
   	}
 
 	UpdateChannel();
 }
 
-UpdateChannel() {
+UpdateChannel() 
+{
 
 				
 	if (getNumChannels(getSongInfoText()) == 1) 
@@ -86,7 +84,6 @@ UpdateChannel() {
 		kbps.setXMLParam("alpha","128");
 		khz.setXMLParam("alpha","128");
 		stereo.hide();
-		surround.hide();
 		mono.show();
 	   	}
 
@@ -97,7 +94,6 @@ UpdateChannel() {
 		kbps.setXMLParam("alpha","180");
 		khz.setXMLParam("alpha","180");
 		stereo.hide();
-		surround.hide();
 		mono.show();
 		}
 		
@@ -115,7 +111,6 @@ UpdateChannel() {
 		kbps.setXMLParam("alpha","128");
 		khz.setXMLParam("alpha","128");
 		stereo.show();
-		surround.hide();
 		mono.hide(); 
 		}
 	 	   	
@@ -127,7 +122,6 @@ UpdateChannel() {
 		kbps.setXMLParam("alpha","180");
 		khz.setXMLParam("alpha","180");
 		stereo.show();
-		surround.hide();
 		mono.hide(); 
 		}
 	}
@@ -135,23 +129,19 @@ UpdateChannel() {
 	else if (getNumChannels(getSongInfoText()) > 2)
 	{
 		if (System.getStatus() == -1 ) {
-			surround.setXMLParam("alpha","128");
 			Bitrate.setXMLParam("alpha","128");
 			Samplerate.setXMLParam("alpha","128");
 			kbps.setXMLParam("alpha","128");
 			khz.setXMLParam("alpha","128");
-			surround.show();
 			stereo.hide();
 			mono.hide(); 
 		}
 	 	   	
 		else if (System.getStatus() == 1 ){
-			surround.setXMLParam("alpha","200");
 			Bitrate.setXMLParam("alpha","200");
 			Samplerate.setXMLParam("alpha","200");
 			kbps.setXMLParam("alpha","180");
 			khz.setXMLParam("alpha","180");
-			surround.show();
 			stereo.hide();
 			mono.hide(); 
 		}
@@ -159,67 +149,62 @@ UpdateChannel() {
 	else {
 		stereo.hide();
 		mono.hide();
-		surround.hide();		
 	}
-	
-
 }
 
+UpdateTicker()
+{
+  ticker.setText(getPlayItemMetaDataString("track")+". "+getPlayItemMetaDataString("artist")+" - "+getPlayItemMetaDataString("title"));
+}
 
 System.onPlay() {
-	Play.show();
-	Pause.hide();
 	kbps.show();
 	khz.show();
 	ticker.setXMLParam("alpha","255");
-
+  UpdateTicker();
 	UpdateChannel();
 }
 
 System.onPause() {
-	Play.hide();
-	Pause.show();
 	ticker.setXMLParam("alpha","200");
-
+  ticker.setText("Player has Paused");
 	UpdateChannel();
 }
 
 System.onStop() {
 	Bitrate.setText("---");
   Samplerate.setText("--");
-	Play.hide();
-	Pause.hide();
 	mono.hide();
 	stereo.hide();
-	surround.hide();
 	kbps.hide();
 	khz.hide();
 	ticker.setXMLParam("alpha","128");
-	
+  ticker.setText("Player has Stopped");
 	UpdateChannel();
 }
 
 System.onResume() {
-  	Play.show();
-  	Pause.hide();
-  	kbps.show();
-	khz.show();
-	ticker.setXMLParam("alpha","255");
-   
-	UpdateChannel();
+  kbps.show();
+  khz.show();
+  ticker.setXMLParam("alpha","255");
+  UpdateTicker();
+  UpdateChannel();
 }
 
 System.onScriptUnloading() {
-
 }
 
 System.onInfoChange(String info) {
   Bitrate.setText(getBitrate(getSongInfoText()));
   Samplerate.setText(getSamplerate(getSongInfoText()));
-
+  UpdateTicker();
   UpdateChannel();
 }
 
+System.onVolumeChanged(Int newvol)
+{
+  ticker.setText("Volume"+newvol); 
+}
 
 string getBitrate(String info) {
 int searchResult;

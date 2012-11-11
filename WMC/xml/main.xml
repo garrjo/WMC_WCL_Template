@@ -346,12 +346,12 @@
     />
 
 		<layer
-			id="MonoOff"
+			id="Mono"
 			x="212" y="41"
 			image="wa2.player.mono.off"
     />
 		<layer
-			id="StereoOn"
+			id="Stereo"
 			x="239" y="41"
 			image="wa2.player.stereo.off"
     />

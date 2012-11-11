@@ -27,6 +27,7 @@
 	<include file="/xml/pledit.xml"/>
 	<include file="/xml/ml.xml"/>
 	<scripts>
+		<script id="notifier" file="scripts/filestatus.maki"/>
 		<script id="doublesizer" file="scripts/doublesize.maki"/>
 		<script id="eqlayer" file="scripts/eq_layers.maki"/>
 		<script id="songinfo" file="scripts/songinfo.maki"/>

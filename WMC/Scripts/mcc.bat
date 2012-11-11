@@ -1,3 +1,3 @@
-..\..\..\mc doublesize.m
+..\..\..\mc filestatus.m
 
 pause
