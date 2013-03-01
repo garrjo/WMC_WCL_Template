@@ -1,13 +1,12 @@
 <container id="EQ" name="Equalizer" default_x="0" default_y="116" default_visible="1">
 	<layout id="normal" background="wa2.player.eq.base">
-		<AlbumArt id="wa2.player.eq.album" notfoundImage="notfound" valign="top" align="left" stretched="false" w="275" h="116" x="0" y="0" alpha="15"/>
 		<layer id="eqlayer">
 			<button id="setMax" x="40" y="36" w="28" h="8"/>
 			<button id="reset"  x="40" y="64" w="28" h="8"/>
 			<button id="setMin" x="40" y="94" w="28" h="8"/>
 
 			<layer
-				id="blah"
+				id="eqtoshade"
 				dblClickAction="SWITCH;shade"
 				x="0" y="0"
 				image="wa2.player.eq.shadeswicher"
@@ -18,6 +17,7 @@
 				id="EQLineBack"
 				x="86" y="17"
 				image="wa2.player.eq.spline.back"
+				inactivealpha="128"
     />
 
 			<!-- Backgrounds -->
@@ -28,56 +28,67 @@
 				move="0"
 				tooltip="Preamp"
 				rectrgn="0"
+				inactivealpha="128"
     />
 			<layer
 				id="eq1back"
 				x="78" y="38"
 				image="wa2.player.eq.slider0"
+				inactiveAlpha="128"
     />
 			<layer
 				id="eq2back"
 				x="96" y="38"
 				image="wa2.player.eq.slider0"
+				inactiveAlpha="128"
     />
 			<layer
 				id="eq3back"
 				x="114" y="38"
 				image="wa2.player.eq.slider0"
+				inactiveAlpha="128"
     />
 			<layer
 				id="eq4back"
 				x="132" y="38"
 				image="wa2.player.eq.slider0"
+				inactiveAlpha="128"
     />
 			<layer
 				id="eq5back"
 				x="150" y="38"
 				image="wa2.player.eq.slider0"
+				inactiveAlpha="128"
     />
 			<layer
 				id="eq6back"
 				x="168" y="38"
 				image="wa2.player.eq.slider0"
+				inactiveAlpha="128"
     />
 			<layer
 				id="eq7back"
 				x="186" y="38"
 				image="wa2.player.eq.slider0"
+				inactiveAlpha="128"
     />
 			<layer
 				id="eq8back"
 				x="204" y="38"
 				image="wa2.player.eq.slider0"
+				inactiveAlpha="128"
     />
 			<layer
 				id="eq9back"
 				x="222" y="38"
 				image="wa2.player.eq.slider0"
+				inactiveAlpha="128"
     />
 			<layer
 				id="eq10back"
 				x="240" y="38"
 				image="wa2.player.eq.slider0"
+				inactiveAlpha="128"
     />
 
 
@@ -89,6 +100,7 @@
 				orientation="vertical"
 				thumb="wa2.player.eq.slider.up"
 				downThumb="wa2.player.eq.slider.down"
+				inactiveAlpha="128"
     />
 
 			<slider
@@ -100,6 +112,7 @@
 				orientation="vertical"
 				thumb="wa2.player.eq.slider.up"
 				downThumb="wa2.player.eq.slider.down"
+				inactiveAlpha="128"
     />
 
 			<slider
@@ -111,6 +124,7 @@
 				orientation="vertical"
 				thumb="wa2.player.eq.slider.up"
 				downThumb="wa2.player.eq.slider.down"
+				inactiveAlpha="128"
     />
 
 			<slider
@@ -122,6 +136,7 @@
 				orientation="vertical"
 				thumb="wa2.player.eq.slider.up"
 				downThumb="wa2.player.eq.slider.down"
+				inactiveAlpha="128"
     />
 
 			<slider
@@ -133,6 +148,7 @@
 				orientation="vertical"
 				thumb="wa2.player.eq.slider.up"
 				downThumb="wa2.player.eq.slider.down"
+				inactiveAlpha="128"
     />
 
 			<slider
@@ -144,6 +160,7 @@
 				orientation="vertical"
 				thumb="wa2.player.eq.slider.up"
 				downThumb="wa2.player.eq.slider.down"
+				inactiveAlpha="128"
     />
 
 			<slider
@@ -155,6 +172,7 @@
 				orientation="vertical"
 				thumb="wa2.player.eq.slider.up"
 				downThumb="wa2.player.eq.slider.down"
+				inactiveAlpha="128"
     />
 
 			<slider
@@ -166,6 +184,7 @@
 				orientation="vertical"
 				thumb="wa2.player.eq.slider.up"
 				downThumb="wa2.player.eq.slider.down"
+				inactiveAlpha="128"
     />
 
 			<slider
@@ -177,6 +196,7 @@
 				orientation="vertical"
 				thumb="wa2.player.eq.slider.up"
 				downThumb="wa2.player.eq.slider.down"
+				inactiveAlpha="128"
     />
 
 			<slider
@@ -188,6 +208,7 @@
 				orientation="vertical"
 				thumb="wa2.player.eq.slider.up"
 				downThumb="wa2.player.eq.slider.down"
+				inactiveAlpha="128"
     />
 
 			<slider
@@ -199,16 +220,19 @@
 				orientation="vertical"
 				thumb="wa2.player.eq.slider.up"
 				downThumb="wa2.player.eq.slider.down"
+				inactiveAlpha="128"
     />
 			<eqvis
 				id="spline"
 				x="86" y="17"
 				w="113" h="19"
-				colortop="211,151,0"
-				colormiddle="239,231,0"
-				colorbottom="244,196,0"
-				colorpreamp="246,181,0"
+				colortop="255,255,255"
+				colormiddle="120,120,120"
+				colorbottom="60,60,60"
+				colorpreamp="30,30,30"
 				gamma="192"
+				gammagroup="Vis"
+				inactivealpha="128"
    />
 
 			<button
@@ -237,6 +261,7 @@
 				image="wa2.player.eq.preset"
 				downImage="wa2.player.eq.preset.pressed"
 				tooltip="Display Presets menu"
+				inactivealpha="128"
     />
 
 			<button
@@ -247,6 +272,7 @@
 				downImage="wa2.eq.on.pressed"
 				activeImage="wa2.eq.on.active"
 				tooltip="Toggle EQ processing"
+				inactivealpha="128"
     />
 
 			<button
@@ -257,14 +283,14 @@
 				downImage="wa2.player.eq.auto.pressed"
 				activeImage="wa2.player.eq.auto.active"
 				tooltip="Toggle EQ automatic processing"
+				inactivealpha="128"
     />
 		</layer>
-		<layer id="glass" x="0" y="0" image="wa2.eq.glass" ghost="1"/>
 	</layout>
 	<layout id="shade" background="wa2.player.eq.shade">
 
 		<layer
-			id="blah"
+			id="shadetoeq"
 			dblClickAction="SWITCH;normal"
 			x="0" y="0"
 			image="wa2.player.eq.shade"
@@ -290,11 +316,11 @@
 			tooltip="Close"
 			inactiveAlpha="128"
     />
-		<images source="volume" images="wa2.player.vol.main" x="80" y="5" w="68" h="13" imagesspacing="15"/>
+		<images source="volume" images="wa2.player.vol.main" x="80" y="5" w="68" h="13" imagesspacing="15" inactiveAlpha="128"/>
 		<slider id="Volume"
 						action="VOLUME"
 						x="80" y="3" w="68" h="13"
-						thumb="wa2.player.vol.slider.normal" downThumb="wa2.player.vol.slider.pressed"/>
+						thumb="wa2.player.vol.slider.normal" downThumb="wa2.player.vol.slider.pressed" inactiveAlpha="128"/>
 
 		<images source="balance"
 						 x="170" y="5" w="36" h="13"
@@ -303,6 +329,6 @@
 		<slider id="Pan"
 						action="PAN"
 						x="173" y="3" w="38" h="13"
-						thumb="wa2.player.bal.slider.normal" downThumb="wa2.player.bal.slider.pressed"/>
+						thumb="wa2.player.bal.slider.normal" downThumb="wa2.player.bal.slider.pressed" inactiveAlpha="128"/>
 	</layout>
 </container>

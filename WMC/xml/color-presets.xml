@@ -1,0 +1,91 @@
+<!-- Gamma sets -->
+<gammaset id="Eroded">
+	<gammagroup id="Background" value="0,0,0" gray="1"/>
+	<gammagroup id="Background2" value="0,0,0" gray="1"/>
+	<gammagroup id="Slider" value="0,0,0" gray="1"/>
+	<gammagroup id="TextSel" value="0,0,0" gray="1"/>
+	<gammagroup id="TextDisable" value="0,0,0" gray="1"/>
+	<gammagroup id="Text" value="0,0,0" gray="1"/>
+	<gammagroup id="Vis" value="0,0,0" gray="1"/>
+	<gammagroup id="TextCur" value="0,0,0" gray="1"/>
+	<gammagroup id="Glass"  value="0,0,0" gray="1"/>
+	<gammagroup id="Button"  value="0,0,0" gray="1"/>
+	<gammagroup id="Buttons" value="0,0,0" gray="1"/>
+	<gammagroup id="ButtonsFront" value="0,0,0" gray="1"/>
+	<gammagroup id="Status" value="0,0,0" gray="1"/>
+	<gammagroup id="Titlebar" value="0,0,0" gray="1"/>
+	<gammagroup id="Display" value="0,0,0" gray="1"/>
+</gammaset>
+
+<gammaset id="FusionBox">
+	<gammagroup id="Background" value="-2000,0,2000" gray="1"/>
+	<gammagroup id="Slider" value="-2000,0,3198" gray="1"/>
+	<gammagroup id="TextSel" value="-2000,0,4198" gray="1"/>
+	<gammagroup id="TextDisable" value="-2000,0,4198" gray="1"/>
+	<gammagroup id="Text" value="-2000,-1000,4000" gray="1"/>
+	<gammagroup id="Vis" value="-2000,-1000,4000" gray="1"/>
+	<gammagroup id="TextCur" value="-4000,0,2197" gray="1"/>
+	<gammagroup id="Glass"  value="-4000,-4000,2197" gray="1"/>
+	<gammagroup id="Button"  value="-2000,0,2000" gray="1"/>
+	<gammagroup id="Buttons"  value="-2000,0,2000" gray="1"/>
+	<gammagroup id="ButtonsFront" value="0,50,50"/>
+	<gammagroup id="Background2" value="-2000,0,2000" gray="1"/>
+	<gammagroup id="Status" value="0,0,198" gray="1"/>
+	<gammagroup id="Titlebar" value="0,0,198" gray="1"/>
+	<gammagroup id="Display" value="-4000,-4000,4000" gray="1"/>
+</gammaset>
+
+<gammaset id="Faust">
+	<gammagroup id="Background" value="4000,-2000,-4000" gray="1"/>
+	<gammagroup id="Background2" value="4000,0,-4000" gray="1"/>
+	<gammagroup id="Slider" value="4000,4000,4000" gray="1"/>
+	<gammagroup id="TextSel" value="4000,-2000,-4000" gray="1"/>
+	<gammagroup id="TextDisable" value="4000,-2000,-4000" gray="1"/>
+	<gammagroup id="Text" value="4000,-2000,-4000" gray="1"/>
+	<gammagroup id="Vis" value="4000,-2000,-4000" gray="1"/>
+	<gammagroup id="TextCur" value="4000,-2000,-4000" gray="1"/>
+	<gammagroup id="Glass"  value="4000,-2000,-4000" gray="1"/>
+	<gammagroup id="Button"  value="50,0,0" gray="1"/>
+	<gammagroup id="Buttons" value="50,0,0" gray="1"/>
+	<gammagroup id="ButtonsFront" value="4000,-2000,-4000" gray="1"/>
+	<gammagroup id="Status" value="2000,-4000,-4000" gray="1"/>
+	<gammagroup id="Titlebar" value="2000,-4000,-4000" gray="1"/>
+	<gammagroup id="Display" value="4000,-4000,-4000" gray="1"/>
+</gammaset>
+
+<gammaset id="JadeTube">
+	<gammagroup id="Background" value="-1000,50,-1000" gray="1"/>
+	<gammagroup id="Background2" value="-1000,500,-500"  gray="1"/>
+	<gammagroup id="Slider" value="-500,50,-1000" gray="1"/>
+	<gammagroup id="TextSel" value="-500,25,-500" gray="1"/>
+	<gammagroup id="TextDisable" value="-4000,0,-4000" gray="1"/>
+	<gammagroup id="Text" value="-500,25,-500" gray="1"/>
+	<gammagroup id="Vis" value="-4000,-2000,-4000" gray="1"/>
+	<gammagroup id="TextCur" value="-4000,-2000,-4000" gray="1"/>
+	<gammagroup id="Glass"  value="-4000,-4000,-4000" gray="1"/>
+	<gammagroup id="Button"  value="-500,25,-500" gray="1"/>
+	<gammagroup id="Buttons" value="-500,25,-500" gray="1"/>
+	<gammagroup id="ButtonsFront" value="-1000,500,-500" gray="1"/>
+	<gammagroup id="Status" value="0,0,0" gray="1"/>
+	<gammagroup id="Titlebar" value="-1000,500,-500" gray="1"/>
+	<gammagroup id="Display" value="-4000,4000,-4000" gray="1"/>
+</gammaset>
+
+<gammaset id="Original" default="true">
+	<gammagroup id="Background" value="0,0,0"/>
+	<gammagroup id="Slider" value="0,0,0"/>
+	<gammagroup id="TextSel" value="0,0,0" gray="0"/>
+	<gammagroup id="Text"  value="0,0,0" gray="0"/>
+	<gammagroup id="TextDisable" value="0,0,0" gray="0"/>
+	<gammagroup id="Vis"  value="0,0,0"/>
+	<gammagroup id="TextCur" value="0,0,0"/>
+	<gammagroup id="Glass"  value="0,0,0"/>
+	<gammagroup id="Buttons"  value="0,0,0"/>
+	<gammagroup id="ButtonsFront" value="0,0,0" gray="0"/>
+	<gammagroup id="Background2" value="0,0,0"/>
+	<gammagroup id="Text2" value="0,0,0"/>
+	<gammagroup id="Text1" value="0,0,0"/>
+	<gammagroup id="Status" value="0,0,0"/>
+	<gammagroup id="Titlebar" value="0,0,0"/>
+	<gammagroup id="Display" value="0,0,0" gray="0"/>
+</gammaset>

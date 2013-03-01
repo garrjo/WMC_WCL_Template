@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 
-<WinampAbstractionLayer version="1.2">
+<WinampAbstractionLayer version="1.29">
 
 	<skininfo>
-		<version>2.1.10.27.2012</version>
+		<version>3.58.02.07.13</version>
 		<name>WMC ADO Elite</name>
 		<comment>WMC/WCL For Winamp</comment>
 		<authors>Garetjax, Peacemaker and PJN123</authors>
@@ -12,13 +12,13 @@
 		<screenshot>screenshot.png</screenshot>
 		<contributors>Gonzotek, The Plague, Skin Love Forum Members, Deviantart: Garetjax Studios and many others.</contributors>
 	</skininfo>
-
-	<include file="../default/xml/studio.xml"/>
-	<include file="../default/xml/components.xml"/>
-	<!--
-		Elements Is Where all Graphics are Defined 
+	<!-- 
+		Colours - Defines the base colours for all object windows (playlist/video/avs/ml etc)
+		you will find the colours of the skin frame windows. (Elements.xml)
+		Elements Is Where all Graphics are Defined and colours
 		To change find the reference area by its comments
 	-->
+	<include file="/xml/color-presets.xml"/>
 	<include file="/xml/elements.xml"/>
 
 	<!-- The Remaining are Layouts (where stuff shows up)-->
@@ -26,6 +26,8 @@
 	<include file="/xml/eqmain.xml"/>
 	<include file="/xml/pledit.xml"/>
 	<include file="/xml/ml.xml"/>
+	<include file="/xml/video.xml"/>
+	<include file="/xml/about.xml"/>
 	<scripts>
 		<script id="notifier" file="scripts/filestatus.maki"/>
 		<script id="doublesizer" file="scripts/doublesize.maki"/>
@@ -33,7 +35,4 @@
 		<script id="songinfo" file="scripts/songinfo.maki"/>
 		<script id="notifier" file="scripts/notifier.maki"/>
 	</scripts>
-
-
-
 </WinampAbstractionLayer>

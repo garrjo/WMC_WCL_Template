@@ -1,6 +1,6 @@
 <container id="Main" name="WA2 Skin Main window">
 	<layout id="normal" background="wa2.player.base">
-		<AlbumArt id="wa2.player.eq.album" notfoundImage="notfound" valign="top" align="left" stretched="false" w="275" h="116" x="0" y="0" alpha="15"/>
+		<layer id="mainview" backround="wa2.player.background" x="0" y="0" image="wa2.player.background" w="275" h="116" gammagroup="background" />
 		<layer
 			id="PosBarBack"
 			x="1" y="72"
@@ -8,6 +8,7 @@
 			image="wa2.player.posbar.back"
 			rectrgn="0"
 			move="0"
+			gammagroup="Button"
     />
 		<ProgressGrid
 		x="0"
@@ -18,19 +19,22 @@
 		orientation="right"
 		left=""
 		middle="seeker.bar.center"
-		right="seeker.bar.left"/>
+		right="seeker.bar.left"
+		gammagroup="Slider"
+		/>
 
-		<button
+		<Button
 			id="Previous"
 			action="Prev"
 			x="16" y="88"
 			image="wa2.player.prev"
 			downImage="wa2.player.prev.down"
 			tooltip="Previous"
-			 inactivealpha="128"
+			inactivealpha="128"
+			gammagroup="Button"
     />
 
-		<button
+		<Button
 			id="Play"
 			action="Play"
 			x="39" y="88"
@@ -38,9 +42,10 @@
 			downImage="wa2.player.play.down"
 			tooltip="Play"
 			 inactivealpha="128"
+			gammagroup="Button"
     />
 
-		<button
+		<Button
 			id="Pause"
 			action="Pause"
 			x="62" y="88"
@@ -48,9 +53,10 @@
 			downImage="wa2.player.pause.down"
 			tooltip="Pause"
 			 inactivealpha="128"
+			gammagroup="Button"
     />
 
-		<button
+		<Button
 			id="Stop"
 			action="Stop"
 			x="84" y="88"
@@ -58,9 +64,10 @@
 			downImage="wa2.player.stop.down"
 			tooltip="Stop"
 			 inactivealpha="128"
+			gammagroup="Button"
     />
 
-		<button
+		<Button
 			id="Next"
 			action="Next"
 			x="108" y="88"
@@ -68,9 +75,10 @@
 			downImage="wa2.player.next.down"
 			tooltip="Next"
 			 inactivealpha="128"
+			gammagroup="Button"
     />
 
-		<button
+		<Button
 			id="Eject"
 			action="EJECT"
 			x="130" y="88"
@@ -78,6 +86,7 @@
 			downImage="wa2.player.eject.down"
 			tooltip="Eject"
 			 inactivealpha="128"
+			gammagroup="Button"
     />
 		<text
 		 id="infoline"
@@ -94,7 +103,8 @@
 			alpha="200"
 			color="246,188,37"
 			font="player.BIGNUM" fontsize="8"
-			 inactivealpha="128"
+			inactivealpha="128"
+			gammagroup="Text"
      />
 		<text
 			id="songticker" ticker="1"
@@ -110,8 +120,9 @@
 			shadowy="-1"
 			alpha="200"
 			color="246,188,37"
-			font="player.Numbers" fontsize="7"
-			 inactivealpha="128"
+			font="player.Numbers" fontsize="8"
+			inactivealpha="128"
+			gammagroup="Text"
     />
 		<text
 			id="timer"
@@ -119,18 +130,19 @@
 			x="35" y="10"
 			w="80" h="27"
 			default="" showlen="1"
-			antialias="true"
+			antialias="1"
 			timeroffstyle="1"
 			offsetx="1"
 			offsety="1"
 			shadowcolor="0,0,0"
 			shadowx="1"
 			shadowy="1"
-			timecolonwidth="3"
+			timecolonwidth="7"
 			alpha="200"
 			color="246,188,37"
 			font="player.Numbers" fontsize="18"
 			 inactivealpha="128"
+			gammagroup="Text"
     />
 		<vis
 			id="vis"
@@ -138,7 +150,6 @@
 			w="72" h="16"
 			alpha="220"
 			default="spectrum"
-			gammagroup="vis"
 			colorband1="211,151,0"
 			colorband2="211,160,5"
 			colorband3="196,138,0"
@@ -161,7 +172,8 @@
 			colorosc3="228,211,160"
 			colorosc4="196,152,5"
 			colorosc5="211,151,0"
-			 inactivealpha="128"
+			inactivealpha="128"
+			gammagroup="Vis"
 				/>
 		<text
 			id="bitrateText"
@@ -237,8 +249,9 @@
 			alpha="200"
 			color="246,188,37"
 			 inactivealpha="128"
+			gammagroup="Text"
      />
-		<togglebutton
+		<toggleButton
 			id="eq"
 			action="TOGGLE" param="EQ"
 			x="219" y="58"
@@ -248,9 +261,10 @@
 			activeImage="wa2.player.eq.on"
 			tooltip="Toggle Equalizer"
 			 inactivealpha="128"
+			gammagroup="Button"
     />
 
-		<togglebutton
+		<toggleButton
 			id="pl"
 			action="TOGGLE" param="PL"
 			x="242" y="58"
@@ -260,9 +274,11 @@
 			activeImage="wa2.player.playlist.on"
 			tooltip="Toggle Playlist Editor"
 			rectrgn="1"
+			 inactivealpha="128"
+			gammagroup="Button"
     />
 
-		<togglebutton
+		<toggleButton
 			id="Repeat"
 			cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Repeat"
 			x="210" y="89"
@@ -272,9 +288,10 @@
 			activeImage="wa2.player.rpt.on"
 			tooltip="Repeat"
 			 inactivealpha="128"
+			gammagroup="Button"
     />
 
-		<togglebutton
+		<toggleButton
 			id="Shuffle"
 			cfgattrib="{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D};Shuffle"
 			action="TOGGLE_SHUFFLE"
@@ -284,30 +301,31 @@
 			activeImage="wa2.player.sfl.on"
 			tooltip="Shuffle"
 			 inactivealpha="128"
+			gammagroup="Button"
     />
 
 		<layer
-			id="blah"
+			id="maintoshade"
 			dblClickAction="SWITCH;shade"
 			x="0" y="0"
 			image="wa2.player.title.enabled"
 			inactiveAlpha="128"
     />
-		<images source="volume" images="wa2.player.vol.main" x="107" y="57" w="68" h="13" imagesspacing="15"/>
+		<images source="volume" images="wa2.player.vol.main" x="107" y="57" w="68" h="13" imagesspacing="15" inactivealpha="128"/>
 		<slider id="Volume"
 						action="VOLUME"
 						x="109" y="55" w="68" h="13"
-						thumb="wa2.player.vol.slider.normal" downThumb="wa2.player.vol.slider.pressed"/>
+						thumb="wa2.player.vol.slider.normal" downThumb="wa2.player.vol.slider.pressed" inactivealpha="128"/>
 
 		<images source="balance"
 						 x="179" y="57" w="36" h="13"
 						images="wa2.player.bal.main"
-						imagesspacing="15"/>
+						imagesspacing="15" inactiveAlpha="128"/>
 		<slider id="Pan"
 						action="PAN"
 						x="181" y="55" w="38" h="13"
-						thumb="wa2.player.bal.slider.normal" downThumb="wa2.player.bal.slider.pressed"/>
-		<button
+						thumb="wa2.player.bal.slider.normal" downThumb="wa2.player.bal.slider.pressed" inactivealpha="128"/>
+		<Button
 			id="Close"
 			action="close"
 			x="264" y="-3"
@@ -315,18 +333,20 @@
 			downImage="wa2.player.title.quit.pressed"
 			tooltip="Close"
 			inactiveAlpha="128"
+			gammagroup="Button"
     />
 
-		<button
+		<Button
 			id="winshade" tooltip="Toggle Windowshade mode"
 			action="SWITCH" param="shade"
 			x="254" y="-3"
 			image="wa2.player.title.shade"
 			downImage="wa2.player.title.shade.pressed"
 			inactiveAlpha="128"
+			gammagroup="Button"
     />
 
-		<button
+		<Button
 			id="Minimize"
 			action="MINIMIZE"
 			x="243" y="-3"
@@ -334,36 +354,42 @@
 			downImage="wa2.player.title.min.pressed"
 			tooltip="Minimize Winamp"
 			inactiveAlpha="128"
+			gammagroup="Button"
     />
 
-		<button
-			id="sysbutton"
+		<Button
+			id="sysButton"
 			action="SYSMENU"
 			x="6" y="-3"
 			image="wa2.player.title.menu"
 			downImage="wa2.player.title.menu.pressed"
 			inactiveAlpha="128"
+			gammagroup="Button"
     />
 
 		<layer
 			id="Mono"
 			x="212" y="41"
 			image="wa2.player.mono.off"
+			gammagroup="Text"
     />
 		<layer
 			id="Stereo"
 			x="239" y="41"
 			image="wa2.player.stereo.off"
+			gammagroup="Text"
     />
 		<layer
 			id="monspeaker"
 			x="212" y="41"
 			image="wa2.player.mono.on"
+			gammagroup="Text"
     />
 		<layer
 			id="sterspeaker"
 			x="239" y="41"
 			image="wa2.player.stereo.on"
+			gammagroup="Text"
     />
 		<status
 			id="status"
@@ -372,51 +398,58 @@
 			stopBitmap="player.status.stop"
 			playBitmap="player.status.play"
 			pauseBitmap="player.status.pause"
+			gammagroup="Status"
     />
-		<button
+		<Button
 			id="optiontog"
 			action="TOGGLE" param="guid:{ED3CD0D9-5FE5-4C34-AFE9-52E714D4FAA4}"
 			x="8" y="15"
 			image="wa2.player.oiadv.o"
 			downImage="wa2.player.oiadv.o.pressed"
+			gammagroup="Button"
     />
-		<togglebutton
+		<toggleButton
 			id="toggleAllWaysOnTop"
 			x="8" y="25"
 			image="wa2.player.oiadv.a"
 			downImage="wa2.player.oiadv.a.pressed"
 			activeImage="wa2.player.oiadv.a.pressed"
 			tooltip="Always On Top"
+			gammagroup="Button"
     />
-		<button
+		<Button
 			id="fileinfo"
 			x="8" y="35"
 			image="wa2.player.oiadv.i"
 			downImage="wa2.player.oiadv.i.pressed"
 			tooltip="File Info"
+			gammagroup="Button"
     />
-		<togglebutton
+		<toggleButton
 			id="toggledoublesize"
 			x="8" y="45"
 			image="wa2.player.oiadv.d"
 			downImage="wa2.player.oiadv.d.pressed"
 			activeImage="wa2.player.oiadv.d.pressed"
 			tooltip="Double Size"
+			gammagroup="Button"
     />
-		<button
+		<Button
 			id="vistog"
 			x="8" y="55"
 			image="wa2.player.oiadv.v"
 			downImage="wa2.player.oiadv.v.pressed"
+			gammagroup="Button"
     />
-		<button
+		<Button
 			id="Thinger"
 			action="TOGGLE" param="thinger"
 			x="8" y="55"
 			h="14" w="14"
 			tooltip="Thinger"
+			gammagroup="Button"
     />
-		<layer id="glass" x="0" y="0" image="wa2.player.glass" ghost="1"/>
+
 
 		<slider
 			id="seeker"
@@ -425,10 +458,11 @@
 			h="10" w="274"
 			thumb="wa2.player.posbar.up"
 			downthumb="wa2.player.posbar.down"
+			gammagroup="Slider"
     />
+		<!--layer id="glass" x="0" y="0" image="wa2.player.glass" gammagroup="Glass" ghost="-1"/-->
 	</layout>
-	<layout id="shade" background="wa2.player.shade.enabled"
-		inactive="wa2.player.shade.disabled">
+	<layout id="shade" background="wa2.player.shade.enabled" gammagroup="Background2" inactive="wa2.player.shade.disabled">
 
 		<layer
 			id="blah"
@@ -446,78 +480,86 @@
 			font="player.SmallFixed" fontsize="8"
     />
 
-		<button
+		<Button
 			id="Previous"
 			action="PREV"
 			x="166" y="3"
-			image="player.winshade.button.previous"
-			downImage="player.winshade.button.previous"
+			image="player.winshade.Button.previous"
+			downImage="player.winshade.Button.previous"
 			tooltip="Previous"
 			inactiveAlpha="128"
+			gammagroup="Button"
     />
-		<button
+		<Button
 			id="Play"
 			action="PLAY"
 			x="176" y="3"
-			image="player.winshade.button.play"
-			downImage="player.winshade.button.play"
+			image="player.winshade.Button.play"
+			downImage="player.winshade.Button.play"
 			tooltip="Play"
 			inactiveAlpha="128"
+			gammagroup="Button"
     />
-		<button
+		<Button
 			id="Pause"
 			action="PAUSE"
 			x="186" y="3"
-			image="player.winshade.button.pause"
-			downImage="player.winshade.button.pause"
+			image="player.winshade.Button.pause"
+			downImage="player.winshade.Button.pause"
 			tooltip="Pause"
 			inactiveAlpha="128"
+			gammagroup="Button"
     />
-		<button
+		<Button
 			id="Stop"
 			action="STOP"
 			x="196" y="3"
-			image="player.winshade.button.stop"
-			downImage="player.winshade.button.stop"
+			image="player.winshade.Button.stop"
+			downImage="player.winshade.Button.stop"
 			tooltip="Stop"
 			inactiveAlpha="128"
+			gammagroup="Button"
     />
-		<button
+		<Button
 			id="Next"
 			action="NEXT"
 			x="206" y="3"
-			image="player.winshade.button.next"
-			downImage="player.winshade.button.next"
+			image="player.winshade.Button.next"
+			downImage="player.winshade.Button.next"
 			tooltip="Next"
 			inactiveAlpha="128"
+			gammagroup="Button"
     />
 
-		<button
+		<Button
 			id="Eject"
 			action="EJECT"
 			x="216" y="3"
-			image="player.winshade.button.open"
-			downImage="player.winshade.button.open"
+			image="player.winshade.Button.open"
+			downImage="player.winshade.Button.open"
 			tooltip="Eject"
+			gammagroup="Button"
     />
 
 		<vis
 			id="vis_Shade"
 			x="79" y="5"
 			w="38" h="5"
+			gammagroup="Vis"
 
    />
 
-		<button
+		<Button
 			id="winshade" tooltip="Toggle Windowshade mode"
 			action="SWITCH" param="normal"
 			x="254" y="3"
 			image="wa2.player.title.shade"
 			downImage="wa2.player.title.shade.pressed"
 			inactiveAlpha="128"
+			gammagroup="Button"
     />
 
-		<button
+		<Button
 			id="Close"
 			action="close"
 			x="264" y="3"
@@ -525,23 +567,26 @@
 			downImage="wa2.player.title.quit.pressed"
 			tooltip="Close"
 			inactiveAlpha="128"
+			gammagroup="Button"
     />
 
-		<button
+		<Button
 			id="Minimize"
 			action="MINIMIZE"
 			x="243" y="3"
 			image="wa2.player.title.min"
 			downImage="wa2.player.title.min.pressed"
 			tooltip="Minimize Winamp"
+			gammagroup="Button"
     />
 
-		<button
-			id="sysbutton"
+		<Button
+			id="sysButton"
 			action="SYSMENU"
 			x="6" y="3"
 			image="wa2.player.shade.menu"
 			downImage="wa2.player.shade.menu.pressed"
+			gammagroup="Button"
     />
 
 		<slider
@@ -551,6 +596,7 @@
 			h="7" w="15"
 			thumb="player.winshade.seek"
 			downthumb="player.winshade.seek"
+			gammagroup="Button"
     />
 
 	</layout>

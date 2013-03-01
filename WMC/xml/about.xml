@@ -1,4 +1,4 @@
-<container id="ML" name="Media Library" default_x="0" default_y="232" default_visible="1">
+<container id="About" name="About Winamp" default_x="0" default_y="232" default_visible="1">
 	<layout id="normal" image="wa2.ml.base" minimum_h="116" minimum_w="275">
 		<layer image="wa2.ml.1" x="0" y="0" inactivealpha="0" regionop="1"/>
 		<layer image="wa2.ml.1.disabled" x="0" y="0" activealpha="0" regionop="1"/>
@@ -17,7 +17,7 @@
 		<windowholder id="studio.list" component=""  fitparent="1"
 			x="12" y="20" w="-20" h="-57" relatw="1" relath="1"
 			noshowcmdbar="1" autoopen="1" autoclose="1" opacity="120"
-			param="guid:ml"
+			param="guid:about"
 		/>
 		<!-- Close Button -->
 		<button

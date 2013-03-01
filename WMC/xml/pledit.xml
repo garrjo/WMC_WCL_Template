@@ -23,7 +23,7 @@
 		<layer id="pl.center.logo.inactive" image="wa2.pl.2.center.disabled" x="-100" y="0" activealpha="0"/>
 		<script file="scripts/_wa2-easylayout.maki" param="pl.center.logo.inactive;0;0;1;0;0;0"/>
 
-		<layer id="pl.vis.area" image="wa2.pl.8.vis" x="-225" y="-38" relatx="1" relaty="1"/>
+		<layer id="pl.vis.area" gammagroup="Vis" image="wa2.pl.8.vis" x="-225" y="-38" relatx="1" relaty="1"/>
 		<script file="scripts/_wa2-easylayout.maki" param="pl.vis.area;350;0;0;0;0;0"/>
 		<!-- Small Ticker/Timer -->
 		<text
@@ -64,21 +64,20 @@
     />
 
 		<!-- Add Playlist Entry (List) -->
-		<button action="PE_ADD"		image="wa2.pl.add"	x="14" y="-30" w="22" h="18" relatx="0" relaty="1" rectrgn="1" tooltip="Add Files"/>
-		<button action="PE_REM"		image="wa2.pl.rem"	x="43" y="-30" w="22" h="18" relatx="0" relaty="1" rectrgn="1" tooltip="Add Files"/>
-		<button action="PE_SEL"		image="wa2.pl.sel"	x="72" y="-30" w="22" h="18" relatx="0" relaty="1" rectrgn="1" tooltip="Add Files"/>
-		<button action="PE_MISC"	image="wa2.pl.misc"	x="101" y="-30" w="22" h="18" relatx="0" relaty="1" rectrgn="1" tooltip="Add Files"/>
-		<button action="PE_LIST"	image="wa2.pl.load"	x="-46" y="-30" w="22" h="18" relatx="1" relaty="1" rectrgn="1" tooltip="Add Files"/>
+		<button action="PE_ADD"		image="wa2.pl.add"	x="14" y="-23" w="22" h="10" relatx="0" relaty="1" rectrgn="1" tooltip="Add Files"/>
+		<button action="PE_REM"		image="wa2.pl.rem"	x="43" y="-23" w="22" h="10" relatx="0" relaty="1" rectrgn="1" tooltip="Remove Files"/>
+		<button action="PE_SEL"		image="wa2.pl.sel"	x="72" y="-23" w="22" h="10" relatx="0" relaty="1" rectrgn="1" tooltip="Select Files"/>
+		<button action="PE_MISC"	image="wa2.pl.misc"	x="101" y="-23" w="22" h="10" relatx="0" relaty="1" rectrgn="1" tooltip="Misc Files"/>
+		<button action="PE_LIST"	image="wa2.pl.load"	x="-49" y="-23" w="22" h="10" relatx="1" relaty="1" rectrgn="1" tooltip="Load Files"/>
 		<!-- End Playlist Entries -->
 
 		<!-- Since Winamp 5.0 the component xml object was renamed to windowholder -->
-		<windowholder id="pl_holder" fitparent="1"
+		<windowholder id="wasabi.list" component="guid:{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D}"  fitparent="1"
 			x="12" y="20" w="-20" h="-57" relatw="1" relath="1"
 			noshowcmdbar="1" autoopen="1" autoclose="1" opacity="120"
 			param="guid:pl"
 		/>
 
-		<script file="scripts/pl_colorize.maki"/>
 		<!-- Special buttons, Since you can't scroll the playlist one line up/down the buttons now move the playing item -->
 		<button id="playlist.up" x="-15" y="-36" w="8" h="5" relatx="1" relaty="1" rectrgn="1" tooltip="Move playing item up"/>
 		<script file="scripts/_wa2-morefunctions.maki" param="playlist.up;pledit_up"/>
