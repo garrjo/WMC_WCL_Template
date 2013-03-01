@@ -3,6 +3,24 @@ WMC-WCL-Open-Source
 Open Source Template for Winamp5+
 After much folly trying to create a modern skin and running afoul of very many problems with maki code and similar. I decided to start over; I am creating a Classic Skin that is simplistic and written from the beginning in the modern skin wrappers. 
 
+
+What You Can Do
+--------------------------------------------------------------------------------
+Support us by making skins of your own.  Submit them and Link to this project.
+
+Why Use this
+--------------------------------------------------------------------------------
+1.  Simplistic
+2.  Easily create a new skin by replacing images with your own.
+3.  Your Done.
+*   Enhance your skin with xml/maki scripts
+
+What is Coming
+--------------------------------------------------------------------------------
+1.  WMC SUI -  A Single User Interface Example of the ADO Elite Skin will be along soon.
+2.  WMC Slim - A Very slimmed down version of a winamp skin (ie just like the shade views).
+3.  * More if needed
+
 Contributors
 --------------------------------------------------------------------------------
 Garetjax  - Skinning since 1996
