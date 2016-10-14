@@ -6,7 +6,7 @@
 		<version>3.58.02.07.13</version>
 		<name>WMC ADO Elite</name>
 		<comment>WMC/WCL For Winamp</comment>
-		<authors>Garetjax, Peacemaker and PJN123</authors>
+		<authors>Garetjax, Peacemaker, Dr0 and PJN123</authors>
 		<email>garrjo@gmail.com</email>
 		<homepage>www.winamp.com</homepage>
 		<screenshot>screenshot.png</screenshot>
@@ -29,10 +29,9 @@
 	<include file="/xml/video.xml"/>
 	<include file="/xml/about.xml"/>
 	<scripts>
-		<script id="notifier" file="scripts/filestatus.maki"/>
+		<script id="filestatus" file="scripts/filestatus.maki"/>
 		<script id="doublesizer" file="scripts/doublesize.maki"/>
 		<script id="eqlayer" file="scripts/eq_layers.maki"/>
 		<script id="songinfo" file="scripts/songinfo.maki"/>
-		<script id="notifier" file="scripts/notifier.maki"/>
 	</scripts>
 </WinampAbstractionLayer>
