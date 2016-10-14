@@ -3,10 +3,16 @@
   <!-- 
 		TrueType Fonts Rather than Image Fonts 
 		Comment for Image Based Fonts
-	-->
-  <truetypefont id="player.Numbers" file="graphics/Neutronium.ttf"  gammagroup="Text" />
-  <truetypefont id="player.BIGNUM" file="graphics/Neutronium.ttf"  gammagroup="Text"/>
-  <truetypefont id="player.SmallFixed" file="graphics/Neutronium.ttf"  gammagroup="Text"/>
+   -->
+  <truetypefont id="wa2.player.ttf.Numbers" file="graphics/Neutronium.ttf"  gammagroup="Text" />
+  <truetypefont id="wa2.player.ttf.SmallFixed" file="graphics/Neutronium.ttf"  gammagroup="Text"/>
+  <truetypefont id="wa2.player.ttf.BIGNUM" file="graphics/Neutronium.ttf"  gammagroup="Text"/>
+
+
+  <!--Image Based Fonts (Classic Method)-->
+  <bitmapfont id="wa2.player.SmallFixed" file="graphics/text.bmp" x="0" y="0" charwidth="5" charheight="6" hspace="0" gammagroup="Background"/>
+  <bitmapfont id="wa2.player.Numbers" file="graphics/numbers.bmp" x="0" y="0" charwidth="9" charheight="13" hspace="0" gammagroup="Background"/>
+  <bitmapfont id="wa2.player.BIGNUM" file="graphics/NUMS_EX.bmp" x="0" y="0" charwidth="9" charheight="13" hspace="13" gammagroup="Background"/>
 
   <!-- Base Main Graphic -->
   <bitmap id="wa2.player.background" file="graphics/bg.bmp" gammagroup="Background"/>
