@@ -21,7 +21,7 @@
 	<include file="/xml/color-presets.xml"/>
 	<include file="/xml/elements.xml"/>
 
-	<!-- The Remaining are Layouts (where stuff shows up)-->
+	<!-- The Remaining are Layouts (where stuff shows up) of note I repositioned the eject button to be just right of the next and included the full size (as a standard button in the button.png)-->
 	<include file="/xml/main.xml"/>
 	<include file="/xml/eqmain.xml"/>
 	<include file="/xml/pledit.xml"/>
