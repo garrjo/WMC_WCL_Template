@@ -29,24 +29,24 @@
 		<text
 			id="songticker" ticker="1"
 			display="songname" default="" showlen="1"
-			x="-145" y="-32"
+			x="-145" y="-37"
 			w="80" h="20"
 			antialias="true"
 			timeroffstyle="0"
 			offsetx="1"
 			offsety="1"
 			shadowcolor="0,0,0"
-			shadowx="-1"
-			shadowy="-1"
-			alpha="200"
-			color="246,188,37"
+			shadowx="0"
+			shadowy="0"
+			alpha="0"
+			color="220,220,220"
 			font="player.Numbers" fontsize="6"
 			 inactivealpha="128" relatx="1" relaty="1"
     />
 		<text
 			id="timer"
 			display="time"
-			x="-95" y="-25"
+			x="-85" y="-25"
 			w="80" h="20"
 			default="" showlen="1"
 			antialias="true"
@@ -58,22 +58,22 @@
 			shadowy="1"
 			timecolonwidth="1"
 			alpha="200"
-			color="246,188,37"
-			font="player.Numbers" fontsize="6"
-			 inactivealpha="128" relatx="1" relaty="1"
+			color="220,220,220"
+			font="player.Numbers" fontsize="7.5"
+			inactivealpha="128" relatx="1" relaty="1"
     />
 
 		<!-- Add Playlist Entry (List) -->
-		<button action="PE_ADD"		image="wa2.pl.add"	x="14" y="-23" w="22" h="10" relatx="0" relaty="1" rectrgn="1" tooltip="Add Files"/>
-		<button action="PE_REM"		image="wa2.pl.rem"	x="43" y="-23" w="22" h="10" relatx="0" relaty="1" rectrgn="1" tooltip="Remove Files"/>
-		<button action="PE_SEL"		image="wa2.pl.sel"	x="72" y="-23" w="22" h="10" relatx="0" relaty="1" rectrgn="1" tooltip="Select Files"/>
-		<button action="PE_MISC"	image="wa2.pl.misc"	x="101" y="-23" w="22" h="10" relatx="0" relaty="1" rectrgn="1" tooltip="Misc Files"/>
-		<button action="PE_LIST"	image="wa2.pl.load"	x="-49" y="-23" w="22" h="10" relatx="1" relaty="1" rectrgn="1" tooltip="Load Files"/>
+		<button action="PE_ADD"		image="wa2.pl.add"	x="14" y="-24" w="22" h="10" relatx="0" relaty="1" rectrgn="1" tooltip="Add Files"/>
+		<button action="PE_REM"		image="wa2.pl.rem"	x="43" y="-24" w="22" h="10" relatx="0" relaty="1" rectrgn="1" tooltip="Remove Files"/>
+		<button action="PE_SEL"		image="wa2.pl.sel"	x="72" y="-24" w="22" h="10" relatx="0" relaty="1" rectrgn="1" tooltip="Select Files"/>
+		<button action="PE_MISC"	image="wa2.pl.misc"	x="101" y="-24" w="22" h="10" relatx="0" relaty="1" rectrgn="1" tooltip="Misc Files"/>
+		<button action="PE_LIST"	image="wa2.pl.load"	x="-49" y="-24" w="22" h="10" relatx="1" relaty="1" rectrgn="1" tooltip="Load Files"/>
 		<!-- End Playlist Entries -->
 
 		<!-- Since Winamp 5.0 the component xml object was renamed to windowholder -->
 		<windowholder id="wasabi.list" component="guid:{45F3F7C1-A6F3-4EE6-A15E-125E92FC3F8D}"  fitparent="1"
-			x="12" y="20" w="-20" h="-57" relatw="1" relath="1"
+			x="10" y="20" w="-25" h="-53" relatw="1" relath="1"
 			noshowcmdbar="1" autoopen="1" autoclose="1" opacity="120"
 			param="guid:pl"
 		/>
@@ -97,13 +97,13 @@
 		downImage="wa2.player.title.quit.pressed"
 		tooltip="Close"
 		inactiveAlpha="128"
-		x="-11" y="-3" relatx="1" relaty="0" action="Close" rectrgn="1"
+		x="-11" y="3" relatx="1" relaty="0" action="Close" rectrgn="1"
 		/>
 		<!-- Playlist Shade -->
 		<button
 			id="winshade" tooltip="Toggle Windowshade mode"
 			action="SWITCH" param="shade"
-			x="-21" y="-3" relatx="1" relaty="0"
+			x="-21" y="3" relatx="1" relaty="0"
 			image="wa2.player.title.shade"
 			downImage="wa2.player.title.shade.pressed"
 			inactiveAlpha="128"

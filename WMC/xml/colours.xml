@@ -1,9 +1,9 @@
 ﻿<!-- COLORS -->
 <!-- Generic Trees -->
 <color id="wasabi.tree.text" value="255,255,255" gammagroup="Text"/>
-<color id="wasabi.tree.selected" value="246,188,137" gammagroup="TextSel"/>
-<color id="wasabi.tree.hilited" value="255,255,255"  gammagroup="Text2"/>
-<color id="wasabi.tree.hiliteddrop" value="255,255,255" gammagroup="Text2"/>
+<color id="wasabi.tree.selected" value="0,188,137" gammagroup="Text"/>
+<color id="wasabi.tree.hilited" value="0,0,255"  gammagroup="Text"/>
+<color id="wasabi.tree.hiliteddrop" value="255,255,255" gammagroup="Text"/>
 <color id="wasabi.border.sunken" value="0,0,0" gammagroup="Background"/>
 <color id="wasabi.list.column.background" value="255,255,255" gammagroup="Background"/>
 <color id="wasabi.list.column.frame.top" value="240,240,240" gammagroup="Background"/>
@@ -11,125 +11,58 @@
 <color id="wasabi.list.column.frame.bottom" value="238,238,238" gammagroup="Background"/>
 
 <!-- Generic Lists -->
-<color id="wasabi.list.text" value="246,188,37"/>
+<color id="wasabi.list.text" value="0,255,0" gammagroup="Text"/>
 <!-- for ml and pl (text) -->
-<color id="wasabi.list.background" value="22,22,22"/>
+<color id="wasabi.list.background" value="33,32,32" gammagroup="Background"/>
+
 <!-- for ml and pl (background color) -->
-<color id="wasabi.list.item.selected" value="246,255,37"/>
-<color id="wasabi.list.item.focused" value="246,188,37"/>
-<color id="wasabi.list.column.background" value="22,22,22"/>
-<color id="wasabi.list.column.text" value="246,88,37"/>
-<color id="wasabi.list.column.separator" value="22,22,22"/>
-<color id="wasabi.list.item.selected.fg" value="22,22,22" />
-
-<!-- :: Tooltip/Button :: -->
-<color id="wasabi.tooltips.textcolor" value="87,87,87" gammagroup="n.TooltipCombobox.Text"/>
-<color id="wasabi.button.text" value="146,88,37" gammagroup="Button"/>
-<color id="wasabi.button.background" value="22,22,22" gammagroup="Button"/>
-
-<!-- :: Component: Background :: -->
-<color id="wasabi.window.background" value="22,22,22" gammagroup="Background"/>
-<color id="wasabi.border.sunken" value="22,22,22" gammagroup="Background"/>
-
-<!-- :: Component: Text :: -->
-<color id="wasabi.window.text" value="210,160,20" gammagroup="Text"/>
-
-<!-- :: Component: Column :: -->
-<color id="wasabi.list.column.text" value="210,210,210" gammagroup="Text"/>
-<color id="wasabi.list.column.background" value="22,22,22" gammagroup="Background"/>
-<color id="wasabi.list.column.frame.top" value="22,22,22" gammagroup="Background"/>
-<color id="wasabi.list.column.frame.middle" value="22,22,22" gammagroup="Background"/>
-<color id="wasabi.list.column.frame.bottom" value="22,22,22" gammagroup="Background"/>
-
-<!-- :: List: Text Color :: -->
-<color id="wasabi.list.text" value="210,160,20" gammagroup="Text"/>
-<color id="wasabi.list.text.alternate" value="210,160,20" gammagroup="TextSel"/>
-
-<!-- :: List: Background :: -->
-<color id="wasabi.list.background" value="22,22,22" gammagroup="Background"/>
-<color id="wasabi.list.background.alternate" value="25,25,25" gammagroup="Background2"/>
-
-<!-- :: List: Text Color (Selected) :: -->
-<color id="wasabi.list.text.selected" value="255,255,237" gammagroup="Text"/>
-<color id="wasabi.list.text.selected.inactive" value="146,88,37" gammagroup="TextDisabled"/>
-
-<!-- :: List: Background (Selected) :: -->
-<color id="wasabi.list.text.selected.background" value="88,88,88" alpha="20" gammagroup="Background"/>
-<color id="wasabi.list.text.selected.background.inactive" value="44,44,44" gammagroup="Background2"/>
-
-<!-- :: List: Scrollbar OLD (updated/new plugins use scrollbars.png) :: -->
-<color id="wasabi.scrollbar.background" value="22,22,22" gammagroup="Background2"/>
-
-<!-- :: List: Text Color (Now Playing in Playlist Editor) :: -->
-<color id="wasabi.list.text.current" value="255,255,237" gammagroup="Text"/>
-<color id="wasabi.list.text.current.selected" value="255,255,237" gammagroup="Text"/>
-<color id="wasabi.list.text.current.selected.background" value="22,22,22" gammagroup="Text"/>
-<color id="wasabi.list.button.background" value="22,22,22" gammagroup="Background"/>
-
-<!-- COLORS -->
-<!-- Generic Trees -->
-<color id="wasabi.tree.text" value="255,255,255" gammagroup="Text"/>
-<color id="wasabi.tree.selected" value="246,188,137" gammagroup="Background"/>
-<color id="wasabi.tree.hilited" value="255,255,255"  gammagroup="Background2"/>
-<color id="wasabi.tree.hiliteddrop" value="255,255,255" gammagroup="Background"/>
-<color id="wasabi.border.sunken" value="0,0,0" gammagroup="Background"/>
-<color id="wasabi.list.column.background" value="255,255,255" gammagroup="Background"/>
-<color id="wasabi.list.column.frame.top" value="240,240,240" gammagroup="Background"/>
-<color id="wasabi.list.column.frame.middle" value="255,255,255" gammagroup="Background"/>
-<color id="wasabi.list.column.frame.bottom" value="238,238,238" gammagroup="Background"/>
-
-<!-- Generic Lists -->
-<color id="wasabi.list.text" value="246,188,37"/>
-<!-- for ml and pl (text) -->
-<color id="wasabi.list.background" value="22,22,22" gammagroup="Background"/>
-<!-- for ml and pl (background color) -->
-<color id="wasabi.list.item.selected" value="246,255,37" gammagroup="TextSel"/>
-<color id="wasabi.list.item.focused" value="246,188,37" gammagroup="TextSel"/>
-<color id="wasabi.list.column.background" value="22,22,22" gammagroup="Background2"/>
-<color id="wasabi.list.column.text" value="246,88,37" gammagroup="Text"/>
-<color id="wasabi.list.column.separator" value="22,22,22" gammagroup="TextSel"/>
-<color id="wasabi.list.item.selected.fg" value="22,22,22"  gammagroup="Background2"/>
+<color id="wasabi.list.item.selected" value="0,255,37" gammagroup="TextSel"/>
+<color id="wasabi.list.item.focused" value="0,188,37" gammagroup="TextSel"/>
+<color id="wasabi.list.column.background" value="33,32,32" gammagroup="Background2"/>
+<color id="wasabi.list.column.text" value="0,88,37" gammagroup="Text"/>
+<color id="wasabi.list.column.separator" value="33,32,32" gammagroup="TextSel"/>
+<color id="wasabi.list.item.selected.fg" value="33,32,32"  gammagroup="Background2"/>
 
 <!-- :: Tooltip/Button :: -->
 <color id="wasabi.tooltips.textcolor" value="87,87,87" gammagroup="Text"/>
-<color id="wasabi.button.text" value="146,88,37" gammagroup="Button"/>
-<color id="wasabi.button.background" value="22,22,22" gammagroup="Button"/>
+<color id="wasabi.button.text" value="88,88,30" gammagroup="Button"/>
+<color id="wasabi.button.background" value="33,32,32" gammagroup="Background"/>
 
 <!-- :: Component: Background :: -->
-<color id="wasabi.window.background" value="22,22,22" gammagroup="Background"/>
-<color id="wasabi.border.sunken" value="22,22,22" gammagroup="Background"/>
+<color id="wasabi.window.background" value="33,32,32" gammagroup="Background"/>
+<color id="wasabi.border.sunken" value="33,32,32" gammagroup="Background"/>
 
-<!-- :: Component: Text :: -->
-<color id="wasabi.window.text" value="210,160,20" gammagroup="Text"/>
+<!-- :: Component: Text (Bottom of ML RIGHT NEAR GENERATE PL) :: -->
+<color id="wasabi.window.text" value="255,50,20" gammagroup="Text"/>
 
 <!-- :: Component: Column :: -->
 <color id="wasabi.list.column.text" value="210,210,210" gammagroup="Text"/>
-<color id="wasabi.list.column.background" value="22,22,22" gammagroup="Background"/>
-<color id="wasabi.list.column.frame.top" value="22,22,22" gammagroup="Background"/>
-<color id="wasabi.list.column.frame.middle" value="22,22,22" gammagroup="Background"/>
-<color id="wasabi.list.column.frame.bottom" value="22,22,22" gammagroup="Background"/>
+<color id="wasabi.list.column.background" value="33,32,32" gammagroup="Background"/>
+<color id="wasabi.list.column.frame.top" value="33,32,32" gammagroup="Background"/>
+<color id="wasabi.list.column.frame.middle" value="33,32,32" gammagroup="Background"/>
+<color id="wasabi.list.column.frame.bottom" value="33,32,32" gammagroup="Background"/>
 
 <!-- :: List: Text Color :: -->
-<color id="wasabi.list.text" value="210,160,20" gammagroup="Text"/>
-<color id="wasabi.list.text.alternate" value="210,160,20" gammagroup="TextSel"/>
+<color id="wasabi.list.text" value="120,120,120" gammagroup="Text"/>
+<color id="wasabi.list.text.alternate" value="68,68,62" gammagroup="TextSel"/>
 
 <!-- :: List: Background :: -->
-<color id="wasabi.list.background" value="22,22,22" gammagroup="Text"/>
-<color id="wasabi.list.background.alternate" value="25,25,25" gammagroup="Background2"/>
+<color id="wasabi.list.background" value="33,32,32" gammagroup="Background"/>
+<color id="wasabi.list.background.alternate" value="38,38,38" gammagroup="Background2"/>
 
 <!-- :: List: Text Color (Selected) :: -->
 <color id="wasabi.list.text.selected" value="255,255,237" gammagroup="TextSel"/>
 <color id="wasabi.list.text.selected.inactive" value="146,88,37" gammagroup="TextDisable"/>
 
 <!-- :: List: Background (Selected) :: -->
-<color id="wasabi.list.text.selected.background" value="88,88,88" alpha="20" gammagroup="Text"/>
+<color id="wasabi.list.text.selected.background" value="53,56,59" alpha="20" gammagroup="Background"/>
 <color id="wasabi.list.text.selected.background.inactive" value="44,44,44" gammagroup="Background2"/>
 
 <!-- :: List: Scrollbar OLD (updated/new plugins use scrollbars.png) :: -->
-<color id="wasabi.scrollbar.background" value="22,22,22" gammagroup="Background2"/>
+<color id="wasabi.scrollbar.background" value="33,32,32" gammagroup="Background2"/>
 
 <!-- :: List: Text Color (Now Playing in Playlist Editor) :: -->
-<color id="wasabi.list.text.current" value="255,255,237" gammagroup="Text"/>
-<color id="wasabi.list.text.current.selected" value="255,255,237" gammagroup="Text"/>
-<color id="wasabi.list.text.current.selected.background" value="22,22,22" gammagroup="Text"/>
-<color id="wasabi.list.button.background" value="22,22,22" gammagroup="Background"/>
+<color id="wasabi.list.text.current" value="220,0,177" gammagroup="Text"/>
+<color id="wasabi.list.text.current.selected" value="0,239,107" gammagroup="Text"/>
+<color id="wasabi.list.text.current.selected.background" value="53,56,59" gammagroup="Background"/>
+<color id="wasabi.list.button.background" value="33,32,32" gammagroup="Background"/>

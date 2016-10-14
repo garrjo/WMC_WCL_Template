@@ -1,9 +1,9 @@
 <container id="EQ" name="Equalizer" default_x="0" default_y="116" default_visible="1">
 	<layout id="normal" background="wa2.player.eq.base">
 		<layer id="eqlayer">
-			<button id="setMax" x="40" y="36" w="28" h="8"/>
-			<button id="reset"  x="40" y="64" w="28" h="8"/>
-			<button id="setMin" x="40" y="94" w="28" h="8"/>
+			<toggleButton id="setMax" x="40" y="36" w="28" h="8"/>
+			<toggleButton id="reset"  x="40" y="64" w="28" h="8"/>
+			<toggleButton id="setMin" x="40" y="94" w="28" h="8"/>
 
 			<layer
 				id="eqtoshade"
@@ -32,61 +32,61 @@
     />
 			<layer
 				id="eq1back"
-				x="78" y="38"
+				x="80" y="38"
 				image="wa2.player.eq.slider0"
 				inactiveAlpha="128"
     />
 			<layer
 				id="eq2back"
-				x="96" y="38"
+				x="98" y="38"
 				image="wa2.player.eq.slider0"
 				inactiveAlpha="128"
     />
 			<layer
 				id="eq3back"
-				x="114" y="38"
+				x="116" y="38"
 				image="wa2.player.eq.slider0"
 				inactiveAlpha="128"
     />
 			<layer
 				id="eq4back"
-				x="132" y="38"
+				x="134" y="38"
 				image="wa2.player.eq.slider0"
 				inactiveAlpha="128"
     />
 			<layer
 				id="eq5back"
-				x="150" y="38"
+				x="152" y="38"
 				image="wa2.player.eq.slider0"
 				inactiveAlpha="128"
     />
 			<layer
 				id="eq6back"
-				x="168" y="38"
+				x="170" y="38"
 				image="wa2.player.eq.slider0"
 				inactiveAlpha="128"
     />
 			<layer
 				id="eq7back"
-				x="186" y="38"
+				x="188" y="38"
 				image="wa2.player.eq.slider0"
 				inactiveAlpha="128"
     />
 			<layer
 				id="eq8back"
-				x="204" y="38"
+				x="206" y="38"
 				image="wa2.player.eq.slider0"
 				inactiveAlpha="128"
     />
 			<layer
 				id="eq9back"
-				x="222" y="38"
+				x="224" y="38"
 				image="wa2.player.eq.slider0"
 				inactiveAlpha="128"
     />
 			<layer
 				id="eq10back"
-				x="240" y="38"
+				x="242" y="38"
 				image="wa2.player.eq.slider0"
 				inactiveAlpha="128"
     />
@@ -107,7 +107,7 @@
 				id="eq1"
 				action="EQ_BAND"
 				param="1"
-				x="79" y="38"
+				x="81" y="38"
 				w="11" h="62"
 				orientation="vertical"
 				thumb="wa2.player.eq.slider.up"
@@ -119,7 +119,7 @@
 				id="eq2"
 				action="EQ_BAND"
 				param="2"
-				x="97" y="38"
+				x="99" y="38"
 				w="11" h="62"
 				orientation="vertical"
 				thumb="wa2.player.eq.slider.up"
@@ -131,7 +131,7 @@
 				id="eq3"
 				action="EQ_BAND"
 				param="3"
-				x="115" y="38"
+				x="117" y="38"
 				w="11" h="62"
 				orientation="vertical"
 				thumb="wa2.player.eq.slider.up"
@@ -143,7 +143,7 @@
 				id="eq4"
 				action="EQ_BAND"
 				param="4"
-				x="133" y="38"
+				x="135" y="38"
 				w="11" h="62"
 				orientation="vertical"
 				thumb="wa2.player.eq.slider.up"
@@ -155,7 +155,7 @@
 				id="eq5"
 				action="EQ_BAND"
 				param="5"
-				x="151" y="38"
+				x="153" y="38"
 				w="11" h="62"
 				orientation="vertical"
 				thumb="wa2.player.eq.slider.up"
@@ -167,7 +167,7 @@
 				id="eq6"
 				action="EQ_BAND"
 				param="6"
-				x="169" y="38"
+				x="171" y="38"
 				w="11" h="62"
 				orientation="vertical"
 				thumb="wa2.player.eq.slider.up"
@@ -179,7 +179,7 @@
 				id="eq7"
 				action="EQ_BAND"
 				param="7"
-				x="187" y="38"
+				x="189" y="38"
 				w="11" h="62"
 				orientation="vertical"
 				thumb="wa2.player.eq.slider.up"
@@ -191,7 +191,7 @@
 				id="eq8"
 				action="EQ_BAND"
 				param="8"
-				x="205" y="38"
+				x="207" y="38"
 				w="11" h="62"
 				orientation="vertical"
 				thumb="wa2.player.eq.slider.up"
@@ -203,7 +203,7 @@
 				id="eq9"
 				action="EQ_BAND"
 				param="9"
-				x="223" y="38"
+				x="225" y="38"
 				w="11" h="62"
 				orientation="vertical"
 				thumb="wa2.player.eq.slider.up"
@@ -215,7 +215,7 @@
 				id="eq10"
 				action="EQ_BAND"
 				param="10"
-				x="241" y="38"
+				x="243" y="38"
 				w="11" h="62"
 				orientation="vertical"
 				thumb="wa2.player.eq.slider.up"
@@ -225,7 +225,7 @@
 			<eqvis
 				id="spline"
 				x="86" y="17"
-				w="113" h="19"
+				w="115" h="19"
 				colortop="255,255,255"
 				colormiddle="120,120,120"
 				colorbottom="60,60,60"
@@ -238,7 +238,7 @@
 			<button
 				id="Close"
 				action="close"
-				x="264" y="-3"
+				x="264" y="3"
 				image="wa2.player.eq.button.quit"
 				downImage="wa2.player.eq.button.quit.pressed"
 				tooltip="Close"
@@ -248,7 +248,7 @@
 			<button
 				id="winshade" tooltip="Toggle Windowshade mode"
 				action="SWITCH" param="shade"
-				x="254" y="-3"
+				x="254" y="3"
 				image="wa2.player.title.shade"
 				downImage="wa2.player.title.shade.pressed"
 				inactiveAlpha="128"
