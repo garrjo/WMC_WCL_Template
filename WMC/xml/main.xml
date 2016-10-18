@@ -99,14 +99,14 @@
 			shadowy="0"
 			alpha="255"
 			color="200,0,0"
-			font="wa2.player.SmallFixed" fontsize="8"
+			font="wa2.player.SmallFixed"
 			inactivealpha="128"
 			gammagroup="Text"
      />
     <text
 			id="songticker" ticker="1"
-			display="songname" default="" showlen="2"
-			x="111" y="22"
+			display="songname" default=""
+			x="110" y="25"
 			w="154" h="10"
 			antialias="false"
 			timeroffstyle="0"
@@ -132,10 +132,9 @@
 			shadowcolor="0,0,0"
 			shadowx="0"
 			shadowy="0"
-			timecolonwidth="7" fontsize="30"
-			alpha="200" vspace="0" hspace="5"
+			alpha="200"
 			color="0,50,50"
-			font="wa2.player.ttf.BIGNUM"
+			font="wa2.player.BIGNUM"
 			inactivealpha="128"
 			gammagroup="Text"
     />
@@ -295,16 +294,16 @@
 			image="wa2.player.title.enabled"
 			inactiveAlpha="128"
     />
-    <images source="volume" images="wa2.player.vol.main" x="107" y="57" w="68" h="13" imagesspacing="15" inactivealpha="128"/>
+    <images source="volume" images="wa2.player.vol.main" x="106" y="57" w="67" h="13" imagesspacing="15" inactivealpha="128"/>
     <slider id="Volume"
 						action="VOLUME"
-						x="109" y="57" w="68" h="13"
+						x="106" y="57" w="67" h="13"
 						thumb="wa2.player.vol.slider.normal" downThumb="wa2.player.vol.slider.pressed" inactivealpha="128"/>
 
-    <images source="balance" x="179" y="57" w="36" h="13" images="wa2.player.bal.main" imagesspacing="15" inactiveAlpha="128"/>
+    <images source="balance" x="176" y="57" w="36" h="13" images="wa2.player.bal.main" imagesspacing="15" inactiveAlpha="128"/>
     <slider id="Pan"
 						action="PAN"
-						x="181" y="57" w="38" h="13"
+						x="176" y="57" w="38" h="13"
 						thumb="wa2.player.bal.slider.normal" downThumb="wa2.player.bal.slider.pressed" inactivealpha="128"/>
     <Button
 			id="Close"
