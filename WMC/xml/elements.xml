@@ -8,11 +8,14 @@
   <truetypefont id="wa2.player.ttf.SmallFixed" file="graphics/Neutronium.ttf"  gammagroup="Text"/>
   <truetypefont id="wa2.player.ttf.BIGNUM" file="graphics/Neutronium.ttf"  gammagroup="Text"/>
 
-
   <!--Image Based Fonts (Classic Method)-->
-  <bitmapfont id="wa2.player.SmallFixed" file="graphics/text.bmp" x="0" y="0" charwidth="5" charheight="6" hspace="0" gammagroup="Background"/>
-  <bitmapfont id="wa2.player.Numbers" file="graphics/numbers.bmp" x="0" y="0" charwidth="9" charheight="13" hspace="0" gammagroup="Background"/>
-  <bitmapfont id="wa2.player.BIGNUM" file="graphics/NUMS_EX.bmp" x="0" y="0" charwidth="9" charheight="13" hspace="13" gammagroup="Background"/>
+  <bitmap id="wa2.player.Text" file="graphics/text.bmp" x="0" y="0" w="155" h="19" gammagroup="Text"/>
+  <bitmap id="wa2.player.Numbers" file="graphics/NUMS_EX.bmp" x="0" y="0" w="108" h="13" gammagroup="Text"/>
+  
+  <!--Defined Font Elements-->
+  <bitmapfont id="wa2.player.SmallFixed" file="wa2.player.Text" x="0" y="0" charwidth="5" charheight="6" hspace="0" vspacing="0" gammagroup="Background"/>
+  <bitmapfont id="wa2.player.Nums" file="wa2.player.Numbers" x="0" y="0" charwidth="8" charheight="13" hspace="0" vspacing="0" gammagroup="Background"/>
+  
 
   <!-- Base Main Graphic -->
   <bitmap id="wa2.player.background" file="graphics/bg.bmp" gammagroup="Background"/>

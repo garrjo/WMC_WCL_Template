@@ -134,7 +134,7 @@
 			shadowy="0"
 			alpha="200"
 			color="0,50,50"
-			font="wa2.player.BIGNUM"
+			font="wa2.player.Nums"
 			inactivealpha="128"
 			gammagroup="Text"
     />
