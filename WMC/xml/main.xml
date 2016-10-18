@@ -67,7 +67,7 @@
     <Button
 			id="Next"
 			action="Next"
-			x="108" y="88"
+			x="107" y="88"
 			image="wa2.player.next"
 			downImage="wa2.player.next.down"
 			tooltip="Next"
@@ -78,11 +78,11 @@
     <Button
 			id="Eject"
 			action="EJECT"
-			x="130" y="88"
+			x="136" y="89"
 			image="wa2.player.eject"
 			downImage="wa2.player.eject.down"
 			tooltip="Eject"
-			 inactivealpha="128"
+			inactivealpha="128"
 			gammagroup="Button"
     />
     <text
@@ -375,7 +375,7 @@
     />
     <status
 			id="status"
-			x="25" y="29"
+			x="26" y="28"
 			w="9" h="9"
 			stopBitmap="player.status.stop"
 			playBitmap="player.status.play"
@@ -386,14 +386,14 @@
     <Button
 			id="optiontog"
 			action="TOGGLE" param="guid:{ED3CD0D9-5FE5-4C34-AFE9-52E714D4FAA4}"
-			x="12" y="20"
+			x="12" y="24"
 			image="wa2.player.oiadv.o"
 			downImage="wa2.player.oiadv.o.pressed"
 			gammagroup="Button"
     />
     <toggleButton
 			id="toggleAllWaysOnTop"
-			x="12" y="30"
+			x="12" y="32"
 			image="wa2.player.oiadv.a"
 			downImage="wa2.player.oiadv.a.pressed"
 			activeImage="wa2.player.oiadv.a.pressed"
@@ -410,7 +410,7 @@
     />
     <toggleButton
 			id="toggledoublesize"
-			x="12" y="50"
+			x="12" y="48"
 			image="wa2.player.oiadv.d"
 			downImage="wa2.player.oiadv.d.pressed"
 			activeImage="wa2.player.oiadv.d.pressed"
@@ -419,7 +419,7 @@
     />
     <toggleButton
 			id="vistog"
-			x="12" y="60"
+			x="12" y="56"
 			image="wa2.player.oiadv.v"
 			downImage="wa2.player.oiadv.v.pressed"
 			gammagroup="Button"
@@ -427,21 +427,21 @@
     <toggleButton
 			id="Thinger"
 			action="TOGGLE" param="thinger"
-			x="12" y="70"
+			x="12" y="74"
 			h="14" w="14"
 			tooltip="Thinger"
 			gammagroup="Button"
     />
+    <layer id="posbar" image="wa2.player.posbar.bg" x="16" y="72" w="253" h="13" imagesspacing="15" inactivealpha="128"/>
     <slider
 			id="seeker"
 			action="seek"
-			x="19" y="72"
-			h="10" w="250"
+			x="16" y="73"
+			h="10" w="252"
 			thumb="wa2.player.posbar.up"
 			downthumb="wa2.player.posbar.down"
 			gammagroup="Slider"
     />
-    <layer id="glass" background="wa2.player.glass" x="0" y="0" image="wa2.player.glass" w="275" h="116" gammagroup="Text" ghost="-1" />
   </layout>
   <layout id="shade" background="wa2.player.shade.enabled" gammagroup="Background2" inactive="wa2.player.shade.disabled">
 

@@ -23,19 +23,19 @@
   <!-- CButtons.bmp to CButtons.bmp -->
   <!-- Buttons Normal -->
   <bitmap id="wa2.player.prev" file="graphics/CButtons.bmp"  x="0" y="0" h="18" w="23" gammagroup="Buttons"/>
-  <bitmap id="wa2.player.play" file="graphics/CButtons.bmp"  x="23" y="0" h="18" w="23" gammagroup="Buttons"/>
-  <bitmap id="wa2.player.pause" file="graphics/CButtons.bmp"  x="46" y="0" h="18" w="23" gammagroup="Buttons"/>
-  <bitmap id="wa2.player.stop" file="graphics/CButtons.bmp"  x="68" y="0" h="18" w="23" gammagroup="Buttons"/>
-  <bitmap id="wa2.player.next" file="graphics/CButtons.bmp"  x="92" y="0" h="18" w="23" gammagroup="Buttons"/>
-  <bitmap id="wa2.player.eject" file="graphics/CButtons.bmp"  x="114" y="0" h="18" w="23" gammagroup="Buttons"/>
+  <bitmap id="wa2.player.play" file="graphics/CButtons.bmp"  x="22" y="0" h="18" w="23" gammagroup="Buttons"/>
+  <bitmap id="wa2.player.pause" file="graphics/CButtons.bmp"  x="45" y="0" h="18" w="23" gammagroup="Buttons"/>
+  <bitmap id="wa2.player.stop" file="graphics/CButtons.bmp"  x="67" y="0" h="18" w="23" gammagroup="Buttons"/>
+  <bitmap id="wa2.player.next" file="graphics/CButtons.bmp"  x="91" y="0" h="18" w="23" gammagroup="Buttons"/>
+  <bitmap id="wa2.player.eject" file="graphics/CButtons.bmp"  x="114" y="0" h="15" w="23" gammagroup="Buttons"/>
 
   <!-- Normal Buttons Down -->
   <bitmap id="wa2.player.prev.down" file="graphics/CButtons.bmp"  x="0" y="18" h="18" w="23" gammagroup="Buttons"/>
-  <bitmap id="wa2.player.play.down" file="graphics/CButtons.bmp"  x="23" y="18" h="18" w="23" gammagroup="Buttons"/>
-  <bitmap id="wa2.player.pause.down" file="graphics/CButtons.bmp"  x="46" y="18" h="18" w="23" gammagroup="Buttons"/>
-  <bitmap id="wa2.player.stop.down" file="graphics/CButtons.bmp"  x="68" y="18" h="18" w="23" gammagroup="Buttons"/>
-  <bitmap id="wa2.player.next.down" file="graphics/CButtons.bmp"  x="92" y="18" h="18" w="23" gammagroup="Buttons"/>
-  <bitmap id="wa2.player.eject.down" file="graphics/CButtons.bmp"  x="114" y="18" h="18" w="23" gammagroup="Buttons"/>
+  <bitmap id="wa2.player.play.down" file="graphics/CButtons.bmp"  x="22" y="18" h="18" w="23" gammagroup="Buttons"/>
+  <bitmap id="wa2.player.pause.down" file="graphics/CButtons.bmp"  x="45" y="18" h="18" w="23" gammagroup="Buttons"/>
+  <bitmap id="wa2.player.stop.down" file="graphics/CButtons.bmp"  x="67" y="18" h="18" w="23" gammagroup="Buttons"/>
+  <bitmap id="wa2.player.next.down" file="graphics/CButtons.bmp"  x="91" y="18" h="18" w="23" gammagroup="Buttons"/>
+  <bitmap id="wa2.player.eject.down" file="graphics/CButtons.bmp"  x="114" y="17" h="15" w="23" gammagroup="Buttons"/>
 
   <!-- titlebar 
 			(crazy but, all here, I prefer transparencies when mapping this out.  
